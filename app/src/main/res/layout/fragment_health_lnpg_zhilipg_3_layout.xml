@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp50" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="受教育程度："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/sjycdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="老年智力评估得分："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/lnzlpgdfTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="老年智力评估结果："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/lnzlpgjgTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="症状说明："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/zzsmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="平均期间："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/pjqjTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="退化程度："
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:id="@+id/thcdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp100"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cxcsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/comfrim_bg"
+            android:text="@string/cm_cxcs_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

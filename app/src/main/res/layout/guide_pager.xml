@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_pannel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer_layout"
+        android:layout_centerHorizontal="true" >
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/pager_pannel"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/previous_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/switch_left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/pager_pannel"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/next_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/switch_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/footer_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dip"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/footer_tips_should"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/footer_tips"
+            android:text=""
+            android:textColor="@color/red2"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/footer_tips_done"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/footer_tips_should"
+            android:text=""
+            android:textColor="@color/red2"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/footer_tips_notDone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/footer_tips_done"
+            android:text=""
+            android:textColor="@color/red2"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/footer_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dip"
+            android:text="0/0"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

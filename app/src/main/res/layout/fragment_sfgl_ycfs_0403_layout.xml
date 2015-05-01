@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="产妇健康恢复状况"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产妇健康恢复状况" >
+
+            <RadioButton
+                android:id="@+id/xz01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/xz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/xz02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="保健指导"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip"
+            app:widgetTag="孕产访视-42天检查-保健指导" >
+
+            <CheckBox
+                android:id="@+id/jzslb01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.个人卫生" />
+
+            <CheckBox
+                android:id="@+id/jzslb02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb01CheckBox"
+                android:text="2.膳食营养" />
+
+            <CheckBox
+                android:id="@+id/jzslb03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb02CheckBox"
+                android:text="3.心理" />
+
+            <CheckBox
+                android:id="@+id/jzslb04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/jzslb03CheckBox"
+                android:text="4.运动" />
+
+            <CheckBox
+                android:id="@+id/jzslb05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/jzslb04CheckBox"
+                android:text="5.自我检测" />
+
+            <CheckBox
+                android:id="@+id/jzslb06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/jzslb05CheckBox"
+                android:text="6.分娩准备" />
+
+            <CheckBox
+                android:id="@+id/jzslb07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzslb01CheckBox"
+                android:layout_below="@+id/jzslb01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.母乳喂养" />
+
+            <CheckBox
+                android:id="@+id/jzslb08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb02CheckBox"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb07CheckBox"
+                android:text="8.避免致畸因素和疾病对胚胎的不良影响" />
+
+            <CheckBox
+                android:id="@+id/jzslb09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb01CheckBox"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb08CheckBox"
+                android:text="9.产前筛选宣传告知" />
+
+            <CheckBox
+                android:id="@+id/jzslb10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb01CheckBox"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb09CheckBox"
+                android:text="10.新生儿护理与喂养" />
+
+            <CheckBox
+                android:id="@+id/jzslb11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzslb07CheckBox"
+                android:layout_below="@+id/jzslb07CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="11.新生儿喂养与营养" />
+
+            <CheckBox
+                android:id="@+id/jzslb12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb07CheckBox"
+                android:layout_marginLeft="18dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb11CheckBox"
+                android:text="12.性保健" />
+
+            <CheckBox
+                android:id="@+id/jzslb13CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb07CheckBox"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb12CheckBox"
+                android:text="13.避孕" />
+
+            <CheckBox
+                android:id="@+id/jzslb14CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzslb07CheckBox"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzslb13CheckBox"
+                android:text="14.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/jzslbEditText"
+                style="@style/text_edittext_style"
+                android:layout_width="300.0dip"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/jzslb07CheckBox"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/jzslb14CheckBox"
+                app:referentId="@+id/jzslb06CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+</LinearLayout>

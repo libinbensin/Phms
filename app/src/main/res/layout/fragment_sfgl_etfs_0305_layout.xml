@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="发育筛选"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会有意识叫爸爸、妈妈："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会有意识叫爸爸、妈妈" >
+
+                <RadioButton
+                    android:id="@+id/fwtt01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/fwtt02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会用手指认东西或图片："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会用手指认东西或图片" >
+
+                <RadioButton
+                    android:id="@+id/hyszr01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hyszr02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="自己独走稳："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-自己独走稳" >
+
+                <RadioButton
+                    android:id="@+id/zjdzw01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/zjdzw02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会将玩具放到杯子或碗里："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会将玩具放到杯子或碗里" >
+
+                <RadioButton
+                    android:id="@+id/hjwj01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hjwj02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="能自己蹲下、并站起来："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-能自己蹲下、并站起来" >
+
+                <RadioButton
+                    android:id="@+id/nzjzx01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/nzjzx02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会说4个以上的单字："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会说4个以上的单字" >
+
+                <RadioButton
+                    android:id="@+id/hs4g01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hs4g02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会指认自己五官或身体部位："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会指认自己五官或身体部位" >
+
+                <RadioButton
+                    android:id="@+id/hzrzj01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hzrzj02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="360dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="能完成简单指令，如“把球放桌上”："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-能完成简单指令，如“把球放桌上”" >
+
+                <RadioButton
+                    android:id="@+id/nwc01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/nwc02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会自己跑："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会自己跑" >
+
+                <RadioButton
+                    android:id="@+id/hzjp01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hzjp02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="会搭高3-7块积木或玩具："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1-2岁-发育筛选-会搭高3-7块积木或玩具" >
+
+                <RadioButton
+                    android:id="@+id/hdg3701RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/hdg3702RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

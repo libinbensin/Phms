@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp30"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <TextView
+        android:id="@+id/bddltsTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/bddlts_text"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/dp20"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/mainLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/qy_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <RadioGroup
+                    android:id="@+id/qyRadiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/qyqk01RadioButton"
+                        style="@style/radio_button_style"
+                        android:layout_marginLeft="26dip"
+                        android:text="@string/cm_yes_text"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/qyqk02RadioButton"
+                        style="@style/radio_button_style"
+                        android:layout_marginLeft="50dip"
+                        android:text="@string/cm_no_text"
+                        android:textColor="@color/text_black"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/qy_date_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <com.cking.phss.widget.CalendarText
+                    android:id="@+id/qyrqCalendarText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_date_bg"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="签约地点："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/qyddEditText"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="签约医生："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/qyysEditText"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="签约类型："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/qylxSpinnerUtil"
+                    spinnerutil:name="qylx"
+                    style="@style/spinnerbtndropdown"
+                    android:layout_width="200dip"
+                    android:background="@drawable/spinner_bg"
+                    android:prompt="@string/qylx_prompt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="签约知情："
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/qyzqRadioGroup"
+                    android:layout_width="220dip"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/qyzq01RadioButton"
+                        style="@style/radio_button_style"
+                        android:text="同意" />
+
+                    <RadioButton
+                        android:id="@+id/qyzq02RadioButton"
+                        style="@style/radio_button_style"
+                        android:layout_marginLeft="30dip"
+                        android:checked="true"
+                        android:text="不同意" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/xxButton"
+                    android:layout_width="100dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/custom_button_bg"
+                    android:text="详细"
+                    android:textColor="@color/custom_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="授权电话："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/sqdhEditText"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:phoneNumber="true" />
+
+                <Button
+                    android:id="@+id/sqButton"
+                    android:layout_width="100dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/custom_button_bg"
+                    android:text="授权"
+                    android:textColor="@color/custom_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="授权状态："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/sqztTextView"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="通过"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <Button
+                    android:id="@+id/sxButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/refresh" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

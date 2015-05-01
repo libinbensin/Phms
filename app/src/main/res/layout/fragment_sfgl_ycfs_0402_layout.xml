@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="乳房：左侧乳腺"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产科检查-乳房：左侧乳腺" >
+
+            <RadioButton
+                android:id="@+id/zcrf01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/zcrf02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:widgetTag="孕产访视-42天检查-产科检查-乳房：左侧乳腺2" >
+
+            <CheckBox
+                android:id="@+id/zcrf01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.乳房切除" />
+
+            <CheckBox
+                android:id="@+id/zcrf02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zcrf01CheckBox"
+                android:text="2.异常泌乳" />
+
+            <CheckBox
+                android:id="@+id/zcrf03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zcrf02CheckBox"
+                android:text="3.乳腺包块" />
+
+            <CheckBox
+                android:id="@+id/zcrf04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zcrf03CheckBox"
+                android:text="4.乳腺增生" />
+
+            <CheckBox
+                android:id="@+id/zcrf05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zcrf04CheckBox"
+                android:text="5.胰液" />
+
+            <CheckBox
+                android:id="@+id/zcrf06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zcrf05CheckBox"
+                android:text="6.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/zcrfEditText"
+                style="@style/text_edittext_style"
+                android:layout_width="120.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/zcrf06CheckBox"
+                android:hint="@string/personal_qt_text"
+                app:referentId="@+id/zcrf06CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="右侧乳腺"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产科检查-乳房：右侧乳腺" >
+
+            <RadioButton
+                android:id="@+id/ycrf01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/ycrf02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:widgetTag="孕产访视-42天检查-产科检查-乳房：右侧乳腺2" >
+
+            <CheckBox
+                android:id="@+id/ycrf01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.乳房切除" />
+
+            <CheckBox
+                android:id="@+id/ycrf02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/ycrf01CheckBox"
+                android:text="2.异常泌乳" />
+
+            <CheckBox
+                android:id="@+id/ycrf03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/ycrf02CheckBox"
+                android:text="3.乳腺包块" />
+
+            <CheckBox
+                android:id="@+id/ycrf04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/ycrf03CheckBox"
+                android:text="4.乳腺增生" />
+
+            <CheckBox
+                android:id="@+id/ycrf05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/ycrf04CheckBox"
+                android:text="5.胰液" />
+
+            <CheckBox
+                android:id="@+id/ycrf06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/ycrf05CheckBox"
+                android:text="6.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/ycrfEditText"
+                style="@style/text_edittext_style"
+                android:layout_width="120.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/ycrf06CheckBox"
+                android:hint="@string/personal_qt_text"
+                app:referentId="@+id/ycrf06CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="恶露："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产科检查-恶露" >
+
+            <RadioButton
+                android:id="@+id/el01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/el02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="子宫："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产科检查-子宫" >
+
+            <RadioButton
+                android:id="@+id/zg01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/zg02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="伤口："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-42天检查-产科检查-伤口" >
+
+            <RadioButton
+                android:id="@+id/sk01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/sk02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="伤口愈合状况："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.Spinner
+            style="@style/spinner_dropdown_style"
+            android:layout_width="180.0dip"
+            android:layout_height="wrap_content"
+            app:widgetTag="孕产访视-42天检查-产科检查-伤口愈合状况" />
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="其他："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            style="@style/text_edittext_style"
+            android:layout_width="120.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="6dip"
+            android:hint="@string/personal_qt_text"
+            app:referentId="@+id/ycrf06CheckBox"
+            app:widgetTag="孕产访视-42天检查-产科检查-其他" />
+    </LinearLayout>
+
+</LinearLayout>

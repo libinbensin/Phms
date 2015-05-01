@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/cjqkRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/cjqk01RadioButton"
+                style="@style/radio_button_style"
+                android:text="@string/cm_wu_text" />
+
+            <RadioButton
+                android:id="@+id/cjqk02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginTop="@dimen/dp30"
+                android:text="@string/cm_have_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/cj_card_number_text"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <EditText
+            android:id="@+id/cjzhEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="40.0dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="integer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/cj_dj_text"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/cjdjSpinnerUtil"
+            spinnerutil:name="cjdj"
+            style="@style/spinnerbtndropdown"
+            android:background="@drawable/spinner_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/cjqk01CheckBox"
+                style="@style/compound_button_style"
+                android:text="@string/cj_slcj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp180"
+                android:layout_toRightOf="@+id/cjqk01CheckBox"
+                android:text="@string/cj_tlcj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp180"
+                android:layout_toRightOf="@+id/cjqk02CheckBox"
+                android:text="@string/cj_yycj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/cjqk01CheckBox"
+                android:layout_below="@+id/cjqk01CheckBox"
+                android:layout_marginBottom="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/cj_ztcj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/cjqk02CheckBox"
+                android:layout_below="@+id/cjqk02CheckBox"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/cj_zlcj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/cjqk03CheckBox"
+                android:layout_below="@+id/cjqk03CheckBox"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/cj_jscj_text" />
+
+            <CheckBox
+                android:id="@+id/cjqk07CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/cjqk04CheckBox"
+                android:layout_below="@+id/cjqk04CheckBox"
+                android:layout_marginBottom="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="@string/cm_qt_text" />
+
+            <EditText
+                android:id="@+id/cjqkqtEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_alignBaseline="@+id/cjqk07CheckBox"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/cjqk07CheckBox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

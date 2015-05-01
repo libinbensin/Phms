@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:orientation="vertical" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip" >
+
+            <CheckBox
+                android:id="@+id/jktj01CheckBox"
+                style="@style/compound_button_style"
+                android:text="体温" />
+
+            <CheckBox
+                android:id="@+id/jktj02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="400dip"
+                android:layout_toRightOf="@+id/jktj01CheckBox"
+                android:text="血脂检测" />
+
+            <CheckBox
+                android:id="@+id/jktj03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj01CheckBox"
+                android:layout_below="@+id/jktj01CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="体质指数" />
+
+            <CheckBox
+                android:id="@+id/jktj04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj02CheckBox"
+                android:layout_below="@+id/jktj02CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="血氧检测" />
+
+            <CheckBox
+                android:id="@+id/jktj05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj03CheckBox"
+                android:layout_below="@+id/jktj03CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="三围测量" />
+
+            <CheckBox
+                android:id="@+id/jktj06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj04CheckBox"
+                android:layout_below="@+id/jktj04CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="心电分析" />
+
+            <CheckBox
+                android:id="@+id/jktj07CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj05CheckBox"
+                android:layout_below="@+id/jktj05CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="血压测量" />
+
+            <CheckBox
+                android:id="@+id/jktj08CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj06CheckBox"
+                android:layout_below="@+id/jktj06CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="人体成分" />
+
+            <CheckBox
+                android:id="@+id/jktj09CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj07CheckBox"
+                android:layout_below="@+id/jktj07CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="血糖测量" />
+
+            <CheckBox
+                android:id="@+id/jktj10CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj08CheckBox"
+                android:layout_below="@+id/jktj08CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="体液检测" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

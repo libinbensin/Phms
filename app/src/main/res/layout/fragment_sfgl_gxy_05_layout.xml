@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="转诊"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dip"
+            android:gravity="center"
+            android:text="转诊："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/zzRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/zz01RadioButton"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/cm_wu_text" />
+
+            <RadioButton
+                android:id="@+id/zz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:text="@string/cm_have_text" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="原因："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/yyEditText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="机构及科室："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/jgjksEditText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="转诊回访"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="日期："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <com.cking.phss.widget.CalendarText
+                    android:id="@+id/rqCalendarText"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_date_bg"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/bqgshqkTextView"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="right"
+                android:text="  靶器官损害："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/bqgsh01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/bqgshqkTextView"
+                android:text="@string/sfgl_gxy_xz_text" />
+
+            <CheckBox
+                android:id="@+id/bqgsh02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/bqgsh01CheckBox"
+                android:text="@string/sfgl_gxy_n_text" />
+
+            <CheckBox
+                android:id="@+id/bqgsh03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/bqgsh02CheckBox"
+                android:text="@string/sfgl_gxy_sz_text" />
+
+            <CheckBox
+                android:id="@+id/bqgsh04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="28.0dip"
+                android:layout_toRightOf="@+id/bqgsh03CheckBox"
+                android:text="@string/sfgl_gxy_zwxg_text" />
+
+            <CheckBox
+                android:id="@+id/bqgsh05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/bqgsh04CheckBox"
+                android:text="@string/sfgl_gxy_yd_text" />
+
+            <CheckBox
+                android:id="@+id/bqgsh06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/bqgsh05CheckBox"
+                android:text="@string/sfgl_gxy_qt_text" />
+
+            <TextView
+                android:id="@+id/hbzTextView"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bqgshqkTextView"
+                android:layout_marginTop="22dip"
+                android:gravity="right"
+                android:text="合并症："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/hbz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh01CheckBox"
+                android:layout_below="@+id/bqgsh01CheckBox"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/hbzTextView"
+                android:text="@string/sfgl_gxy_zsfh_text" />
+
+            <CheckBox
+                android:id="@+id/hbz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh02CheckBox"
+                android:layout_below="@+id/bqgsh02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_xlsj_text" />
+
+            <CheckBox
+                android:id="@+id/hbz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh03CheckBox"
+                android:layout_below="@+id/bqgsh03CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_gxb_text" />
+
+            <CheckBox
+                android:id="@+id/hbz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh04CheckBox"
+                android:layout_below="@+id/bqgsh04CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_xlsc_text" />
+
+            <CheckBox
+                android:id="@+id/hbz05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh05CheckBox"
+                android:layout_below="@+id/bqgsh05CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_nzz_text" />
+
+            <CheckBox
+                android:id="@+id/hbz06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/bqgsh06CheckBox"
+                android:layout_below="@+id/bqgsh06CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_zdmjcdml_text" />
+
+            <CheckBox
+                android:id="@+id/hbz07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/hbz01CheckBox"
+                android:layout_below="@+id/hbz01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_dmzyyh_text" />
+
+            <CheckBox
+                android:id="@+id/hbz08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/hbz02CheckBox"
+                android:layout_below="@+id/hbz02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_swmbb_text" />
+
+            <CheckBox
+                android:id="@+id/hbz09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/hbz03CheckBox"
+                android:layout_below="@+id/hbz03CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="@string/sfgl_gxy_qt_text" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="其他疾病："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/qtjbEditText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginTop="12.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="下次随访日期："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/xcsfrqCalendarText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="随访医生签名："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/sfysqmEditText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

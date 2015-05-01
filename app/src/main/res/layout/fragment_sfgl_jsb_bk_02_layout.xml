@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="辖区村（居）委会信息"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="村（居）委会名称："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/cjwhmcEditText"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="村（居）委会联系人："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/cjwhlxrEditText"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="280.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="村（居）委会联系人电话："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/cjwhlxrdhEditText"
+                style="@style/phone_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="知情同意"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="知情同意："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zqtySpinnerUtil"
+                spinnerutil:name="zqty"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="签字："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/qzEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="签字时间："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/qzsjCalendarText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="首次发病年龄："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/scfbnlEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="140.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:text="@string/pttj_zz_text"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <CheckBox
+                android:id="@+id/zz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.幻觉" />
+
+            <CheckBox
+                android:id="@+id/zz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/zz01CheckBox"
+                android:text="2.交流困难" />
+
+            <CheckBox
+                android:id="@+id/zz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/zz02CheckBox"
+                android:text="3.猜疑" />
+
+            <CheckBox
+                android:id="@+id/zz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/zz03CheckBox"
+                android:text="4.喜怒无常" />
+
+            <CheckBox
+                android:id="@+id/zz05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/zz04CheckBox"
+                android:text="5.行为怪异" />
+
+            <CheckBox
+                android:id="@+id/zz06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:layout_toRightOf="@+id/zz05CheckBox"
+                android:text="6.兴奋话多" />
+
+            <CheckBox
+                android:id="@+id/zz07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz01CheckBox"
+                android:layout_below="@+id/zz01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.伤人毁物" />
+
+            <CheckBox
+                android:id="@+id/zz08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz02CheckBox"
+                android:layout_below="@+id/zz02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="8.悲观厌世" />
+
+            <CheckBox
+                android:id="@+id/zz09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz03CheckBox"
+                android:layout_below="@+id/zz03CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="9.无骨外走" />
+
+            <CheckBox
+                android:id="@+id/zz10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz04CheckBox"
+                android:layout_below="@+id/zz04CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="10.自语自笑" />
+
+            <CheckBox
+                android:id="@+id/zz11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz05CheckBox"
+                android:layout_below="@+id/zz05CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="11.孤僻懒散" />
+
+            <CheckBox
+                android:id="@+id/zz12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz07CheckBox"
+                android:layout_below="@+id/zz07CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="12.其他" />
+
+            <EditText
+                android:id="@+id/qtEditText"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/zz08CheckBox"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/zz12CheckBox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

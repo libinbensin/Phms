@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10.0dip"
+    android:layout_marginRight="10.0dip"
+    android:layout_marginTop="8.0dip"
+    android:background="@drawable/subject_bg"
+    android:gravity="center_vertical" >
+
+    <ImageView
+        android:id="@+id/ptxImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="5.0dip"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:background="@drawable/subject_white" />
+
+    <ImageView
+        android:id="@+id/glxImageView"
+        android:layout_width="140.0dip"
+        android:layout_height="5.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:background="@drawable/subject_blue" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" >
+
+        <TextView
+            android:id="@+id/page01TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key_pressed"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="1"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page02TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="2"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page03TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="3"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page04TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="4"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page05TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="5"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page06TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="6"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page07TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="7"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page08TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="8"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page09TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="9"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="5.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/subject_blue"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page10TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sheet_key__normal"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:text="10"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>   
+  <PreferenceScreen   
+            xmlns:android="http://schemas.android.com/apk/res/android"   
+            android:key="using_categories_in_root_screen"   
+            android:title="@string/preferenceScreen_title"   
+                   >  
+                   
+     <ListPreference  
+           xmlns:android="http://schemas.android.com/apk/res/android" 
+    		android:key="brodcast_type"
+    		android:title="@string/listPreference_title"
+    		android:dialogTitle="@string/listPreference_dialogTitle"
+    		android:entries="@array/brodcast_name"
+    		android:entryValues="@array/brodcast_values"
+    		>  		
+    </ListPreference>
+    
+    <MultiSelectListPreference   
+        xmlns:android="http://schemas.android.com/apk/res/android"   
+                android:key="device_Type"   
+                android:title="@string/multiSelectListPreference_title"
+                android:dialogTitle="@string/multiSelectListPreference_dialogTitle"	
+                android:entries="@array/device_type_name"
+                android:entryValues="@array/device_type_value"
+                >
+            
+        </MultiSelectListPreference>
+       
+    </PreferenceScreen>   

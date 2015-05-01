@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="ltgray">#fff4f4f4</item>
+    <item type="drawable" name="ltyellow">#fffff4db</item>
+    <item type="drawable" name="black">#ff000000</item>
+    <item type="drawable" name="white">#ffffffff</item>
+    <item type="drawable" name="transparent">#00000000</item>
+    <item type="drawable" name="transparent_background">#99000000</item>
+    <item type="drawable" name="list_background">#fff4f4f4</item>
+    <color name="yellow">#FFFF00</color>
+	<color name="orange">#FFA500</color>
+	<color name="white">#ffffff</color> 
+	<color name="title_white">#F5F9FA</color> 
+	<color name="red2">#7F0000</color> 
+	<color name="black">#000000</color>
+	<color name="text_black">#2D2D2D</color>
+	<color name="text_gray">#595959</color>
+	<color name="red">#ff0000</color>
+	<color name="green">#00ff00</color>
+	<color name="text_green">#0BA8DD</color>
+	<color name="text_blue">#4182E0</color>
+	<color name="blue">#0000ff</color>
+	<color name="custom_blue">#3C465C</color>
+	<color name="white2">#f5f5f5</color>
+	<color name="sky_blue">#87CEEB</color> 
+	<color name="steel_blue">#4682B4</color>
+	<color name="list_divider">#ffcc99</color>    
+	<color name="new_item_time_color">#ffffa200</color>
+	<color name="null_color">#00ffffff</color>
+	<color name="gray">#999999</color>
+	<color name="user_info_name_text">#777777</color>
+	<color name="user_info_count_text">#555555</color>
+	 <color name="ForestGreen">#6B8E23</color>
+</resources>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="个人信息"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="月龄:   "
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.Spinner
+                    style="@style/spinner_dropdown_style"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="儿童访视-1岁内-个人信息-月龄" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="实际月龄："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/zrysEditText"
+                    style="@style/integer_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="儿童访视-1岁内-个人信息-实际月龄" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="责任医生："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="儿童访视-1岁内-个人信息-责任医生" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="本次访视日期："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.CalendarText
+                    style="@style/common_text_style"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/edit_date_bg"
+                    android:hint="请输入时间"
+                    app:widgetTag="儿童访视-1岁内-个人信息-本次访视日期" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="喂养情况"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="喂养方式:   "
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-喂养方式" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="吃奶量："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-吃奶量" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:gravity="right"
+                android:text="ml/次"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="吃奶次数："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-吃奶次数" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:gravity="right"
+                android:text="次/日"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="米粉或粥:   "
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-米粉或粥" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="菜泥或果泥："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-菜泥或果泥" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="蛋黄或肝泥："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-蛋黄或肝泥" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="添加辅食:   "
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-添加辅食" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:gravity="right"
+                android:text="次/日"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="食欲："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-喂养情况-食欲" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fzjcTitleLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp55"
+    android:background="@color/bl_bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="193dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="辅助检查项目"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <TextView
+        android:layout_width="193dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="辅助检查结果"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <TextView
+        android:layout_width="133dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="检查人"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <TextView
+        android:layout_width="227dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="检查日期"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="操作"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+</LinearLayout>

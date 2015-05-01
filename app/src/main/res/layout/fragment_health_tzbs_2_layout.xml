@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.cking.phss.widget.TestPageItem
+        android:id="@+id/xlpgTestPageItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/subject_bg"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomRelativeLayout"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="60dip"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp30" >
+
+            <TextView
+                android:id="@+id/tips_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cm_question_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="平和质测试问卷: 您感觉"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="90dip"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginRight="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="(1)您精力充沛吗? (指精神头组，乐于做事)"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:id="@+id/radio_bar_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_marginTop="@dimen/dp20" >
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer1"
+                    style="@style/answer_button_style"
+                    android:text="@string/cm_meiy_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer2"
+                    style="@style/answer_button_style"
+                    android:layout_marginLeft="@dimen/dp80"
+                    android:layout_toRightOf="@+id/radio_tzps_answer1"
+                    android:text="@string/cm_hens_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer3"
+                    style="@style/answer_button_style"
+                    android:layout_marginLeft="@dimen/dp80"
+                    android:layout_toRightOf="@+id/radio_tzps_answer2"
+                    android:text="@string/cm_yous_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer4"
+                    style="@style/answer_button_style"
+                    android:layout_below="@+id/radio_tzps_answer1"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:text="@string/cm_jingc_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer5"
+                    style="@style/answer_button_style"
+                    android:layout_alignTop="@+id/radio_tzps_answer4"
+                    android:layout_marginLeft="@dimen/dp80"
+                    android:layout_toRightOf="@+id/radio_tzps_answer4"
+                    android:text="@string/cm_zongs_text" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="30dip"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingRight="@dimen/dp30" >
+
+            <Button
+                android:id="@+id/tzps_last_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/comfrim_bg"
+                android:text="@string/cm_previous_text"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/tzps_over_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comfrim_bg"
+                android:text="结束"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/tzps_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:background="@drawable/comfrim_bg"
+                android:text="@string/cm_next_text"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

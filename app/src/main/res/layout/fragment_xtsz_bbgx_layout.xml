@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp30" >
+
+    <TextView
+        android:id="@+id/bbxxTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:text="当前已经是最新版本，无需更新。"
+        android:textColor="@color/text_gray"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/qrButton"
+        android:layout_width="120dip"
+        android:layout_height="49dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dip"
+        android:background="@drawable/custom_button_bg"
+        android:text="确认"
+        android:textColor="@color/custom_text_color"
+        android:textSize="@dimen/dp20" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="安装最新数据包："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/zxButton"
+            android:layout_width="100dip"
+            android:layout_height="38dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/custom_button_bg"
+            android:text="执行"
+            android:textColor="@color/custom_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

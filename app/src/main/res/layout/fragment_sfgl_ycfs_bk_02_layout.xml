@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="既往病史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/jwbsRadioGroup"
+            app:name="SmokingGiveUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-配偶信息-既往病史" >
+
+            <RadioButton
+                android:id="@+id/jwbs01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jwbs02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:id="@+id/hxsj_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:widgetTag="孕产访视报卡-配偶信息-既往病史" >
+
+            <CheckBox
+                android:id="@+id/jwbs01CheckBox"
+                style="@style/compound_button_style" />
+
+            <CheckBox
+                android:id="@+id/jwbs02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jwbs01CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jwbs03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jwbs02CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jwbs04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jwbs03CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jwbs05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jwbs04CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jwbs06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jwbs05CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jwbs07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs01CheckBox"
+                android:layout_below="@+id/jwbs01CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs02CheckBox"
+                android:layout_below="@+id/jwbs02CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs03CheckBox"
+                android:layout_below="@+id/jwbs03CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs04CheckBox"
+                android:layout_below="@+id/jwbs04CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs05CheckBox"
+                android:layout_below="@+id/jwbs05CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs06CheckBox"
+                android:layout_below="@+id/jwbs06CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs13CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs07CheckBox"
+                android:layout_below="@+id/jwbs07CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs14CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs08CheckBox"
+                android:layout_below="@+id/jwbs08CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs15CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs09CheckBox"
+                android:layout_below="@+id/jwbs09CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs16CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs10CheckBox"
+                android:layout_below="@+id/jwbs10CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jwbs17CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jwbs11CheckBox"
+                android:layout_below="@+id/jwbs11CheckBox"
+                android:layout_marginTop="18dip" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="现患疾病："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:widgetTag="孕产访视报卡-配偶信息-现患疾病" >
+
+            <CheckBox
+                android:id="@+id/xhjb01CheckBox"
+                style="@style/compound_button_style" />
+
+            <CheckBox
+                android:id="@+id/xhjb02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/xhjb01CheckBox" />
+
+            <CheckBox
+                android:id="@+id/xhjb03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/xhjb02CheckBox" />
+
+            <CheckBox
+                android:id="@+id/xhjb04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/xhjb03CheckBox" />
+
+            <CheckBox
+                android:id="@+id/xhjb05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/xhjb04CheckBox" />
+
+            <CheckBox
+                android:id="@+id/xhjb06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/xhjb05CheckBox" />
+
+            <CheckBox
+                android:id="@+id/xhjb07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb01CheckBox"
+                android:layout_below="@+id/xhjb01CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb02CheckBox"
+                android:layout_below="@+id/xhjb02CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb03CheckBox"
+                android:layout_below="@+id/xhjb03CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb04CheckBox"
+                android:layout_below="@+id/xhjb04CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb05CheckBox"
+                android:layout_below="@+id/xhjb05CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb06CheckBox"
+                android:layout_below="@+id/xhjb06CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb13CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb07CheckBox"
+                android:layout_below="@+id/xhjb07CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb14CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb08CheckBox"
+                android:layout_below="@+id/xhjb08CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb15CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb09CheckBox"
+                android:layout_below="@+id/xhjb09CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb16CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb10CheckBox"
+                android:layout_below="@+id/xhjb10CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/xhjb17CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/xhjb12CheckBox"
+                android:layout_below="@+id/xhjb12CheckBox"
+                android:layout_marginTop="18dip" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="吸烟："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/xyRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-配偶信息-吸烟" >
+
+            <RadioButton
+                android:id="@+id/xy01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/xy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="right"
+            android:text="饮酒："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/yjRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-配偶信息-饮酒" >
+
+            <RadioButton
+                android:id="@+id/yj01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/yj02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="与遗传有关的家族史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:widgetTag="孕产访视报卡-配偶信息-与遗传有关的家族史" >
+
+            <CheckBox
+                android:id="@+id/jzs01CheckBox"
+                style="@style/compound_button_style" />
+
+            <CheckBox
+                android:id="@+id/jzs02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs01CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs02CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs03CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs04CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs05CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs01CheckBox"
+                android:layout_below="@+id/jzs01CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs02CheckBox"
+                android:layout_below="@+id/jzs02CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs03CheckBox"
+                android:layout_below="@+id/jzs03CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs04CheckBox"
+                android:layout_below="@+id/jzs04CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs05CheckBox"
+                android:layout_below="@+id/jzs05CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzs06CheckBox"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzs11CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs13CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzs06CheckBox"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzs12CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+</LinearLayout>

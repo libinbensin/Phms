@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/blsRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/bls01RadioButton"
+                style="@style/radio_button_style"
+                android:text="@string/cm_wu_text" />
+
+            <RadioButton
+                android:id="@+id/bls02RadioButton"
+                android:layout_marginTop="@dimen/dp30"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/cm_have_text" />
+        </RadioGroup>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/blsRadioGroup"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_toRightOf="@+id/blsRadioGroup" >
+
+            <CheckBox
+                android:id="@+id/bls01CheckBox"
+                style="@style/compound_button_style"
+                android:text="@string/bl_hxp_text" />
+
+            <CheckBox
+                android:id="@+id/bls02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_toRightOf="@+id/bls01CheckBox"
+                android:text="@string/bl_dw_text" />
+
+            <CheckBox
+                android:id="@+id/bls03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_toRightOf="@id/bls02CheckBox"
+                android:text="@string/bl_sx_text" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </RelativeLayout>
+
+</LinearLayout>

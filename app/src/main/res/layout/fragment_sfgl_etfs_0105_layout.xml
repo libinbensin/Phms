@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text0"
+            style="@style/compound_jzs_button_style"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="right|center_vertical"
+            android:text="脐带："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-脐带" >
+
+            <CheckBox
+                android:id="@+id/zz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/text0"
+                android:text="1.未脱" />
+
+            <CheckBox
+                android:id="@+id/zz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/zz01CheckBox"
+                android:text="2.脱落" />
+
+            <CheckBox
+                android:id="@+id/zz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zz02CheckBox"
+                android:text="3.脐部有渗出" />
+
+            <CheckBox
+                android:id="@+id/zz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zz03CheckBox"
+                android:text="4.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/zz04CheckBox"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/zz04CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="是否高危儿："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-是否高危儿" >
+
+            <RadioButton
+                android:id="@+id/ywg01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/ywg02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/ywg02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="转诊："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-转诊" >
+
+            <RadioButton
+                android:id="@+id/ewg01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/ewg02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/compound_jzs_button_style"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="right|center_vertical"
+            android:text="指导："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-指导" >
+
+            <CheckBox
+                android:id="@+id/zd01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.科学喂养" />
+
+            <CheckBox
+                android:id="@+id/zd02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/zd01CheckBox"
+                android:text="2.合理膳食" />
+
+            <CheckBox
+                android:id="@+id/zd03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zd02CheckBox"
+                android:text="3.生长发育" />
+
+            <CheckBox
+                android:id="@+id/zd04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zd03CheckBox"
+                android:text="4.疾病预防" />
+
+            <CheckBox
+                android:id="@+id/zd05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/zd04CheckBox"
+                android:text="5.预防意外伤害" />
+
+            <CheckBox
+                android:id="@+id/zd06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd01CheckBox"
+                android:layout_below="@+id/zd01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="6.口腔保健" />
+
+            <CheckBox
+                android:id="@+id/zd07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd02CheckBox"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/zd07CheckBox"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/zd07CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="特殊医嘱及处理："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            style="@style/text_edittext_style"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-特殊医嘱及处理" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="本次访视日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.CalendarText
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_date_bg"
+                android:hint="请输入时间"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-本次访视日期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="下次访视地点："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-下次访视地点" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="下次访视日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.CalendarText
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_date_bg"
+                android:hint="请输入时间"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-下次访视日期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="随访医生签名："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-随访医生签名" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

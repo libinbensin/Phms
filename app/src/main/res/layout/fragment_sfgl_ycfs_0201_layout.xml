@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="个人信息"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="访视日期:   "
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.CalendarText
+                    android:id="@+id/sfrqCalendarText"
+                    style="@style/common_text_style"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_date_bg"
+                    app:widgetTag="孕产访视-第2-5次产前-个人信息-访视日期" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="孕周(周)："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/zrysEditText"
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-个人信息-孕周(周)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="产前访视次数："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-个人信息-产前访视次数" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="主述："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="300dip"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-个人信息-主述" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="体征"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:id="@+id/lineView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/jktj_line" />
+
+                <Button
+                    android:id="@+id/tjsjButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/lineView"
+                    android:background="@drawable/comfrim_bg"
+                    android:text="体检数据"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="体重(kg)："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-体重(kg)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="血压(mmHg)："
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/integer_edittext_style"
+                    android:layout_width="75dip"
+                    android:layout_height="wrap_content"
+                    android:hint="收缩压"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-血压(mmHg)：1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dip"
+                    android:text="/"
+                    android:textColor="@color/text_gray"
+                    android:textSize="20sp" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/integer_edittext_style"
+                    android:layout_width="75dip"
+                    android:layout_height="wrap_content"
+                    android:hint="舒张压"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-血压(mmHg)：2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="血红蛋白(g/L)："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-血红蛋白(g/L)" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="尿蛋白(mg/24H)："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-尿蛋白(mg/24H)" />
+
+                <net.xinhuaxing.widget.Spinner
+                    style="@style/spinner_dropdown_style"
+                    android:layout_width="180.0dip"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="孕产访视-第2-5次产前-体征-尿蛋白(mg/24H)2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+    <style name="radio_button_style" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/personal_textcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/radiobutton_bg</item>
+    </style>
+
+    <style name="compound_button_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/personal_textcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/checkbox_bg</item>
+    </style>
+
+    <style name="compound_jzs_button_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/personal_textcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/checkbox_bg</item>
+    </style>
+
+    <style name="checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/personal_textcolor</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/checkbox_bg</item>
+    </style>
+
+    <style name="listview_style" parent="@android:style/Widget.ListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 更换背景图片实现全透明 -->
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 隐藏标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="health_left_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/jktj_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_health_left_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="health_middle_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/jktj_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_health_middle_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="health_right_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/radiobutton_health_right_bg</item>
+    </style>
+
+    <style name="sjgl_left_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/sjgl_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_sjgl_left_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sjgl_middle_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/sjgl_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_sjgl_middle_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sjgl_right_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/sjgl_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_sjgl_right_bg</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sjgl_jmcx_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/sjgl_jmcx_color</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:background">@drawable/radiobutton_sjgl_jmcx_bg</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="sjgl_radio_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp18</item>
+        <item name="android:textColor">@color/sjgl_radio_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_sjgl_left_bgs</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="answer_button_style" parent="@android:style/Widget.CompoundButton">
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/radiobutton_answer_bg</item>
+        <item name="android:paddingLeft">@dimen/dp30</item>
+        <item name="android:paddingTop">@dimen/dp10</item>
+        <item name="android:paddingRight">@dimen/dp30</item>
+        <item name="android:paddingBottom">@dimen/dp10</item>
+        <item name="android:layout_width">160dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sjgl_radio_color</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="CheckBoxStyle">
+        <item name="android:button">@drawable/checkbox_bg</item>
+        <item name="android:height">37dip</item>
+    </style>
+
+    <style name="CheckBox2Style">
+        <item name="android:button">@drawable/custom_check</item>
+        <item name="android:height">34dip</item>
+    </style>
+
+    <style name="CheckBox3Style">
+        <item name="android:button">@drawable/switch_bg</item>
+        <item name="android:height">35dp</item>
+        <item name="android:width">84dp</item>
+    </style>
+
+    <style name="CheckBox4Style">
+        <item name="android:button">@drawable/status_bg</item>
+        <item name="android:height">37dp</item>
+        <item name="android:width">81dp</item>
+    </style>
+
+    <style name="CheckBox5Style">
+        <item name="android:button">@drawable/quanxian_bg</item>
+        <item name="android:height">40dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="left_tab_bottom">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="bottom_radio_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">16dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="tab_radio_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="left_radio_style">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="custom_radio_style" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radiobutton_bg</item>
+        <item name="android:maxHeight">28dip</item>
+    </style>
+
+    <style name="common_singleLine_text_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="common_text_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+    </style>
+
+    <style name="listview_title_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="listview_body_text_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="decimal_edittext_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:numeric">decimal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="integer_edittext_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:numeric">integer</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="idc_edittext_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:digits">0123456789xX</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="text_edittext_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="phone_edittext_style">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="title_right_text_style">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="spinnerbtndropdown" parent="android:Widget.Spinner">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="spinner_dropdown_style" parent="android:Widget.Spinner">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/dp20</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="bklistDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 设置边框 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 设置是否背景模糊 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 设置半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置无标题 -->
+        <item name="android:windowFullscreen">false</item>
+        <!-- 设置全屏 -->
+    </style>
+
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 设置window背景透明，也就是去边框 -->
+    </style>
+    <!-- 定义一种通用的为控件添加外部的方形边框style -->
+    <style name="RelativeLayoutStyle">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:animateOnClick">true</item>
+        <item name="android:background">@drawable/rectangle</item>
+    </style>
+
+</resources>

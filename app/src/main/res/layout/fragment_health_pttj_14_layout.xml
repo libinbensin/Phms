@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/step_label_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:text="@string/pttj_xgjb_text"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal" >
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/xgjp01CheckBox"
+                    style="@style/compound_button_style"
+                    android:text="@string/pttj_1_wfx_text" />
+
+                <CheckBox
+                    android:id="@+id/xgjp02CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/xgjp01CheckBox"
+                    android:text="@string/pttj_2_jcdml_text" />
+
+                <CheckBox
+                    android:id="@+id/xgjp03CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp80"
+                    android:layout_toRightOf="@+id/xgjp02CheckBox"
+                    android:text="@string/pttj_3_dmbs_text" />
+
+                <CheckBox
+                    android:id="@+id/xgjp04CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/xgjp03CheckBox"
+                    android:text="@string/pttj_4_qt_text" />
+
+                <EditText
+                    android:id="@+id/xgjpEditText"
+                    android:layout_width="170.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignTop="@+id/xgjp04CheckBox"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/xgjp04CheckBox"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="@dimen/dp20" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/step_label_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:text="@string/pttj_ybjb_text"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal" >
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/ybjp01CheckBox"
+                    style="@style/compound_button_style"
+                    android:text="@string/pttj_1_wfx_text" />
+
+                <CheckBox
+                    android:id="@+id/ybjp02CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/ybjp01CheckBox"
+                    android:text="@string/pttj_2_swmsc_text" />
+
+                <CheckBox
+                    android:id="@+id/ybjp03CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/ybjp02CheckBox"
+                    android:text="@string/pttj_3_srtsz_text" />
+
+                <CheckBox
+                    android:id="@+id/ybjp04CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="60.0dip"
+                    android:layout_toRightOf="@+id/ybjp03CheckBox"
+                    android:text="@string/pttj_4_bnz_text" />
+
+                <CheckBox
+                    android:id="@+id/ybjp05CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_alignLeft="@+id/ybjp01CheckBox"
+                    android:layout_below="@+id/ybjp01CheckBox"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/pttj_5_qt_text" />
+
+                <EditText
+                    android:id="@+id/ybjpEditText"
+                    android:layout_width="170.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_alignTop="@+id/ybjp05CheckBox"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/ybjp05CheckBox"
+                    android:background="@drawable/edit_bg"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="@dimen/dp20" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/step_label_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:text="@string/pttj_sjxtjb_text"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pttj_sjxtjb_s_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/sjxtjp01RadioButton"
+                    android:layout_gravity="center_vertical"
+                    style="@style/radio_button_style"
+                    android:text="@string/cm_wfx_text" />
+
+                <RadioButton
+                    android:id="@+id/sjxtjp02RadioButton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50.0dip"
+                    style="@style/radio_button_style"
+                    android:text="@string/cm_have_text" />
+
+                <EditText
+                    android:id="@+id/sjxtjpEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/edit_bg" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/step_label_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:text="@string/pttj_qtxtjb_text"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pttj_qtxtjb_s_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/qtxtjp01RadioButton"
+                    android:layout_gravity="center_vertical"
+                    style="@style/radio_button_style"
+                    android:text="@string/cm_wfx_text" />
+
+                <RadioButton
+                    android:id="@+id/qtxtjp02RadioButton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50.0dip"
+                    style="@style/radio_button_style"
+                    android:text="@string/cm_have_text" />
+
+                <EditText
+                    android:id="@+id/qtxtjpEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:background="@drawable/edit_bg" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

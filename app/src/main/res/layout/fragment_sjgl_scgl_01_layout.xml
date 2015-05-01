@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sjgl_background_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:gravity="right"
+                android:text="选择日期："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <RadioGroup
+                android:id="@+id/scglRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/scgl01RadioButton"
+                    style="@style/sjgl_left_style"
+                    android:layout_width="100dip"
+                    android:layout_height="42dip"
+                    android:tag="0"
+                    android:text="最近一周" />
+
+                <RadioButton
+                    android:id="@+id/scgl02RadioButton"
+                    style="@style/sjgl_middle_style"
+                    android:layout_width="100dip"
+                    android:layout_height="42dip"
+                    android:tag="1"
+                    android:text="最近一月 " />
+
+                <RadioButton
+                    android:id="@+id/scgl03RadioButton"
+                    style="@style/sjgl_middle_style"
+                    android:layout_width="100dip"
+                    android:layout_height="42dip"
+                    android:tag="2"
+                    android:text="最近三月" />
+
+                <RadioButton
+                    android:id="@+id/scgl04RadioButton"
+                    style="@style/sjgl_right_style"
+                    android:layout_width="100dip"
+                    android:layout_height="42dip"
+                    android:tag="3"
+                    android:text="自定义" />
+
+                <Button
+                    android:id="@+id/zdyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/biaoqian"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="10dip"
+                    android:text="2014-05-1 ~ 2014-07-01"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="10dip" >
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" >
+
+                <TextView
+                    android:id="@+id/xmsxTextView"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="right"
+                    android:text="项目筛选："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <CheckBox
+                    android:id="@+id/xmsx01CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_toRightOf="@+id/xmsxTextView"
+                    android:text="全选" />
+
+                <CheckBox
+                    android:id="@+id/xmsx02CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/xmsx01CheckBox"
+                    android:text="档案" />
+
+                <CheckBox
+                    android:id="@+id/xmsx03CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/xmsx02CheckBox"
+                    android:text="快速体检" />
+
+                <CheckBox
+                    android:id="@+id/xmsx04CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/xmsx03CheckBox"
+                    android:text="高血压随访" />
+
+                <CheckBox
+                    android:id="@+id/xmsx05CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_toRightOf="@+id/xmsx04CheckBox"
+                    android:text="糖尿病随访" />
+
+                <TextView
+                    android:id="@+id/scztTextView"
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_toRightOf="@+id/xmsx05CheckBox"
+                    android:gravity="right"
+                    android:text="上传状态："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <CheckBox
+                    android:id="@+id/sczt01CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_toRightOf="@+id/scztTextView"
+                    android:text="未上传" />
+
+                <CheckBox
+                    android:id="@+id/sczt02CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toRightOf="@+id/sczt01CheckBox"
+                    android:text="已上传" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/titleLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp55"
+        android:background="@color/bl_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/listTotalCheckBox"
+            style="@style/checkbox_style"
+            android:layout_width="45dip"
+            android:layout_marginLeft="20dip" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="157dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="序号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="98dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_name_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="98dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_xb_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="197dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="项目名称"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="198dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="数据来源"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="139dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="操作标志"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="139dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="上传标志"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="操作时间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/scglListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomRelativeLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/dp10"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000" />
+
+        <RelativeLayout
+            android:id="@+id/bottomRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="40dip"
+            android:paddingRight="40dip" >
+
+            <LinearLayout
+                android:id="@+id/bottomLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总计:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp20" />
+
+                    <TextView
+                        android:id="@+id/zjTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/page"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已上传:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp20" />
+
+                    <TextView
+                        android:id="@+id/yscTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/page"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未上传:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp20" />
+
+                    <TextView
+                        android:id="@+id/wscTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:background="@drawable/page"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="200dip"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/deleteButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp30"
+                        android:background="@drawable/custom_button_bg"
+                        android:text="删除"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp20" />
+
+                    <Button
+                        android:id="@+id/uploadButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp30"
+                        android:background="@drawable/custom_button_bg"
+                        android:text="上传"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="健康体检"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/jktjqkTextView"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="right"
+                android:text="健康体检："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/jktj01CheckBox"
+                style="@style/compound_button_style"
+                android:layout_toRightOf="@+id/jktjqkTextView"
+                android:text="快速体检" />
+
+            <CheckBox
+                android:id="@+id/jktj02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/jktj01CheckBox"
+                android:text="体质辨识" />
+
+            <CheckBox
+                android:id="@+id/jktj03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/jktj02CheckBox"
+                android:text="老年评估" />
+
+            <CheckBox
+                android:id="@+id/jktj04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="28.0dip"
+                android:layout_toRightOf="@+id/jktj03CheckBox"
+                android:text="普通体检" />
+
+            <CheckBox
+                android:id="@+id/jktj05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/jktj04CheckBox"
+                android:text="心理评估" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:text="随访管理"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/sfglqkTextView"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="right"
+                android:text="随访管理："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/sfgl01CheckBox"
+                style="@style/compound_button_style"
+                android:layout_toRightOf="@+id/sfglqkTextView"
+                android:text="高血压" />
+
+            <CheckBox
+                android:id="@+id/sfgl02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/sfgl01CheckBox"
+                android:text="糖尿病" />
+
+            <CheckBox
+                android:id="@+id/sfgl03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/sfgl02CheckBox"
+                android:text="脑卒中" />
+
+            <CheckBox
+                android:id="@+id/sfgl04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="28.0dip"
+                android:layout_toRightOf="@+id/sfgl03CheckBox"
+                android:text="精神病" />
+
+            <CheckBox
+                android:id="@+id/sfgl05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/sfgl04CheckBox"
+                android:text="孕产访视" />
+
+            <CheckBox
+                android:id="@+id/sfgl06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/sfgl01CheckBox"
+                android:layout_below="@+id/sfgl01CheckBox"
+                android:layout_marginTop="10dip"
+                android:text="儿童访视" />
+
+            <CheckBox
+                android:id="@+id/sfgl07CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/sfgl02CheckBox"
+                android:layout_below="@+id/sfgl02CheckBox"
+                android:layout_marginTop="10dip"
+                android:text="老年随访" />
+
+            <CheckBox
+                android:id="@+id/sfgl08CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/sfgl03CheckBox"
+                android:layout_below="@+id/sfgl03CheckBox"
+                android:layout_marginTop="10dip"
+                android:text="残疾随访" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="远程监护"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/ycjhqkTextView"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:gravity="right"
+                android:text="远程监护："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/ycjh01CheckBox"
+                style="@style/compound_button_style"
+                android:layout_toRightOf="@+id/ycjhqkTextView"
+                android:text="血压监护" />
+
+            <CheckBox
+                android:id="@+id/ycjh02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/ycjh01CheckBox"
+                android:text="血氧监护" />
+
+            <CheckBox
+                android:id="@+id/ycjh03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/ycjh02CheckBox"
+                android:text="心电监护" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

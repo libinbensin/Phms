@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp30" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:text="选择主题"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/xzztRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="26dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xzzt01RadioButton"
+                style="@style/sjgl_radio_style"
+                android:layout_width="174dip"
+                android:layout_height="49dip"
+                android:checked="true"
+                android:tag="0"
+                android:text="标准" />
+
+            <RadioButton
+                android:id="@+id/xzzt02RadioButton"
+                style="@style/sjgl_radio_style"
+                android:layout_width="174dip"
+                android:layout_height="49dip"
+                android:layout_marginLeft="200dip"
+                android:tag="1"
+                android:text="星空" />
+
+            <RadioButton
+                android:id="@+id/xzzt03RadioButton"
+                style="@style/sjgl_radio_style"
+                android:layout_width="174dip"
+                android:layout_height="49dip"
+                android:layout_marginLeft="200dip"
+                android:tag="2"
+                android:text="湖面" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:text="选择分辨率"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/xzfblRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="26dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/xzfbl01RadioButton"
+                style="@style/sjgl_radio_style"
+                android:layout_width="174dip"
+                android:layout_height="49dip"
+                android:checked="true"
+                android:tag="0"
+                android:text="1280X800" />
+
+            <RadioButton
+                android:id="@+id/xzfbl02RadioButton"
+                style="@style/sjgl_radio_style"
+                android:layout_width="174dip"
+                android:layout_height="49dip"
+                android:layout_marginLeft="200dip"
+                android:tag="1"
+                android:text="2560X1600 " />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

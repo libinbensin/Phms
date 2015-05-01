@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="诊断信息"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="最高诊断单位："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zgzddwSpinnerUtil"
+                spinnerutil:name="zgzddw"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="160dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="首次诊断日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/sczdrqCalendarText"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡医生："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/bkysSpinnerUtil"
+                spinnerutil:name="bkys"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/bkys_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/bkrqCalendarText"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡单位："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/bkdwSpinnerUtil"
+                spinnerutil:name="bkdw"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/bkdw_prompt" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="ICD编码："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/icdbmSpinnerUtil"
+                spinnerutil:name="ICDbm"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="160dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="933dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="糖尿病类型："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/tnblxSpinnerUtil"
+                spinnerutil:name="tnblx"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip" >
+
+            <TextView
+                android:id="@+id/bfzTextView"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="并发症："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/bfz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/bfzTextView"
+                android:text="1.无" />
+
+            <CheckBox
+                android:id="@+id/bfz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/bfz01CheckBox"
+                android:text="2.肾脏疾病" />
+
+            <CheckBox
+                android:id="@+id/bfz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/bfz02CheckBox"
+                android:text="3.神经病变" />
+
+            <CheckBox
+                android:id="@+id/bfz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/bfz03CheckBox"
+                android:text="4.血管病变" />
+
+            <CheckBox
+                android:id="@+id/bfz05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/bfz04CheckBox"
+                android:text="5.视网膜病变" />
+
+            <CheckBox
+                android:id="@+id/bfz06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="2.0dip"
+                android:layout_toRightOf="@+id/bfz05CheckBox"
+                android:text="6.皮肤感染" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip" >
+
+            <TextView
+                android:id="@+id/wxysTextView"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="危险因素："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/wxys01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/wxysTextView"
+                android:text="1.肥胖" />
+
+            <CheckBox
+                android:id="@+id/wxys02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_toRightOf="@+id/wxys01CheckBox"
+                android:text="2.高血压" />
+
+            <CheckBox
+                android:id="@+id/wxys03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_toRightOf="@+id/wxys02CheckBox"
+                android:text="3.高血脂" />
+
+            <CheckBox
+                android:id="@+id/wxys04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/wxys03CheckBox"
+                android:text="4.巨大儿分娩史" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="家族史："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="父母兄弟共："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/fmxdgEditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5.0dip"
+                android:text="人"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dip" >
+
+                <TextView
+                    android:id="@+id/ytnbszTextView"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="有糖尿病史者："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <CheckBox
+                    android:id="@+id/ytnbsz01CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_toRightOf="@+id/ytnbszTextView"
+                    android:text="1.无" />
+
+                <CheckBox
+                    android:id="@+id/ytnbsz02CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="2dip"
+                    android:layout_toRightOf="@+id/ytnbsz01CheckBox"
+                    android:text="2.父" />
+
+                <CheckBox
+                    android:id="@+id/ytnbsz03CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="2dip"
+                    android:layout_toRightOf="@+id/ytnbsz02CheckBox"
+                    android:text="3.母" />
+
+                <CheckBox
+                    android:id="@+id/ytnbsz04CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="2dip"
+                    android:layout_toRightOf="@+id/ytnbsz03CheckBox"
+                    android:text="4.兄弟" />
+
+                <CheckBox
+                    android:id="@+id/ytnbsz05CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="2dip"
+                    android:layout_toRightOf="@+id/ytnbsz04CheckBox"
+                    android:text="5.姐妹" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dip" >
+
+                <TextView
+                    android:id="@+id/sfsyjdxTextView"
+                    android:layout_width="160dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:gravity="right"
+                    android:text="是否是研究对象："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <CheckBox
+                    android:id="@+id/sfsyjdxCheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_toRightOf="@+id/sfsyjdxTextView" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dip"
+                android:gravity="right"
+                android:text="病存期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/bcqEditText"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_bg"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="死亡日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/swrqCalendarText"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:allowEmpty="true" />
+
+            <Button
+                android:id="@+id/qkButton"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/custom_button_bg"
+                android:text="清空"
+                android:textColor="@color/custom_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:gravity="right"
+                android:text="死亡原因："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/swyySpinnerUtil"
+                spinnerutil:name="swyy"
+                style="@style/spinnerbtndropdown"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="死亡ICD10："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/swicd10SpinnerUtil"
+                spinnerutil:name="swicd10"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="80dip"
+                android:gravity="right"
+                android:text="死亡ICD："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/swicdEditText"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_bg"
+                android:digits="0123456789."
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

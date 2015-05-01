@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="基本信息"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="身份证："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/sfzEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="姓名："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/xmEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="性别："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/xbSpinnerUtil"
+                spinnerutil:name="xb"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/personal_csrq_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/csrqCalendarText"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="联系电话："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/lxdhEditText"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/personal_mz_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/mzSpinnerUtil"
+                spinnerutil:name="mz"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/mz_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="家庭住址：" />
+
+            <com.cking.phss.widget.AddressText
+                android:id="@+id/jtzzAddressText"
+                style="@style/text_edittext_style"
+                android:layout_width="480.0dip"
+                android:layout_height="40.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/personal_hjdz_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/hjdzEditText"
+                android:layout_width="480.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="婚姻状况："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/hyzkSpinnerUtil"
+                spinnerutil:name="hyzk"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/hyzk_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/personal_job_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zySpinnerUtil"
+                spinnerutil:name="zy"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/zy_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="具体工种："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/jtgzSpinnerUtil"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/jtgz_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="文化程度："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/whcdSpinnerUtil"
+                spinnerutil:name="whcd"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/whcd_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="工作单位："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/gzdwEditText"
+                android:layout_width="480.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="right"
+            android:text="保险类型："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:id="@+id/hxsj_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/bxlx01CheckBox"
+                style="@style/compound_button_style" />
+
+            <CheckBox
+                android:id="@+id/bxlx02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="130dip"
+                android:layout_toRightOf="@+id/bxlx01CheckBox" />
+
+            <CheckBox
+                android:id="@+id/bxlx03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="100dip"
+                android:layout_toRightOf="@+id/bxlx02CheckBox" />
+
+            <CheckBox
+                android:id="@+id/bxlx04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx01CheckBox"
+                android:layout_below="@+id/bxlx01CheckBox"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <CheckBox
+                android:id="@+id/bxlx05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx02CheckBox"
+                android:layout_below="@+id/bxlx02CheckBox"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <CheckBox
+                android:id="@+id/bxlx06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx03CheckBox"
+                android:layout_below="@+id/bxlx03CheckBox"
+                android:layout_marginTop="@dimen/dp10" />
+
+            <CheckBox
+                android:id="@+id/bxlx07CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx04CheckBox"
+                android:layout_below="@+id/bxlx04CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx08CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx05CheckBox"
+                android:layout_below="@+id/bxlx05CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx09CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx06CheckBox"
+                android:layout_below="@+id/bxlx06CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx10CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx07CheckBox"
+                android:layout_below="@+id/bxlx07CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx11CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx08CheckBox"
+                android:layout_below="@+id/bxlx08CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx12CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx09CheckBox"
+                android:layout_below="@+id/bxlx09CheckBox"
+                android:layout_marginTop="10dip" />
+
+            <CheckBox
+                android:id="@+id/bxlx13CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/bxlx10CheckBox"
+                android:layout_below="@+id/bxlx10CheckBox"
+                android:layout_marginTop="10dip" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

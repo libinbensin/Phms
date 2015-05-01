@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dip"
+    android:layout_height="240dip"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp" >
+
+        <!-- title -->
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_display_devices_title"
+            android:textSize="20dp" />
+
+        <!-- divider -->
+
+        <ImageView
+            android:id="@+id/addActivity_backBtn"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="3dp"
+            android:onClick="doClick"
+            android:src="@drawable/back_button_selector"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:background="#DADADC" >
+        </View>
+
+        <ImageView
+            android:id="@+id/settingBtn"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_above="@+id/view1"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:layout_marginRight="20dp"
+            android:onClick="doClick"
+            android:src="@drawable/setting_button_selector"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!--
+           android:stackFromBottom="true"
+           android:transcriptMode="alwaysScroll"
+        -->
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scanBtn"
+            android:layout_margin="8dp"
+            android:background="#ffffff"
+            android:fastScrollEnabled="true" />
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_single_button"
+            android:onClick="doClick"
+            android:text="@string/start_scan_Btn"
+            android:textColor="@drawable/selector_single_button_text" />
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_single_button"
+            android:onClick="doClick"
+            android:text="@string/stop_scan_Btn"
+            android:textColor="@drawable/selector_single_button_text" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/listview"
+            android:layout_marginBottom="10dp"
+            android:background="#DADADC" />
+    </RelativeLayout>
+
+</LinearLayout>

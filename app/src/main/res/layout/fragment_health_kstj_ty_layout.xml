@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingRight="@dimen/dp50" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_tyjc_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comfrim_bg"
+                    android:text="@string/jktj_get_data_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_yxsy_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/yxsyEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_cm_text"
+                    android:textSize="@dimen/dp18"
+                    android:visibility="gone" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/yxsySpinnerUtil"
+                    spinnerutil:name="nyxsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/yxsyjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_bxb_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/bxbEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_cells_μl_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/bxbSpinnerUtil"
+                    spinnerutil:name="nbxb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/bxbjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_ndy_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ndyEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_µmol_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/ndySpinnerUtil"
+                    spinnerutil:name="nqx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ndyjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_ndb_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ndbEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_g_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/ndbSpinnerUtil"
+                    spinnerutil:name="ndb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ndbjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_qx_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/qxEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_cells_μl_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/qxSpinnerUtil"
+                    spinnerutil:name="nqx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/qxjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_ntt_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/nttEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_mmol_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/nttSpinnerUtil"
+                    spinnerutil:name="ntt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/nttjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_dhs_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/dhsEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_mg_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18"
+                    android:visibility="gone" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/dhsSpinnerUtil"
+                    spinnerutil:name="ndhs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/dhsjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_nt_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ntEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_mmol_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/ntSpinnerUtil"
+                    spinnerutil:name="nxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/ntjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/jktj_vitamin_c_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/wsscEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_mmol_l_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/wsscSpinnerUtil"
+                    spinnerutil:name="wssc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/wsscjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="100.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/cm_ph_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/phEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_cells_μl_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18"
+                    android:visibility="invisible" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/phSpinnerUtil"
+                    spinnerutil:name="mdxq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50.0dip"
+                    android:background="@drawable/spinner_bg"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:gravity="right"
+                    android:text="@string/jktj_conclusion_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/phjlEditText"
+                    android:layout_width="250.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

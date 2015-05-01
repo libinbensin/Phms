@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="个人信息"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/pttj_zrys_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/zrysEditText"
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-个人信息-责任医生" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="随访时间:   "
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.CalendarText
+                    android:id="@+id/sfrqCalendarText"
+                    style="@style/common_text_style"
+                    android:layout_width="180dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_date_bg"
+                    app:widgetTag="脑卒中-个人信息-随访时间" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="生活习惯改变"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="吸烟："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:id="@+id/sfxyRadioGroup"
+                app:name="SmokingGiveUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:widgetTag="脑卒中-生活习惯改变-吸烟" >
+
+                <RadioButton
+                    android:id="@+id/sfxy01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/sfxy02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="饮食："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.Spinner
+                    android:id="@+id/rxylEditText"
+                    style="@style/spinner_dropdown_style"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-生活习惯改变-饮食" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="饮酒："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:id="@+id/sfyjRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:widgetTag="脑卒中-生活习惯改变-饮酒" >
+
+                <RadioButton
+                    android:id="@+id/sfyj01RadioButton"
+                    style="@style/radio_button_style" />
+
+                <RadioButton
+                    android:id="@+id/sfyj02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip" />
+            </net.xinhuaxing.widget.RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="白酒或黄酒："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/bjhhjEditText"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="integer"
+                    app:widgetTag="脑卒中-生活习惯改变-白酒或黄酒" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="啤酒："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/pjEditText"
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="integer"
+                    app:widgetTag="脑卒中-生活习惯改变-啤酒" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="两/次"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="运动："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="形式"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-生活习惯改变-运动形式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="康复锻炼："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="形式"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-生活习惯改变-康复锻炼形式" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="运动："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="时间"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-生活习惯改变-运动时间" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="康复锻炼："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="时间"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <net.xinhuaxing.widget.EditText
+                    style="@style/text_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:widgetTag="脑卒中-生活习惯改变-康复锻炼时间" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

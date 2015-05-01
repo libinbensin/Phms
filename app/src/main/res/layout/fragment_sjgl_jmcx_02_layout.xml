@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sjgl_background_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:text="选择类型："
+                    android:textSize="@dimen/dp20" />
+
+                <com.cking.phss.widget.SpinnerUtil
+                    android:id="@+id/yhzgx_spinner"
+                    spinnerutil:name="yhzgx"
+                    style="@style/spinnerbtndropdown"
+                    android:layout_width="120dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/spinner_bg"
+                    android:prompt="@string/gender_prompt" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/tab_line_normal"
+                    android:gravity="top|center_horizontal"
+                    android:text="列表"
+                    android:textColor="@color/green_normal_text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dip"
+                    android:background="@drawable/tab_line_pressed"
+                    android:gravity="top|center_horizontal"
+                    android:text="趋势图"
+                    android:textColor="@color/green_pressed_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="500dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="40dip"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_cgtj"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:checked="true"
+                    android:tag="0"
+                    android:text="最近一周" />
+
+                <RadioButton
+                    android:id="@+id/radio_xueya"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="1"
+                    android:text="最近一月" />
+
+                <RadioButton
+                    android:id="@+id/radio_xt"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="2"
+                    android:text="最近三月" />
+
+                <RadioButton
+                    android:id="@+id/radio_xt"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="2"
+                    android:text="自定义时间" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/chart"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dip"
+                android:layout_weight="1"
+                android:background="@drawable/answer_normal"
+                android:orientation="vertical"
+                android:paddingBottom="18dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="8dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正常血压参考值:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="收缩压"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:text="90-130mmHg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="舒张压"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:text="60-85mmHg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

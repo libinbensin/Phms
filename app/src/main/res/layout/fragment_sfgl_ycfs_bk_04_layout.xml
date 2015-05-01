@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="吸烟："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/xyRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-吸烟" >
+
+            <RadioButton
+                android:id="@+id/xy01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/xy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="right"
+            android:text="饮酒："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/yjRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-饮酒" >
+
+            <RadioButton
+                android:id="@+id/yj01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/yj02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="right"
+            android:text="子宫手术史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/zgssRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-子宫手术史" >
+
+            <RadioButton
+                android:id="@+id/zgss01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/zgss02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="附件手术史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/fjsssRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-附件手术史" >
+
+            <RadioButton
+                android:id="@+id/fjsss01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/fjsss02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="right"
+            android:text="痛经："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/tjRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-痛经" >
+
+            <RadioButton
+                android:id="@+id/tj01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/tj02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="right"
+            android:text="近亲婚配："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/jqhpRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视报卡-孕妇情况-近亲婚配" >
+
+            <RadioButton
+                android:id="@+id/jqhp01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jqhp02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:text="初潮年龄：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/idc_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="孕产访视报卡-孕妇情况-初潮年龄" />
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="岁" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:text="月经周期：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="孕产访视报卡-孕妇情况-月经周期" />
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="天" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/text_gray" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:text="经期：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/phone_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="孕产访视报卡-孕妇情况-经期" />
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:text="天" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="240dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="与遗传有关的家族史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:widgetTag="孕产访视报卡-孕妇情况-与遗传有关的家族史" >
+
+            <CheckBox
+                android:id="@+id/jzs01CheckBox"
+                style="@style/compound_button_style" />
+
+            <CheckBox
+                android:id="@+id/jzs02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs01CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs02CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs03CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs04CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="40dip"
+                android:layout_toRightOf="@+id/jzs05CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs01CheckBox"
+                android:layout_below="@+id/jzs01CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs02CheckBox"
+                android:layout_below="@+id/jzs02CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs03CheckBox"
+                android:layout_below="@+id/jzs03CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs04CheckBox"
+                android:layout_below="@+id/jzs04CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzs05CheckBox"
+                android:layout_below="@+id/jzs05CheckBox"
+                android:layout_marginTop="18dip" />
+
+            <CheckBox
+                android:id="@+id/jzs12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzs06CheckBox"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzs11CheckBox" />
+
+            <CheckBox
+                android:id="@+id/jzs13CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_below="@+id/jzs06CheckBox"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/jzs12CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="其他异常情况：" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/lxdhEditText"
+                style="@style/text_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="孕产访视报卡-孕妇情况-其他异常情况" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/text_gray" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="监测地变更：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="孕产访视报卡-孕妇情况-监测地变更" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="变更日期：" />
+
+            <net.xinhuaxing.widget.CalendarText
+                android:id="@+id/csrqCalendarText"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:widgetTag="孕产访视报卡-孕妇情况-变更日期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/text_gray" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="转往地：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="孕产访视报卡-孕妇情况-转往地" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/qrButton"
+                android:layout_width="120dip"
+                android:layout_height="49dip"
+                android:layout_marginRight="60dip"
+                android:layout_toLeftOf="@+id/fhButton"
+                android:background="@drawable/custom_button_bg"
+                android:text="确认"
+                android:textColor="@color/custom_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/fhButton"
+                android:layout_width="120dip"
+                android:layout_height="49dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dip"
+                android:background="@drawable/cancel_bg"
+                android:text="返回"
+                android:textColor="@color/cancel_text_color"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

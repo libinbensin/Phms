@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/jktj_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/fqTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:paddingRight="40.0dip"
+            android:text="@string/jz_father_text"
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/fq01checkbox"
+                style="@style/compound_jzs_button_style"
+                android:text="@string/cm_wu_text" />
+
+            <CheckBox
+                android:id="@+id/fq02checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/fq01checkbox"
+                android:text="@string/jz_gxy_text" />
+
+            <CheckBox
+                android:id="@+id/fq03checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_toRightOf="@+id/fq02checkbox"
+                android:text="@string/jz_tnb_text" />
+
+            <CheckBox
+                android:id="@+id/fq04checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="60.0dip"
+                android:layout_toRightOf="@+id/fq03checkbox"
+                android:text="@string/jz_gxb_text" />
+
+            <CheckBox
+                android:id="@+id/fq05checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="60.0dip"
+                android:layout_toRightOf="@+id/fq04checkbox"
+                android:text="@string/jz_zsxjb_text" />
+
+            <CheckBox
+                android:id="@+id/fq06checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="40.0dip"
+                android:layout_toRightOf="@+id/fq05checkbox"
+                android:text="@string/jz_exzl_text" />
+
+            <CheckBox
+                android:id="@+id/fq07checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq01checkbox"
+                android:layout_below="@+id/fq01checkbox"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:text="@string/jz_nzz_text" />
+
+            <CheckBox
+                android:id="@+id/fq08checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq02checkbox"
+                android:layout_below="@+id/fq02checkbox"
+                android:layout_marginTop="5dip"
+                android:text="@string/jz_zxjsb_text" />
+
+            <CheckBox
+                android:id="@+id/fq09checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq03checkbox"
+                android:layout_below="@+id/fq03checkbox"
+                android:layout_marginTop="5dip"
+                android:text="@string/jz_jhb_text" />
+
+            <CheckBox
+                android:id="@+id/fq10checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq04checkbox"
+                android:layout_below="@+id/fq04checkbox"
+                android:layout_marginTop="5dip"
+                android:text="@string/jz_gy_text" />
+
+            <CheckBox
+                android:id="@+id/fq11checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq05checkbox"
+                android:layout_below="@+id/fq05checkbox"
+                android:layout_marginTop="5dip"
+                android:text="@string/jz_xtjx_text" />
+
+            <CheckBox
+                android:id="@+id/fq12checkbox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/fq06checkbox"
+                android:layout_below="@+id/fq06checkbox"
+                android:layout_marginTop="5dip"
+                android:text="@string/cm_qt_text" />
+
+            <EditText
+                android:id="@+id/fqqtEditText"
+                android:layout_width="match_parent"
+                android:layout_height="35.0dip"
+                android:layout_alignBaseline="@+id/fq12checkbox"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@+id/fq12checkbox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

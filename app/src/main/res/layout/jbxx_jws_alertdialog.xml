@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="请填写既往史名称，并选择ICD10种类："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/jwsmc_edit"
+            android:layout_width="230dip"
+            android:layout_height="38dip"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edit_box"
+            android:paddingLeft="10dip"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/jbzl_spinner"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_alignTop="@id/jwsmc_edit"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/jwsmc_edit"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/jbzl_prompt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="确诊时间："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.CalendarText
+            android:id="@+id/qzsj_date_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/edit_date_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发病时间："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.CalendarText
+            android:id="@+id/fbsj_date_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/edit_date_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="治疗结果："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/zljg_spinner"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/spinner"
+            android:prompt="@string/zljg_prompt" />
+    </RelativeLayout>
+
+</LinearLayout>

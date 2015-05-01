@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时效果 -->
+    <item android:drawable="@drawable/xtsz_admin_valid" android:state_checked="true"/>
+
+    <!-- 未选中时效果 -->
+    <item android:drawable="@drawable/xtsz_customer" android:state_checked="false"/>
+    <item android:drawable="@drawable/xtsz_admin_invalid" android:state_enabled="false"/>
+
+</selector>

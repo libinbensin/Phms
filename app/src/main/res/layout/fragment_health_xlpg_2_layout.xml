@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.cking.phss.widget.TestPageItem
+        android:id="@+id/xlpgTestPageItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/subject_bg"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomRelativeLayout"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp50" >
+
+            <!-- android:background="@drawable/box" -->
+
+            <TextView
+                android:id="@+id/csmc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dip"
+                android:text="抑郁自评量表(SDS)"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tips_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="14dip"
+                android:text="根据最近一年的体验和感觉，回答以下问题："
+                android:textColor="@color/text_green"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="10dip"
+                android:text="问卷：你感觉（1/20）"
+                android:textColor="@color/text_gray"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="10dip"
+                android:text="（1）我感觉闷闷不乐吗，情绪低沉？"
+                android:textColor="@color/text_gray"
+                android:textSize="22sp" />
+
+            <RelativeLayout
+                android:id="@+id/radio_anwer_group_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_answer_1"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="非常肯定和十分严重"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_answer_5"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="400dip"
+                    android:text="是有，但并不严重"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/radio_anwer_group_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_answer_2"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有一点，单并不使我苦恼"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_answer_6"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="400dip"
+                    android:text="根本没有"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/radio_anwer_group_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_answer_3"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_answer_7"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="400dip"
+                    android:text="6"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/radio_anwer_group_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginRight="40dip"
+                android:layout_marginTop="10dip"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_answer_4"
+                    style="@style/custom_radio_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/text_black"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="30dip"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingRight="@dimen/dp30" >
+
+            <Button
+                android:id="@+id/xlce_last_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/comfrim_bg"
+                android:text="@string/cm_previous_text"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/xlce_over_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comfrim_bg"
+                android:text="结束"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/xlce_next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:background="@drawable/comfrim_bg"
+                android:text="@string/cm_next_text"
+                android:textColor="@color/confrim_text_color"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

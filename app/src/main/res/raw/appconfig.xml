@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 请先德完成此文档内容，并填写每个测试项目可选的设备 -->
+<!-- serialno:设备编号，id:平台编号，bridgeid:基站编号 -->
+<ConfigTag
+	serialno="0951910500001029"
+	id="1"
+	bridgeid="645dd7001b40">
+	<!-- name:机构名称，serialno:机构代码，webserviceurl:WEBSERVICE服务器地址，uploadkstjurl:上传快速体检地址，downloadkstjurl:下载快速体检地址，versionserviceurl:版本下载地址 -->
+	<SelectHospitalTag>
+		<HospitalTag
+			serialno="2354489"
+			name="上海先德医疗设备有限公司"
+			webserviceurl="http://shmed.eicp.net:8038/HandeService.asmx/HealthPADBus"
+			uploadkstjurl="http://shmed.eicp.net:8038/HandeService.asmx"
+			downloadkstjurl="http://shmed.eicp.net:8038/HandeService.asmx?op=GetWaistData"
+			versionserviceurl="http://shmed.eicp.net:8038/HandeService.asmx"
+			printheader="宁波市居民移动体检平台"
+			printfooter="社区名称：白鹤街道社区卫生服务中心&#x000D;&#x000A;社区地址：宁波市江东区甬港南路225号&#x000D;&#x000A;电    话：0574-88222999&#x000D;&#x000A;服务热线：4006-772-882&#x000D;&#x000A;"/>
+		<HospitalTag
+			serialno="2354499"
+			name="白鹤街道社区卫生服务中心"
+			webserviceurl="http://shmed.eicp.net:8038/HandeService.asmx/HealthPADBus"
+			uploadkstjurl="http://shmed.eicp.net:8038/HandeService.asmx"
+			downloadkstjurl="http://shmed.eicp.net:8038/HandeService.asmx?op=GetWaistData"
+			versionserviceurl="http://shmed.eicp.net:8038/HandeService.asmx"
+			printheader="宁波市居民移动体检平台"
+			printfooter="社区名称：白鹤街道社区卫生服务中心&#x000D;&#x000A;社区地址：宁波市江东区甬港南路225号&#x000D;&#x000A;电    话：0574-88222999&#x000D;&#x000A;服务热线：4006-772-882&#x000D;&#x000A;"/>
+	</SelectHospitalTag>
+	<!-- id:序号，name:仪器名称， type:仪器类型，brand:品牌，model:型号，serialno:编号 -->
+	<ListDeviceInfoTag>
+		<DeviceInfoTag
+			id="1"
+			name="平板电脑"
+			type="硬件平台"
+			brand="三星"
+			model="T520"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="2"
+			name="身份证阅读器"
+			type="身份识别"
+			brand="华视电子"
+			model="CVR-100B"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="4"
+			name="血压计"
+			type="血压测量"
+			brand="AND"
+			model="767"	
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="8"
+			name="血糖仪"
+			type="血糖检测"
+			brand="其他"
+			model="标准"
+			serialno=" ">
+		</DeviceInfoTag>	
+		<DeviceInfoTag
+			id="9"
+			name="血脂仪"
+			type="血脂检测"
+			brand="卡迪克"
+			model="Cardiocheck"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="11"
+			name="电子腰围尺"
+			type="三围测量"
+			brand="lifesense"
+			model="LS501"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="15"
+			name="人体成分仪"
+			type="人体成分分析"
+			brand="lifesense"
+			model="LS202"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="16"
+			name="心电图机"
+			type="心电分析"
+			brand="理邦"
+			model="SE-1010"
+			serialno=" ">
+		</DeviceInfoTag>
+		<DeviceInfoTag
+			id="18"
+			name="热敏打印机"
+			type="热敏打印"
+			brand="QS"
+			model="5801"
+			serialno=" ">
+		</DeviceInfoTag>
+	</ListDeviceInfoTag>
+</ConfigTag>

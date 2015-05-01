@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp50" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/lnpg_lnzlztpg_s_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp30"
+        android:text="@string/lnpg_lzlzzt_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp20" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp100"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ksjcButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/comfrim_bg"
+            android:text="@string/cm_ksjc_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+
+        <Button
+            android:id="@+id/scjgButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:background="@drawable/cancel_bg"
+            android:text="上次结果"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

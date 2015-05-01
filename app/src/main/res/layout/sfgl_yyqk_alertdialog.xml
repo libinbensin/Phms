@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="药物名称："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/ywmc_edit"
+            android:layout_width="100dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="124dip"
+            android:background="@drawable/edit_box"
+            android:hint="药物代号"
+            android:paddingLeft="10dip"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/ywmc_spinner"
+            spinnerutil:name="ywlx"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="200dip"
+            android:layout_height="38dip"
+            android:layout_alignTop="@+id/ywmc_edit"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/ywmc_edit"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/ywmc_prompt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="   用    量："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/syjl_edit"
+            android:layout_width="130dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="124dip"
+            android:background="@drawable/edit_box"
+            android:digits="0123456789."
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="单位名称："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/dwmc_spinner"
+            spinnerutil:name="ywdw"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="124dip"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/dwmc_prompt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="   用    法："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/ywyf_spinner"
+            spinnerutil:name="yf"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="124dip"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/ywyf_prompt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="给药方式："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/gyfs_spinner"
+            spinnerutil:name="gyfs"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_marginLeft="124dip"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/gyfs_prompt" />
+    </RelativeLayout>
+
+</LinearLayout>

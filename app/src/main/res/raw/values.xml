@@ -1,0 +1,3946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="xb">
+    <item ID="0">未知</item>
+    <item ID="1">男</item>
+    <item ID="2">女</item>
+    <item ID="9">未说明性别</item>
+  </string-array>
+  <string-array name="zjlx">
+    <item ID="1">居民身份证</item>
+    <item ID="2">居民户口簿</item>
+    <item ID="3">护照</item>
+    <item ID="4">军官证</item>
+    <item ID="5">港澳居民来往内地通行证</item>
+    <item ID="6">台湾居民来往内地通行证</item>
+  </string-array>
+  <string-array name="czdzhjbz">
+    <item ID="1">是</item>
+    <item ID="2">否</item>
+  </string-array>
+  <string-array name="qyqk">
+    <item ID="1">是</item>
+    <item ID="2">否</item>
+  </string-array>
+  <string-array name="mz">
+    <item ID="01">汉族</item>
+    <item ID="02">蒙古族</item>
+    <item ID="03">回族</item>
+    <item ID="04">藏族</item>
+    <item ID="05">维吾尔族</item>
+    <item ID="06">苗族</item>
+    <item ID="07">彝族</item>
+    <item ID="08">壮族</item>
+    <item ID="09">布依族</item>
+    <item ID="10">朝鲜族</item>
+    <item ID="11">满族</item>
+    <item ID="12">侗族</item>
+    <item ID="13">瑶族</item>
+    <item ID="14">白族</item>
+    <item ID="15">土家族</item>
+    <item ID="16">哈尼族</item>
+    <item ID="17">哈萨克族</item>
+    <item ID="18">傣族</item>
+    <item ID="19">黎族</item>
+    <item ID="20">傈僳族</item>
+    <item ID="21">佤族</item>
+    <item ID="22">畲族</item>
+    <item ID="23">高山族</item>
+    <item ID="24">拉祜族</item>
+    <item ID="25">水族</item>
+    <item ID="26">东乡族</item>
+    <item ID="27">纳西族</item>
+    <item ID="28">景颇族</item>
+    <item ID="29">柯尔克孜族</item>
+    <item ID="30">土族</item>
+    <item ID="31">达斡尔族</item>
+    <item ID="32">仫佬族</item>
+    <item ID="33">羌族</item>
+    <item ID="34">布朗族</item>
+    <item ID="35">撒拉族</item>
+    <item ID="36">毛南族</item>
+    <item ID="37">仡佬族</item>
+    <item ID="38">锡伯族</item>
+    <item ID="39">阿昌族</item>
+    <item ID="40">普米族</item>
+    <item ID="41">塔吉克族</item>
+    <item ID="42">怒族</item>
+    <item ID="43">乌孜别克族</item>
+    <item ID="44">俄罗斯族</item>
+    <item ID="45">鄂温克族</item>
+    <item ID="46">德昂族</item>
+    <item ID="47">保安族</item>
+    <item ID="48">裕固族</item>
+    <item ID="49">京族</item>
+    <item ID="50">塔塔尔族</item>
+    <item ID="51">独龙族</item>
+    <item ID="52">鄂伦春族</item>
+    <item ID="53">赫哲族</item>
+    <item ID="54">门巴族</item>
+    <item ID="55">珞巴族</item>
+    <item ID="56">基诺族</item>
+    <item ID="57">外国血统中国籍人士</item>
+    <item ID="97">其他</item>
+    <item ID="98">不详</item>
+  </string-array>
+  <string-array name="xx">
+    <item ID="0">O型</item>
+    <item ID="1">A型</item>
+    <item ID="2">B型</item>
+    <item ID="3">AB型</item>
+    <item ID="4">AB型的RH阴性</item>
+    <item ID="5">不详</item>
+    <item ID="6">AB型的RH阳性</item>
+  </string-array>
+  <string-array name="rhyx">
+    <item ID="1">否</item>
+    <item ID="2">是</item>
+    <item ID="3">不详</item>
+  </string-array>
+  <string-array name="whcd">
+    <item ID="10">研究生</item>
+    <item ID="20">大学本科</item>
+    <item ID="30">大学专科和专科学校</item>
+    <item ID="40">中专</item>
+    <item ID="50">技工学校</item>
+    <item ID="60">高中</item>
+    <item ID="70">初中</item>
+    <item ID="80">小学</item>
+    <item ID="90">文盲或半文盲</item>
+    <item ID="97">其他</item>
+  </string-array>
+  <string-array name="zy">
+    <item ID="2300">幼托儿童</item>
+    <item ID="2400">散居儿童</item>
+    <item ID="2600">教师</item>
+    <item ID="2700">保育员及保姆</item>
+    <item ID="2900">餐饮食品业</item>
+    <item ID="1409">公共场所服务员</item>
+    <item ID="2800">商业服务</item>
+    <item ID="3000">医务人员</item>
+    <item ID="3100">工人</item>
+    <item ID="3200">民工</item>
+    <item ID="3300">农民</item>
+    <item ID="3400">牧民</item>
+    <item ID="3500">渔(船)民</item>
+    <item ID="4200">海员及长途驾驶员</item>
+    <item ID="3600">干部职员</item>
+    <item ID="3700">离退人员</item>
+    <item ID="3800">家务及待业</item>
+    <item ID="4000">不详</item>
+    <item ID="3900">其他</item>
+    <item ID="1100">国家机关、党群组织、企业、事业单位负责人</item>
+    <item ID="1200">专业技术人员</item>
+    <item ID="1300">办事人员和有关人员</item>
+    <item ID="1400">商业、服务业人员</item>
+    <item ID="1500">农、林、牧、渔、水利业生产人员</item>
+    <item ID="1600">生产、运输设备操作人员及有关人员</item>
+    <item ID="1700">军人</item>
+    <item ID="1800">不便分类的其他从业人员</item>
+    <item ID="1900">婴幼儿、学龄前儿童</item>
+    <item ID="2000">学生</item>
+    <item ID="2100">家务</item>
+    <item ID="2200">无业或待业</item>
+  </string-array>
+  <string-array name="zy1100">
+        <item ID="1101">中国共产党中央委员会和地方各级党组织负责人</item> 
+        <item ID="1102">国家机关及其工作机构负责人</item> 
+        <item ID="1103">民主党派和社会团体及其工作机构负责人</item> 
+        <item ID="1104">事业单位负责人</item> 
+        <item ID="1105">企业负责人</item> 
+  </string-array>
+  <string-array name="zy1200">
+  	<item ID="1201">科学研究人员</item> 
+ 	<item ID="1202">工程技术人员</item> 
+ 	<item ID="1203">农业技术人员</item> 
+  	<item ID="1204">飞机和船舶技术人员</item> 
+  	<item ID="1205">卫生专业技术人员</item> 
+  	<item ID="1206">经济业务人员</item> 
+  	<item ID="1207">金融业务人员</item> 
+  	<item ID="1208">法律专业人员</item> 
+  	<item ID="1209">教学人员</item> 
+ 	<item ID="1210">文学艺术工作人员</item> 
+ 	<item ID="1211">体育工作人员</item> 
+  	<item ID="1212">新闻出版、文化工作人员</item> 
+  	<item ID="1213">宗教职业者</item> 
+  	<item ID="1214">其他专业技术人员</item> 
+  </string-array>
+  <string-array name="zy1300">
+  	<item ID="1301">行政办公人员</item> 
+  	<item ID="1302">安全保卫和消防人员</item> 
+  	<item ID="1303">邮政和电信业务人员</item> 
+  	<item ID="1304">其他办事人员和有关人员</item> 
+  </string-array>
+  <string-array name="zy1400">
+  	<item ID="1401">购销人员</item> 
+  	<item ID="1402">仓储人员</item> 
+ 	<item ID="1403">餐饮服务人员</item> 
+  	<item ID="1404">饭店、旅游及健身娱乐场所服务人员</item> 
+  	<item ID="1405">运输服务人员</item> 
+  	<item ID="1406">医疗卫生辅助服务人员</item> 
+  	<item ID="1407">社会服务和居民生活服务人员</item> 
+  	<item ID="1408">其他商业、服务业人员</item>
+  </string-array>
+  <string-array name="zy1500">
+ 	<item ID="1501">种植业生产人员</item> 
+  	<item ID="1502">林业生产及野生动植物保护人员</item> 
+  	<item ID="1503">畜牧业生产人员</item> 
+  	<item ID="1504">渔业生产人员</item> 
+  	<item ID="1505">水利设施管理养护人员</item> 
+  	<item ID="1506">其他农、林、牧、渔、水利业生产人员</item> 
+  </string-array>
+  <string-array name="zy1600">
+	<item ID="1601">勘探及矿物开采人员</item> 
+  	<item ID="1602">金属冶炼、轧制人员</item> 
+  	<item ID="1603">化工产品生产人员</item> 
+  	<item ID="1604">机电产品装配人员</item> 
+  	<item ID="1605">机械制造加工人员</item> 
+  	<item ID="1606">机械设备修理人员</item> 
+  	<item ID="1607">电力设备安装、运行、检修及供点人员</item> 
+  	<item ID="1608">电子元器件与设备制造、装配、调试及维修人员</item> 
+  	<item ID="1609">橡胶和塑料制品生产人员</item> 
+  	<item ID="1610">纺织、针织、印染人员</item> 
+  	<item ID="1611">裁剪、缝纫和皮革、毛皮制品加工制作人员</item> 
+  	<item ID="1612">粮油、食品、饮料生产加工及饲料生产加工人员</item> 
+  	<item ID="1613">烟草及其制品加工人员</item> 
+  	<item ID="1614">药品生产人员</item> 
+  	<item ID="1615">木材加工、人造板生产、木制品制作及制浆、造纸和纸制品生产加工人员</item> 
+  	<item ID="1616">建筑材料生产、加工人员</item> 
+  	<item ID="1617">玻璃、陶瓷、搪瓷及其制品生产加工人员</item> 
+  	<item ID="1618">广播影视制品制作、播放及文物保护作业人员</item> 
+  	<item ID="1619">印刷人员</item> 
+  	<item ID="1620">工艺、美术品制作人员</item> 
+ 	<item ID="1621">文化教育、体育用品制作人员</item> 
+  	<item ID="1622">工程施工人员</item> 
+  	<item ID="1623">运输设备操作人员及有关人员</item> 
+  	<item ID="1624">环境监测与废物处理人员</item> 
+  	<item ID="1625">检验、计量人员</item> 
+  	<item ID="1626">其他生产、运输设备操作人员及有关人员</item> 
+  </string-array>
+  <string-array name="zy1700">
+  	<item ID="x0">军人</item>
+  </string-array>
+  <string-array name="zy1800">
+  	<item ID="y0">不便分类的其他从业人员</item> 
+  </string-array>
+  <string-array name="zy1900">
+  	<item ID="I0">婴幼儿、学龄前儿童</item> 
+  </string-array>
+  <string-array name="zy2000">
+  	<item ID="J0">学生</item> 
+  </string-array>
+  <string-array name="zy2100">
+  	<item ID="K0">家务</item>
+  </string-array>
+  <string-array name="zy2200">
+	<item ID="L0">无业</item>
+  </string-array>
+  <string-array name="hyzk">
+    <item ID="10">未婚</item>
+    <item ID="20">已婚</item>
+    <item ID="22">再婚</item>
+    <item ID="23">复婚</item>
+    <item ID="30">丧偶</item>
+    <item ID="40">离婚</item>
+    <item ID="90">未说明的婚姻状况</item>
+  </string-array>
+  <string-array name="yhzgx">
+    <item ID="0">户主</item>
+    <item ID="1">配偶</item>
+    <item ID="2">子</item>
+    <item ID="3">女</item>
+    <item ID="4">孙子，孙女，或外孙子，外孙女</item>
+    <item ID="5">父母</item>
+    <item ID="6">主父母或外主父母</item>
+    <item ID="7">兄、弟、姐、妹</item>
+    <item ID="8">其他</item>
+    <item ID="10">其他情况配偶</item>
+    <item ID="11">夫</item>
+    <item ID="12">妻</item>
+    <item ID="20">儿子</item>
+    <item ID="21">养子</item>
+    <item ID="22">女婿</item>
+    <item ID="23">其他儿子</item>
+    <item ID="30">女儿</item>
+    <item ID="31">养女</item>
+    <item ID="32">儿媳</item>
+    <item ID="33">其他女儿</item>
+    <item ID="41">孙子</item>
+    <item ID="42">孙女</item>
+    <item ID="43">外孙子</item>
+    <item ID="44">外孙女</item>
+    <item ID="45">孙媳妇</item>
+    <item ID="46">孙女婿</item>
+    <item ID="47">曾孙子</item>
+    <item ID="48">曾孙女</item>
+    <item ID="49">其他孙子</item>
+    <item ID="51">父亲</item>
+    <item ID="52">母亲</item>
+    <item ID="53">公公</item>
+    <item ID="54">婆婆</item>
+    <item ID="55">岳父</item>
+    <item ID="56">岳母</item>
+    <item ID="57">继父</item>
+    <item ID="58">继母</item>
+    <item ID="59">其他父母关系</item>
+    <item ID="60">祖父母</item>
+    <item ID="61">祖父</item>
+    <item ID="62">祖母</item>
+    <item ID="63">外祖父</item>
+    <item ID="64">外祖母</item>
+    <item ID="65">配偶的祖父母</item>
+    <item ID="66">曾祖父</item>
+    <item ID="67">曾祖母</item>
+    <item ID="68">配偶的曾祖父母</item>
+    <item ID="69">其他祖父母</item>
+    <item ID="70">兄弟姐妹</item>
+    <item ID="71">兄</item>
+    <item ID="72">嫂</item>
+    <item ID="73">弟</item>
+    <item ID="74">弟媳</item>
+    <item ID="75">姐姐</item>
+    <item ID="76">姐夫</item>
+    <item ID="77">妹妹</item>
+    <item ID="78">妹夫</item>
+    <item ID="79">其他兄弟姐妹</item>
+    <item ID="81">伯父</item>
+    <item ID="82">伯母</item>
+    <item ID="83">叔父</item>
+    <item ID="84">婶母</item>
+    <item ID="85">舅父</item>
+    <item ID="86">舅母</item>
+    <item ID="87">姨父</item>
+    <item ID="88">姨母</item>
+    <item ID="89">姑父</item>
+    <item ID="90">姑母</item>
+    <item ID="91">堂兄弟</item>
+    <item ID="92">表兄弟</item>
+    <item ID="93">侄子</item>
+    <item ID="94">侄女</item>
+    <item ID="95">外甥</item>
+    <item ID="96">外甥女</item>
+    <item ID="97">其他亲属</item>
+    <item ID="98">保姆</item>
+    <item ID="99">非亲属</item>
+  </string-array>
+  <string-array name="czlx">
+    <item ID="1">户籍</item>
+    <item ID="2">非户籍</item>
+    <item ID="3">流动</item>
+  </string-array>
+  <string-array name="jzlx">
+    <item ID="1">户籍</item>
+    <item ID="2">非户籍</item>
+    <item ID="3">流动</item>
+  </string-array>
+  <string-array name="hkxz">
+    <item ID="0">农业户口</item>
+    <item ID="1">非农业户口</item>
+    <item ID="2">农转非</item>
+  </string-array>
+  <string-array name="gj">
+    <item ID="01">中国</item>
+    <item ID="02">美国</item>
+    <item ID="03">日本</item>
+    <item ID="04">韩国</item>
+    <item ID="05">英国</item>
+    <item ID="06">法国</item>
+    <item ID="07">德国</item>
+    <item ID="08">意大利</item>
+    <item ID="09">新加坡</item>
+    <item ID="11">澳大利亚</item>
+    <item ID="12">加拿大</item>
+  </string-array>
+  <string-array name="yzlx">
+    <item ID="1">特困残疾人</item>
+    <item ID="2">低保对象</item>
+    <item ID="3">五保对象</item>
+    <item ID="4">非救助对象</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="fxsj">
+    <item ID="1">丧偶</item>
+    <item ID="2">独居</item>
+    <item ID="3">近期住院</item>
+    <item ID="4">子女分家</item>
+    <item ID="5">失去亲人</item>
+    <item ID="9">其他</item>
+  </string-array>
+  <string-array name="bxlb">
+    <item ID="01">医保</item>
+    <item ID="02">商业医疗保险</item>
+    <item ID="03">大病统筹</item>
+    <item ID="04">新型农村合作医疗</item>
+    <item ID="05">城镇居民基本医疗保险</item>
+    <item ID="06">公费医疗</item>
+    <item ID="9">职工家属医保</item>
+    <item ID="10">半劳保</item>
+    <item ID="11">学生医疗基金或保险</item>
+    <item ID="12">市职工医疗保险</item>
+    <item ID="13">省职工医疗保险</item>
+    <item ID="14">铁路医疗保险</item>
+    <item ID="99">其他</item>
+  </string-array>
+  <string-array name="bls">
+    <item ID="1">化学品</item>
+    <item ID="2">毒物</item>
+    <item ID="3">射线</item>
+    <item ID="4">其他</item>
+    <item ID="5">不详</item>
+  </string-array>
+  <string-array name="gmzl">
+    <item ID="01">药物过敏</item>
+    <item ID="02">非药物过敏</item>
+  </string-array>
+  <string-array name="gmzl02">
+    <item ID="02">动物毛发过敏</item>
+    <item ID="04">柑橘类水果过敏</item>
+    <item ID="05">室内灰尘过敏</item>
+    <item ID="06">鸡蛋过敏</item>
+    <item ID="07">鱼及贝壳类食物过敏</item>
+    <item ID="09">牛奶过敏</item>
+    <item ID="10">带壳的果仁过敏</item>
+    <item ID="11">花粉过敏</item>
+    <item ID="15">油漆类过敏</item>
+    <item ID="16">化妆品类过敏</item>
+    <item ID="99">其他过敏</item>
+  </string-array>
+  <string-array name="gmzl01">
+    <item ID="0311">镇静麻醉剂过敏</item>
+    <item ID="0312">抗微生物药品过敏</item>
+    <item ID="0313">碘过敏</item>
+    <item ID="0314">生物制品类过敏</item>
+    <item ID="0315">中成药品类过敏</item>
+    <item ID="0316">其他过敏</item>
+    <item ID="031201">青霉素类</item>
+    <item ID="031202">头孢菌素类</item>
+    <item ID="031203">氨基糖苷类</item>
+    <item ID="031204">大环内酯类</item>
+    <item ID="031205">其他抗生素</item>
+    <item ID="031206">磺胺类</item>
+    <item ID="031207">喹诺酮类</item>
+    <item ID="031208">硝基呋喃类</item>
+    <item ID="031209">抗结核病药</item>
+    <item ID="031210">抗麻风病药</item>
+    <item ID="031211">抗病毒药</item>
+    <item ID="031212">林可酰胺药</item>
+  </string-array>
+  <string-array name="jwsmc">
+  <item ID="I10.x00">高血压病</item> 
+  <item ID="I10.x01">临界性高血压</item> 
+  <item ID="I10.x02">恶性高血压</item> 
+  <item ID="I10.x03">高血压1级</item> 
+  <item ID="I10.x04">高血压2级</item> 
+  <item ID="I10.x05">高血压3级</item> 
+  <item ID="I10.x06">高血压危象</item> 
+  <item ID="I10.x07">良性高血压</item> 
+  <item ID="I10.x08">老年收缩期高血压</item> 
+  <item ID="I10.x09">原发性高血压</item> 
+  <item ID="I10.x10">高血压急症</item> 
+  <item ID="I10.x11">单纯收缩期高血压</item> 
+  <item ID="I10.x12">难治性高血压</item> 
+  <item ID="I10.x13">低肾素性高血压</item> 
+  <item ID="I10.x14">高血压亚急症</item> 
+  <item ID="I11.000">高血压心脏病伴心力衰竭</item> 
+  <item ID="I11.900">高血压性心脏病</item> 
+  <item ID="I12.000">高血压性肾衰竭</item> 
+  <item ID="I12.900">高血压性肾病</item> 
+  <item ID="I13.000">高血压性心脏病肾脏病伴心力衰竭</item> 
+  <item ID="I13.100">高血压性心脏病肾脏病伴肾功能衰竭</item> 
+  <item ID="I13.200">高血压性心脏病肾脏病伴心力衰竭和肾功能衰竭</item> 
+  <item ID="I13.900">高血压性心脏病及肾脏病</item> 
+  <item ID="I15.000">肾血管性高血压</item> 
+  <item ID="I15.100">继发于特指肾疾患高血压</item> 
+  <item ID="I15.102">肾性高血压</item> 
+  <item ID="I15.103">肾萎缩伴有高血压</item> 
+  <item ID="I15.200">继发于内分泌疾患高血压</item> 
+  <item ID="I15.800">特指继发性高血压</item> 
+  <item ID="I15.900">继发性高血压</item>
+  <item ID="H35.004">高血压性视网膜病变</item>
+  <item ID="E10.000">1型糖尿病伴昏迷</item> 
+  <item ID="E10.001">1型糖尿病性高渗性昏迷</item> 
+  <item ID="E10.100">1型糖尿病性酮症</item> 
+  <item ID="E10.101">1型糖尿病性酮症酸中毒</item> 
+  <item ID="E10.102">1型糖尿病性乳酸酸中毒</item> 
+  <item ID="E10.200+">1型糖尿病性肾的并发症</item> 
+  <item ID="E10.201">1型糖尿病性肾病</item> 
+  <item ID="E10.300">1型糖尿病伴眼并发症</item> 
+  <item ID="E10.301+">1型糖尿病性视网膜病变</item> 
+  <item ID="E10.302+">1型糖尿病性白内障</item> 
+  <item ID="E10.400">1型糖尿病伴神经并发症</item> 
+  <item ID="E10.401+">1型糖尿病性周围神经病</item> 
+  <item ID="E10.402+">1型糖尿病性植物神经紊乱</item> 
+  <item ID="E10.403+">1型糖尿病性神经炎</item> 
+  <item ID="E10.404+">1型糖尿病性神经源性膀胱</item> 
+  <item ID="E10.500">1型糖尿病性周围循环并发症</item> 
+  <item ID="E10.501+">1型糖尿病性周围血管病变</item> 
+  <item ID="E10.502+">1型糖尿病性缺血性心肌病</item> 
+  <item ID="E10.503+">1型糖尿病性足病</item> 
+  <item ID="E10.504">1型糖尿病性坏疽</item> 
+  <item ID="E10.600">1型糖尿病伴特指并发症</item> 
+  <item ID="E10.601">1型糖尿病性乳腺病</item> 
+  <item ID="E10.602">1型病伴有生长发育障碍</item> 
+  <item ID="E10.700">1型糖尿病伴多并发症</item> 
+  <item ID="E10.800">1型糖尿病伴并发症</item> 
+  <item ID="E10.900">1型糖尿病</item> 
+  <item ID="E11.000">2型糖尿病伴有昏迷</item> 
+  <item ID="E11.001">2型糖尿病性高渗性昏迷</item> 
+  <item ID="E11.002">2型糖尿病性低血糖性昏迷</item> 
+  <item ID="E11.003">2型糖尿病性高渗性昏迷伴酮症酸中毒</item> 
+  <item ID="E11.100">2型糖尿病性酮症酸中毒</item> 
+  <item ID="E11.101">2型糖尿病性乳酸酸中毒</item> 
+  <item ID="E11.200+">2型糖尿病性肾病</item> 
+  <item ID="E11.300">2型糖尿病伴眼并发症</item> 
+  <item ID="E11.301+">2型糖尿病性视网膜病变</item> 
+  <item ID="E11.400">2型糖尿病伴神经并发症</item> 
+  <item ID="E11.401+">2型糖尿病性周围神经病</item> 
+  <item ID="E11.402+">2型糖尿病性神经原性膀胱</item> 
+  <item ID="E11.403+">2型糖尿病性神经炎</item> 
+  <item ID="E11.404+">2型糖尿病性植物神经病变</item> 
+  <item ID="E11.500">2型糖尿病性周围循环并发症</item> 
+  <item ID="E11.501+">2型糖尿病性周围血管病变</item> 
+  <item ID="E11.502">2型糖尿病性坏疽</item> 
+  <item ID="E11.600">2型糖尿病伴特指并发症</item> 
+  <item ID="E11.601">2型糖尿病足病</item> 
+  <item ID="E11.700">2型糖尿病伴多并发症</item> 
+  <item ID="E11.800">2型糖尿病伴并发症</item> 
+  <item ID="E11.900">2型糖尿病</item>
+  </string-array>
+  <string-array name="zljg">
+    <item ID="1">治愈</item>
+    <item ID="2">未愈</item>
+    <item ID="3">好转</item>
+    <item ID="4">死亡</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="jzs">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝脏疾病</item>
+    <item ID="11">先天畸形</item>
+    <item ID="12">其他</item>
+  </string-array>
+  <string-array name="zycj">
+    <item ID="2">视力残疾</item>
+    <item ID="3">听力残疾</item>
+    <item ID="4">言语残疾</item>
+    <item ID="5">肢体残疾</item>
+    <item ID="6">智力残疾</item>
+    <item ID="7">精神残疾</item>
+    <item ID="8">其他残疾</item>
+  </string-array>
+  <string-array name="dccj">
+    <item ID="2">视力残疾</item>
+    <item ID="3">听力残疾</item>
+    <item ID="4">言语残疾</item>
+    <item ID="5">肢体残疾</item>
+    <item ID="6">智力残疾</item>
+    <item ID="7">精神残疾</item>
+    <item ID="8">其他残疾</item>
+  </string-array>
+  <string-array name="cjdj">
+    <item ID="1">一级</item>
+    <item ID="2">二级</item>
+    <item ID="3">三级</item>
+    <item ID="4">四级</item>
+    <item ID="5">未评定</item>
+  </string-array>
+  <string-array name="jtlx">
+    <item ID="01">联合家庭</item>
+    <item ID="02">单亲家庭</item>
+    <item ID="03">主干家庭</item>
+    <item ID="04">单人家庭</item>
+    <item ID="05">核心家庭</item>
+    <item ID="06">其他</item>
+  </string-array>
+  <string-array name="hsx">
+    <item ID="0">城镇居民</item>
+    <item ID="1">一般农户</item>
+    <item ID="2">五保户</item>
+    <item ID="3">贫困户</item>
+    <item ID="4">特困户</item>
+    <item ID="6">烈军属</item>
+    <item ID="7">低保户</item>
+    <item ID="99">其他</item>
+  </string-array>
+  <string-array name="jjzk">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="nrjsr">
+    <item ID="1">＜1000元</item>
+    <item ID="2">1000～1999元</item>
+    <item ID="3">2000～3999元</item>
+    <item ID="4">4000～7999元</item>
+    <item ID="5">8000元以上</item>
+  </string-array>
+  <string-array name="jtycs">
+    <item ID="1">无</item>
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神性疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝炎</item>
+    <item ID="11">先天畸形</item>
+    <item ID="12">其他</item>
+  </string-array>
+  <string-array name="whcd">
+    <item ID="10">研究生</item>
+    <item ID="20">大学本科</item>
+    <item ID="30">大学专科和专科学校</item>
+    <item ID="40">中专</item>
+    <item ID="50">技工学校</item>
+    <item ID="60">高中</item>
+    <item ID="70">初中</item>
+    <item ID="80">小学</item>
+    <item ID="90">文盲或半文盲</item>
+    <item ID="91">学龄前儿童</item>
+    <item ID="97">其他</item>
+    <item ID="98">不详</item>
+  </string-array>
+  <string-array name="grzt">
+    <item ID="0">正常</item>
+    <item ID="1">注销</item>
+    <item ID="2">死亡</item>
+    <item ID="3">迁出（区域\外地）</item>
+    <item ID="4">挂起</item>
+    <item ID="5">临时</item>
+  </string-array>
+  <string-array name="jd">
+    <item ID="1">新婚</item>
+    <item ID="2">第一个孩子出生</item>
+    <item ID="3">有学龄前儿童</item>
+    <item ID="4">有青少年</item>
+    <item ID="5">孩子离家创业</item>
+    <item ID="6">父母独处</item>
+    <item ID="7">退休</item>
+    <item ID="8">二代同生</item>
+    <item ID="9">三代同生</item>
+    <item ID="10">其他</item>
+  </string-array>
+  <string-array name="zywt">
+    <item ID="01">药物过敏</item>
+    <item ID="02">遗传问题</item>
+    <item ID="03">酗酒</item>
+    <item ID="04">吸烟</item>
+    <item ID="05">缺血性卒中</item>
+    <item ID="06">离婚</item>
+    <item ID="07">丧偶</item>
+    <item ID="08">脑出血</item>
+    <item ID="09">传染病</item>
+    <item ID="10">蛛网膜下腔出血</item>
+    <item ID="11">短暂性脑缺血发作</item>
+    <item ID="12">慢性病</item>
+    <item ID="13">其他脑血管疾病</item>
+    <item ID="14">持续性健康指标异常</item>
+    <item ID="15">残疾</item>
+    <item ID="16">糖尿病肾病</item>
+    <item ID="17">肾功能衰竭</item>
+    <item ID="18">急性肾炎</item>
+    <item ID="19">慢性肾炎</item>
+    <item ID="20">其他肾脏疾病</item>
+    <item ID="21">心肌梗死</item>
+    <item ID="22">心绞痛</item>
+    <item ID="23">冠状动脉血运重建</item>
+    <item ID="24">充血性心力衰竭</item>
+    <item ID="25">心前区疼痛</item>
+    <item ID="26">其他心脏疾病</item>
+    <item ID="27">夹层动脉瘤</item>
+    <item ID="28">动脉闭塞性疾病</item>
+    <item ID="29">其他血管疾病</item>
+    <item ID="30">神经系统疾病</item>
+    <item ID="31">其他系统疾病</item>
+  </string-array>
+  <string-array name="cfpfss">
+    <item ID="1">无</item>
+    <item ID="2">油烟机</item>
+    <item ID="3">换气扇</item>
+    <item ID="4">烟囱</item>
+  </string-array>
+  <string-array name="yy">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="cfsyfs">
+    <item ID="1">独用</item>
+    <item ID="2">合用</item>
+    <item ID="3">无</item>
+  </string-array>
+  <string-array name="rllx">
+    <item ID="1">液化气</item>
+    <item ID="2">煤</item>
+    <item ID="3">天然气</item>
+    <item ID="4">沼气</item>
+    <item ID="5">柴火</item>
+    <item ID="7">管道天然气</item>
+    <item ID="8">管道煤气</item>
+    <item ID="9">其他</item>
+  </string-array>
+  <string-array name="ys">
+    <item ID="1">自来水</item>
+    <item ID="2">经净化过滤的水</item>
+    <item ID="3">井水</item>
+    <item ID="4">河湖水</item>
+    <item ID="5">塘水</item>
+    <item ID="6">纯水或桶装水</item>
+    <item ID="9">其他</item>
+    <item ID="11">水厂自来水</item>
+    <item ID="12">溪水</item>
+    <item ID="13">消毒井水</item>
+    <item ID="14">水站自来水</item>
+  </string-array>
+  <string-array name="fwsgc">
+    <item ID="1">一格或二格粪池式</item>
+    <item ID="2">马桶</item>
+    <item ID="3">露天粪坑</item>
+    <item ID="4">简易棚厕</item>
+    <item ID="5">无</item>
+  </string-array>
+  <string-array name="wsgc">
+    <item ID="1">三格式粪池</item>
+    <item ID="2">双瓮漏斗式</item>
+    <item ID="3">三联沼气池式</item>
+    <item ID="4">粪尿分集式</item>
+    <item ID="5">完整下水道式</item>
+    <item ID="6">水冲式</item>
+    <item ID="7">双坑交替式</item>
+  </string-array>
+  <string-array name="qcl">
+    <item ID="1">单设</item>
+    <item ID="2">室内</item>
+    <item ID="3">室外</item>
+    <item ID="4">无</item>
+  </string-array>
+  <string-array name="fwlx">
+    <item ID="1">土屋</item>
+    <item ID="2">茅屋</item>
+    <item ID="3">木屋</item>
+    <item ID="4">砖瓦平房</item>
+    <item ID="5">砖瓦楼房</item>
+    <item ID="9">其他</item>
+    <item ID="11">砖混结构</item>
+    <item ID="12">框架结构</item>
+    <item ID="13">砖木结构</item>
+    <item ID="14">土木结构</item>
+  </string-array>
+  <string-array name="jydq">
+    <item ID="1">彩色电视</item>
+    <item ID="2">黑白电视</item>
+    <item ID="3">冰箱</item>
+    <item ID="4">空调</item>
+    <item ID="5">洗衣机</item>
+    <item ID="6">电脑</item>
+  </string-array>
+  <string-array name="ljcl">
+    <item ID="1">自行处理</item>
+    <item ID="2">垃圾箱</item>
+    <item ID="3">塑料袋</item>
+    <item ID="9">其他</item>
+  </string-array>
+  <string-array name="jtgj">
+    <item ID="1">摩托车</item>
+    <item ID="2">助动车</item>
+    <item ID="3">自行车</item>
+    <item ID="4">汽车</item>
+  </string-array>
+  <string-array name="grdazt">
+    <item ID="0">正常</item>
+    <item ID="1">注销</item>
+    <item ID="2">死亡</item>
+    <item ID="3">迁出（区域地）</item>
+    <item ID="4">挂起</item>
+    <item ID="5">临时</item>
+  </string-array>
+  <string-array name="zfxz">
+    <item ID="1">自有</item>
+    <item ID="2">租房</item>
+  </string-array>
+  <string-array name="zfcg">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="zftf">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="zfbn">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="kqsd">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="ws">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="wscl">
+    <item ID="1">无处理</item>
+    <item ID="2">下水道</item>
+    <item ID="3">深水坑</item>
+  </string-array>
+  <string-array name="wtsb">
+    <item ID="1">电视机</item>
+    <item ID="2">收录机</item>
+    <item ID="3">收音机</item>
+    <item ID="4">卫生报刊</item>
+    <item ID="5">其他报刊杂志</item>
+    <item ID="6">体育锻炼用品</item>
+    <item ID="7">网络宽带</item>
+    <item ID="8">电脑</item>
+    <item ID="9">其他</item>
+  </string-array>
+  <string-array name="gxylx">
+    <item ID="1">原发</item>
+    <item ID="2">继发</item>
+    <item ID="3">不详</item>
+  </string-array>
+  <string-array name="sffs">
+    <item ID="1">门诊</item>
+    <item ID="2">家庭</item>
+    <item ID="3">电话</item>
+    <item ID="4">集体</item>
+  </string-array>
+  <string-array name="gxyzz">
+    <item ID="0">无症状</item>
+    <item ID="1">头痛头晕</item>
+    <item ID="2">恶心呕吐</item>
+    <item ID="3">眼花耳鸣</item>
+    <item ID="4">呼吸困难</item>
+    <item ID="5">心悸胸闷</item>
+    <item ID="6">鼻衄出血不止</item>
+    <item ID="7">四肢发麻</item>
+    <item ID="8">下肢水肿</item>
+    <item ID="9">烦躁</item>
+    <item ID="10">视力模糊</item>
+    <item ID="11">面色苍白或潮红</item>
+    <item ID="12">四肢乏力</item>
+    <item ID="99">其他</item>
+  </string-array>
+  <string-array name="fyycx">
+    <item ID="1">规律</item>
+    <item ID="2">间断</item>
+    <item ID="3">不服药</item>
+  </string-array>
+  <string-array name="ccfwfl">
+    <item ID="1">控制满意</item>
+    <item ID="2">控制不满意</item>
+    <item ID="3">不良反应</item>
+    <item ID="4">并发症</item>
+  </string-array>
+  <string-array name="gyfs">
+    <item ID="setcx">上颌窦冲洗</item>
+    <item ID="fy">发药</item>
+    <item ID="iv">静推</item>
+    <item ID="jmxz">结膜下注射</item>
+    <item ID="xt">吸痰</item>
+    <item ID="ivgtt">静脉滴注</item>
+    <item ID="bs">鼻饲</item>
+    <item ID="sg">纳肛</item>
+    <item ID="pxzs">皮下注射</item>
+    <item ID="qt">其它</item>
+    <item ID="db">滴鼻</item>
+    <item ID="de">滴耳</item>
+    <item ID="h">皮下注射</item>
+    <item ID="dsss">带手术室</item>
+    <item ID="dy">滴眼</item>
+    <item ID="jf">局封</item>
+    <item ID="gc">灌肠</item>
+    <item ID="jmzs">静脉注射</item>
+    <item ID="qgndr">气管内滴入</item>
+    <item ID="kh">口含</item>
+    <item ID="1">气管内滴入</item>
+    <item ID="ny">纳阴</item>
+    <item ID="ssy">手术用</item>
+    <item ID="ps">皮试</item>
+    <item ID="pw">喷雾</item>
+    <item ID="qhzs">球后注射</item>
+    <item ID="qnzs">腔内注射</item>
+    <item ID="qz">鞘内注射</item>
+    <item ID="kf">口服</item>
+    <item ID="sk">漱口</item>
+    <item ID="po">口服</item>
+    <item ID="sxhf">舌下含服</item>
+    <item ID="tpn">肠外营养</item>
+    <item ID="wy">外用</item>
+    <item ID="wbzs">微泵注射</item>
+    <item ID="whxr">雾化吸入</item>
+    <item ID="xejd">小儿静滴</item>
+    <item ID="jm">局部麻醉</item>
+    <item ID="zyy">造影用</item>
+    <item ID="im">肌注</item>
+  </string-array>
+  <string-array name="ywdw">
+    <item ID="1">升</item>
+    <item ID="2">毫升</item>
+    <item ID="3">微升</item>
+    <item ID="4">卡</item>
+    <item ID="5">人次</item>
+    <item ID="6">胎</item>
+    <item ID="7">根</item>
+    <item ID="8">次</item>
+    <item ID="9">支</item>
+    <item ID="10">组</item>
+    <item ID="11">粒</item>
+    <item ID="12">例</item>
+    <item ID="13">项</item>
+    <item ID="14">片</item>
+    <item ID="15">张</item>
+    <item ID="16">盒</item>
+    <item ID="17">包</item>
+    <item ID="18">瓶</item>
+    <item ID="19">袋</item>
+    <item ID="20">板</item>
+    <item ID="21">把</item>
+    <item ID="22">本</item>
+    <item ID="23">尺</item>
+    <item ID="24">打</item>
+    <item ID="25">刀</item>
+    <item ID="26">对</item>
+    <item ID="27">份</item>
+    <item ID="28">副</item>
+    <item ID="29">付</item>
+    <item ID="30">个</item>
+    <item ID="31">件</item>
+    <item ID="32">斤</item>
+    <item ID="33">具</item>
+    <item ID="34">卷</item>
+    <item ID="35">块</item>
+    <item ID="36">捆</item>
+    <item ID="37">辆</item>
+    <item ID="38">枚</item>
+    <item ID="39">批</item>
+    <item ID="40">束</item>
+    <item ID="41">双</item>
+    <item ID="42">台</item>
+    <item ID="43">套</item>
+    <item ID="44">条</item>
+    <item ID="45">贴</item>
+    <item ID="46">桶</item>
+    <item ID="47">丸</item>
+    <item ID="48">箱</item>
+    <item ID="49">只</item>
+    <item ID="50">千克</item>
+    <item ID="51">克</item>
+    <item ID="52">毫克</item>
+    <item ID="53">微克</item>
+    <item ID="54">IU</item>
+  </string-array>
+  <string-array name="ywlx">
+    <item ID="1">西药</item>
+    <item ID="2">中成药</item>
+    <item ID="3">中草药</item>
+    <item ID="4">其他中药</item>
+    <item ID="5">为使用</item>
+  </string-array>
+  <string-array name="yf">
+    <item ID="qd1">餐前一日1次</item>
+    <item ID="qd">一日1次</item>
+    <item ID="bid">一日2次</item>
+    <item ID="bid1">餐前一日2次</item>
+    <item ID="qid">一日4次</item>
+    <item ID="qid1">餐前一日4次</item>
+    <item ID="q4h">4小时1次</item>
+    <item ID="q6h">6小时1次</item>
+    <item ID="q8h">8小时1次</item>
+    <item ID="q12h">12小时1次</item>
+    <item ID="qm">早上1次</item>
+    <item ID="qn">晚上1次</item>
+    <item ID="q2h">2小时1次</item>
+    <item ID="qod">隔日1次</item>
+    <item ID="biw">每周2次</item>
+    <item ID="st">临时</item>
+    <item ID="qw">每周1次</item>
+    <item ID="q3d">一周2次</item>
+    <item ID="tid1">餐前一日三次</item>
+    <item ID="q2d">一周四次</item>
+    <item ID="iv12">12小时1次静</item>
+    <item ID="ivq8">8小时1次静推</item>
+    <item ID="ivq6">6小时1次静推</item>
+    <item ID="ivbi">一日2次静推</item>
+    <item ID="ivqd">一日1次静推</item>
+    <item ID="w3d">一周3次</item>
+    <item ID="q1h">1小时1次</item>
+    <item ID="q3h">3小时1次</item>
+    <item ID="tid">一日3次</item>
+    <item ID="q5h">5小时1次</item>
+  </string-array>
+  <string-array name="bqgss">
+    <item ID="1">心脏</item>
+    <item ID="2">脑</item>
+    <item ID="3">肾脏</item>
+    <item ID="4">周围血管</item>
+    <item ID="5">眼底</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="gxyhbz">
+    <item ID="1">左室肥厚</item>
+    <item ID="2">心力衰竭</item>
+    <item ID="3">冠心病</item>
+    <item ID="4">心律失常</item>
+    <item ID="5">脑卒中</item>
+    <item ID="6">主动脉夹层动脉瘤</item>
+    <item ID="7">动脉粥样硬化</item>
+    <item ID="8">视网膜病变</item>
+    <item ID="9">其他</item>
+  </string-array>
+  <string-array name="zgzddw">
+    <item ID="1">省级医院</item>
+    <item ID="2">市级医院</item>
+    <item ID="3">县（区）级医院</item>
+    <item ID="4">乡级医院</item>
+    <item ID="5">其他</item>
+    <item ID="6">不详</item>
+  </string-array>
+  <string-array name="xyjb">
+    <item ID="1">一级高血压</item>
+    <item ID="2">二级高血压</item>
+    <item ID="3">三级高血压</item>
+  </string-array>
+  <string-array name="tnbzz">
+    <item ID="1">多饮</item>
+    <item ID="2">多食</item>
+    <item ID="3">多尿</item>
+    <item ID="4">视力模糊</item>
+    <item ID="5">感染</item>
+    <item ID="6">手脚麻木</item>
+    <item ID="7">下肢浮肿</item>
+    <item ID="13">体重明显下降</item>
+    <item ID="8">消瘦</item>
+    <item ID="9">乏力</item>
+    <item ID="10">手足疼痛</item>
+    <item ID="11">四肢发凉</item>
+    <item ID="12">神经紧张</item>
+    <item ID="14">皮肤瘙痒</item>
+    <item ID="99">其他</item>
+  </string-array>
+  <string-array name="zbmbtd">
+    <item ID="1">未触及</item>
+    <item ID="2">触及</item>
+  </string-array>
+  <string-array name="xltz">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="zyxw">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="dxtfy">
+    <item ID="1">无</item>
+    <item ID="2">偶尔</item>
+    <item ID="3">频繁</item>
+  </string-array>
+  <string-array name="tnbbfz">
+    <item ID="1">足病</item>
+    <item ID="2">肾病</item>
+    <item ID="3">眼病</item>
+    <item ID="4">脑病</item>
+    <item ID="5">心脏病</item>
+    <item ID="6">皮肤病</item>
+    <item ID="7">性病</item>
+    <item ID="8">其他酮症酸中毒</item>
+    <item ID="9">非酮症性高渗性昏迷</item>
+    <item ID="10">乳酸性酸中毒</item>
+    <item ID="11">低血糖昏迷</item>
+    <item ID="12">泌尿道感染</item>
+    <item ID="13">呼吸道感染</item>
+    <item ID="14">皮肤感染</item>
+    <item ID="15">酮症酸中毒</item>
+    <item ID="16">神经病变</item>
+    <item ID="17">眼部病变</item>
+    <item ID="18">糖尿病足</item>
+    <item ID="19">脑血管病变</item>
+    <item ID="20">肢端坏疽</item>
+    <item ID="21">其他</item>
+  </string-array>
+  <string-array name="tnbhbz">
+    <item ID="1">神经病变</item>
+    <item ID="2">眼部病变</item>
+    <item ID="3">心脑血管</item>
+    <item ID="4">肾病</item>
+    <item ID="5">高血脂</item>
+    <item ID="6">伴有感染</item>
+    <item ID="7">肝脏异常</item>
+    <item ID="8">其他</item>
+  </string-array>
+  <string-array name="tnblx">
+    <item ID="1">I型糖尿病</item>
+    <item ID="2">Ⅱ型糖尿病</item>
+    <item ID="3">其他特殊类型</item>
+    <item ID="4">妊娠糖尿病</item>
+  </string-array>
+  <string-array name="tnbwxys">
+    <item ID="0">肥胖</item>
+    <item ID="1">高血压</item>
+    <item ID="2">高血脂</item>
+    <item ID="3">巨大儿分娩史</item>
+  </string-array>
+  <string-array name="swyy">
+    <item ID="1">糖尿病</item>
+    <item ID="2">非糖尿病</item>
+  </string-array>
+  <string-array name="xy">
+    <item ID="1">未戒</item>
+    <item ID="2">已戒</item>
+  </string-array>
+  <string-array name="yj">
+    <item ID="1">未戒</item>
+    <item ID="2">已戒</item>
+  </string-array>
+  <string-array name="ys">
+    <item ID="1">喜荤</item>
+    <item ID="2">多素</item>
+    <item ID="3">普通</item>
+    <item ID="4">多水果</item>
+  </string-array>
+  <string-array name="xzb">
+    <item ID="1">心衰</item>
+    <item ID="2">AF</item>
+    <item ID="3">心梗</item>
+  </string-array>
+  <string-array name="nczlczd">
+    <item ID="1">梗塞</item>
+    <item ID="2">TIA</item>
+    <item ID="3">出血（部位）</item>
+  </string-array>
+  <string-array name="nczxcg">
+    <item ID="1">Hb</item>
+    <item ID="2">WBC</item>
+    <item ID="3">RBC</item>
+    <item ID="4">CRP</item>
+    <item ID="5">ESR</item>
+  </string-array>
+  <string-array name="nczggn">
+    <item ID="1">总蛋白</item>
+    <item ID="2">白蛋白</item>
+    <item ID="3">总胆</item>
+    <item ID="4">ALT</item>
+    <item ID="5">AST</item>
+  </string-array>
+  <string-array name="nczsgn">
+    <item ID="1">Cr</item>
+    <item ID="2">BUN</item>
+    <item ID="3">UA</item>
+    <item ID="4">血糖</item>
+    <item ID="5">糖化血红蛋白</item>
+    <item ID="6">TC</item>
+    <item ID="7">TG</item>
+    <item ID="8">HDL</item>
+    <item ID="9">LDL</item>
+    <item ID="10">脂蛋白a</item>
+  </string-array>
+  <string-array name="xfczsjzd">
+    <item ID="1">出血</item>
+    <item ID="2">脑梗死</item>
+    <item ID="3">TIA</item>
+  </string-array>
+  <string-array name="wxx">
+    <item ID="1">0级</item>
+    <item ID="2">1级</item>
+    <item ID="3">2级</item>
+    <item ID="4">3级</item>
+    <item ID="5">4级</item>
+    <item ID="6">5级</item>
+  </string-array>
+  <string-array name="mqzz">
+    <item ID="1">幻觉</item>
+    <item ID="2">交流困难</item>
+    <item ID="3">猜疑</item>
+    <item ID="4">喜怒无常</item>
+    <item ID="5">行为怪异</item>
+    <item ID="6">兴奋话多</item>
+    <item ID="7">伤人毁物</item>
+    <item ID="8">悲观厌世</item>
+    <item ID="9">无故外走</item>
+    <item ID="10">自语自笑</item>
+    <item ID="5">孤僻懒散</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="zzl">
+    <item ID="1">自知力完全</item>
+    <item ID="2">自知力不全</item>
+    <item ID="3">自知力缺失</item>
+  </string-array>
+  <string-array name="smqk">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="ysqk">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="shgnqk">
+    <item ID="1">个人生活料理</item>
+    <item ID="2">家务活动</item>
+    <item ID="3">生产劳动及工作</item>
+    <item ID="4">学习能力</item>
+    <item ID="5">社会人际交往</item>
+  </string-array>
+  <string-array name="grshll">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="jwhd">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="scldjgz">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="xxnl">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="shrjjw">
+    <item ID="1">良好</item>
+    <item ID="2">一般</item>
+    <item ID="3">较差</item>
+  </string-array>
+  <string-array name="hbdjtshdyx">
+    <item ID="2">轻度滋事</item>
+    <item ID="3">肇事</item>
+    <item ID="4">肇祸</item>
+    <item ID="5">自伤</item>
+    <item ID="6">自杀未遂</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="gsqk">
+    <item ID="1">无关锁</item>
+    <item ID="2">关锁</item>
+    <item ID="3">关锁已解除</item>
+  </string-array>
+  <string-array name="zyqk">
+    <item ID="1">从未住院</item>
+    <item ID="2">目前正在住院</item>
+    <item ID="3">既往住院</item>
+    <item ID="4">现未住院</item>
+  </string-array>
+  <string-array name="kfcs">
+    <item ID="1">生活劳动能力</item>
+    <item ID="2">职业训练</item>
+    <item ID="3">学习能力</item>
+    <item ID="4">社会交往</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="bcsffl">
+    <item ID="1">不稳定</item>
+    <item ID="2">基本稳定</item>
+    <item ID="3">稳定</item>
+    <item ID="4">未访到</item>
+  </string-array>
+  <string-array name="zqty">
+    <item ID="1">同意参加管理</item>
+    <item ID="2">不同意参加管理</item>
+  </string-array>
+  <string-array name="hjd">
+    <item ID="1">本市</item>
+    <item ID="2">省市</item>
+    <item ID="3">省外</item>
+  </string-array>
+  <string-array name="jwbs">
+    <item ID="1">心脏病</item>
+    <item ID="2">肺结核</item>
+    <item ID="3">哮喘</item>
+    <item ID="4">肾病</item>
+    <item ID="5">生殖系统疾病</item>
+    <item ID="6">肝病</item>
+    <item ID="7">高血压</item>
+    <item ID="8">糖尿病</item>
+    <item ID="9">贫血</item>
+    <item ID="10">甲亢</item>
+    <item ID="11">精神病</item>
+    <item ID="12">癫痫</item>
+    <item ID="13">性病</item>
+    <item ID="14">手术史</item>
+    <item ID="15">药敏史</item>
+    <item ID="16">腮腺炎</item>
+    <item ID="17">其他</item>
+  </string-array>
+  <string-array name="xhjb">
+    <item ID="1">心脏病</item>
+    <item ID="2">肺结核</item>
+    <item ID="3">哮喘</item>
+    <item ID="4">肾病</item>
+    <item ID="5">生殖系统疾病</item>
+    <item ID="6">肝病</item>
+    <item ID="7">高血压</item>
+    <item ID="8">糖尿病</item>
+    <item ID="9">贫血</item>
+    <item ID="10">甲亢</item>
+    <item ID="11">精神病</item>
+    <item ID="12">癫痫</item>
+    <item ID="13">性病</item>
+    <item ID="14">严重遗传性疾病</item>
+    <item ID="15">腮腺炎</item>
+    <item ID="16">其他</item>
+  </string-array>
+  <string-array name="yycygdjzs">
+    <item ID="1">盲</item>
+    <item ID="2">聋</item>
+    <item ID="3">哑</item>
+    <item ID="4">先天性心脏病</item>
+    <item ID="5">精神病</item>
+    <item ID="6">癫痫</item>
+    <item ID="7">高血压</item>
+    <item ID="8">糖尿病</item>
+    <item ID="9">智力低下</item>
+    <item ID="10">血友病</item>
+    <item ID="11">畸形</item>
+    <item ID="12">其他</item>
+  </string-array>
+  <string-array name="jcdbg">
+    <item ID="1">否</item>
+    <item ID="2">委托</item>
+    <item ID="3">转诊</item>
+    <item ID="4">本市户籍变更</item>
+  </string-array>
+  <string-array name="jcsj">
+    <item ID="1">孕前</item>
+    <item ID="2">产前</item>
+    <item ID="3">前时</item>
+    <item ID="4">产防</item>
+  </string-array>
+  <string-array name="yflb">
+    <item ID="1">农业户籍</item>
+    <item ID="2">非农业户籍</item>
+  </string-array>
+  <string-array name="yfxz">
+    <item ID="1">户籍</item>
+    <item ID="2">非户籍</item>
+  </string-array>
+  <string-array name="jws">
+    <item ID="1">心脏病</item>
+    <item ID="2">肾脏疾病</item>
+    <item ID="3">肝脏疾病</item>
+    <item ID="4">高血压</item>
+    <item ID="5">贫血</item>
+    <item ID="6">糖尿病</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="jzslb">
+    <item ID="1">遗传性疾病史</item>
+    <item ID="2">精神疾病史</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="jzszl">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝脏疾病</item>
+    <item ID="11">先天畸形</item>
+    <item ID="12">其他</item>
+  </string-array>
+  <string-array name="grs">
+    <item ID="1">吸烟</item>
+    <item ID="2">饮酒</item>
+    <item ID="3">服用药物</item>
+    <item ID="4">接触有毒有害物质</item>
+    <item ID="5">接触放射线</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="ycs">
+    <item ID="1">流产</item>
+    <item ID="2">死胎</item>
+    <item ID="3">死产</item>
+    <item ID="4">新生儿死亡</item>
+    <item ID="5">出生缺陷儿</item>
+  </string-array>
+  <string-array name="HIVkt">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+    <item ID="3">不确定</item>
+  </string-array>
+  <string-array name="ggn">
+    <item ID="1">血清谷丙转氨酶（U/L）</item>
+    <item ID="2">血清谷草转氨酶(U/L)</item>
+    <item ID="3">白蛋白(g/L)</item>
+    <item ID="4">总胆红素</item>
+    <item ID="5">结合胆红素</item>
+  </string-array>
+  <string-array name="mdxq">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="ncg">
+    <item ID="1">尿蛋白（mg/24h）</item>
+    <item ID="2">尿糖(mmol/L)</item>
+    <item ID="3">尿酮体</item>
+    <item ID="4">尿潜血</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="sgn">
+    <item ID="1">血清肌酐（μmol/L）</item>
+    <item ID="2">血尿素氮（mmol/L）</item>
+  </string-array>
+  <string-array name="xcg">
+    <item ID="1">血红蛋白值（g/L）</item>
+    <item ID="2">白细胞计数值（G/L）</item>
+    <item ID="3">血小板计数值(G/L)</item>
+  </string-array>
+  <string-array name="yxgywx">
+    <item ID="1">乙型肝炎表面抗原</item>
+    <item ID="2">乙型肝炎表面抗体</item>
+    <item ID="3">乙型肝炎e抗原</item>
+    <item ID="4">乙型肝炎e抗体</item>
+    <item ID="5">乙型肝炎核心抗体</item>
+  </string-array>
+  <string-array name="ydfmw">
+    <item ID="1">滴虫</item>
+    <item ID="2">假丝酵母菌</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="cqfscs">
+    <item ID="1">第二次</item>
+    <item ID="2">死三次</item>
+    <item ID="3">第四次</item>
+    <item ID="4">第五次</item>
+  </string-array>
+  <string-array name="tw">
+    <item ID="1">头先露</item>
+    <item ID="2">臀先露</item>
+    <item ID="3">肩先露</item>
+    <item ID="4">面先露</item>
+    <item ID="5">不详</item>
+  </string-array>
+  <string-array name="d2cjkzd">
+    <item ID="1">个人卫生</item>
+    <item ID="2">膳食营养</item>
+    <item ID="3">心理</item>
+    <item ID="4">母乳喂养</item>
+    <item ID="5">新生儿护理与喂养</item>
+    <item ID="6">运动</item>
+    <item ID="7">自我监测</item>
+    <item ID="8">分娩准备</item>
+    <item ID="9">避免致畸因素和疾病对胚胎的不良影响</item>
+    <item ID="10">产前筛查宣传告知</item>
+    <item ID="11">婴儿喂养与营养</item>
+    <item ID="12">性保健</item>
+    <item ID="13">避孕</item>
+    <item ID="14">其他</item>
+  </string-array>
+  <string-array name="skyhzk">
+    <item ID="1">愈合</item>
+    <item ID="2">未愈</item>
+    <item ID="3">感染</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="ja">
+    <item ID="1">是</item>
+    <item ID="2">否</item>
+  </string-array>
+  <string-array name="fscs">
+    <item ID="1">1</item>
+    <item ID="2">2</item>
+    <item ID="3">3</item>
+  </string-array>
+  <string-array name="xsewyfs">
+    <item ID="2">纯母乳</item>
+    <item ID="3">混合</item>
+    <item ID="4">人工</item>
+  </string-array>
+  <string-array name="dbxz">
+    <item ID="1">成形</item>
+    <item ID="2">糊状</item>
+    <item ID="3">稀、鲜血样便</item>
+    <item ID="4">脓性及脓血便</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="dbys">
+    <item ID="1">黄色</item>
+    <item ID="2">灰白色</item>
+    <item ID="3">绿色</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="smwt">
+    <item ID="1">无</item>
+    <item ID="2">安静</item>
+    <item ID="3">吵闹</item>
+    <item ID="4">汗多</item>
+    <item ID="5">烦躁</item>
+    <item ID="6">夜惊</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="hdbw">
+    <item ID="1">无</item>
+    <item ID="2">面部</item>
+    <item ID="3">躯干</item>
+    <item ID="4">四肢</item>
+    <item ID="5">手足</item>
+    <item ID="6">巩膜</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="ms">
+    <item ID="1">红润</item>
+    <item ID="2">黄染</item>
+    <item ID="3">潮红</item>
+    <item ID="4">苍白</item>
+    <item ID="5">发绀</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="pf">
+    <item ID="1">潮红</item>
+    <item ID="2">苍白</item>
+    <item ID="3">发绀</item>
+    <item ID="4">黄染</item>
+    <item ID="5">色素沉着</item>
+    <item ID="6">湿疹</item>
+    <item ID="7">糜烂</item>
+    <item ID="8">其他</item>
+  </string-array>
+  <string-array name="qd">
+    <item ID="1">未脱</item>
+    <item ID="2">脱落</item>
+    <item ID="3">脐部有渗出</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="qx">
+    <item ID="1">正常</item>
+    <item ID="2">膨隆</item>
+    <item ID="3">凹陷</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="1syl">
+    <item ID="1">满月</item>
+    <item ID="2">3月龄</item>
+    <item ID="3">6月龄</item>
+    <item ID="4">8月龄</item>
+  </string-array>
+  <string-array name="cnhgn">
+    <item ID="1">未加</item>
+    <item ID="2">已加</item>
+  </string-array>
+  <string-array name="dhhgn">
+    <item ID="1">未加</item>
+    <item ID="2">已加</item>
+  </string-array>
+  <string-array name="mfhz">
+    <item ID="1">未加</item>
+    <item ID="2">已加</item>
+  </string-array>
+  <string-array name="sy">
+    <item ID="1">好</item>
+    <item ID="2">一般</item>
+    <item ID="3">差</item>
+  </string-array>
+  <string-array name="scpj">
+    <item ID="1">上</item>
+    <item ID="2">中</item>
+    <item ID="3">中上</item>
+    <item ID="4">中偏上</item>
+    <item ID="5">中偏下</item>
+    <item ID="6">中下</item>
+    <item ID="7">下</item>
+  </string-array>
+  <string-array name="tzpj">
+    <item ID="1">上</item>
+    <item ID="2">中</item>
+    <item ID="3">中上</item>
+    <item ID="4">中偏上</item>
+    <item ID="5">中偏下</item>
+    <item ID="6">中下</item>
+    <item ID="7">下</item>
+  </string-array>
+  <string-array name="1skyglbtz">
+    <item ID="1">颅骨软化</item>
+    <item ID="2">方颅</item>
+    <item ID="3">枕秃</item>
+    <item ID="4">肋串骨</item>
+    <item ID="5">肋外翻</item>
+    <item ID="6">肋软骨沟</item>
+    <item ID="7">鸡胸</item>
+    <item ID="8">手镯征</item>
+  </string-array>
+  <string-array name="kyglbzz">
+    <item ID="1">夜惊</item>
+    <item ID="2">多汗</item>
+    <item ID="3">烦躁</item>
+  </string-array>
+  <string-array name="kgjhd">
+    <item ID="1">未受限制</item>
+    <item ID="2">受限制</item>
+    <item ID="3">皮纹不对称</item>
+  </string-array>
+  <string-array name="tl">
+    <item ID="1">通过</item>
+    <item ID="2">未通过</item>
+  </string-array>
+  <string-array name="tgfypj">
+    <item ID="1">正常</item>
+    <item ID="2">低体重</item>
+    <item ID="3">消瘦</item>
+    <item ID="4">发育迟缓</item>
+    <item ID="5">超重</item>
+    <item ID="6">肥胖</item>
+  </string-array>
+  <string-array name="jbzd">
+    <item ID="1">佝偻病</item>
+    <item ID="2">贫血</item>
+    <item ID="3">先天性心脏病</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="etzd2">
+    <item ID="1">科学喂养</item>
+    <item ID="2">合理膳食</item>
+    <item ID="3">生长发育</item>
+    <item ID="4">疾病预防</item>
+    <item ID="5">预防意外伤害</item>
+    <item ID="6">口腔保健</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="2syl">
+    <item ID="1">12月龄</item>
+    <item ID="2">18月龄</item>
+    <item ID="3">24月龄</item>
+    <item ID="4">30月龄</item>
+  </string-array>
+  <string-array name="rlhyx">
+    <item ID="1">吃</item>
+    <item ID="2">未吃</item>
+  </string-array>
+  <string-array name="sghsc">
+    <item ID="1">吃</item>
+    <item ID="2">未吃</item>
+  </string-array>
+  <string-array name="2skyglbtz">
+    <item ID="1">"O"型腿</item>
+    <item ID="2">"X"型腿方颅</item>
+  </string-array>
+  <string-array name="qxbh">
+    <item ID="1">闭合</item>
+    <item ID="2">未闭</item>
+  </string-array>
+  <string-array name="3snl">
+    <item ID="1">3岁</item>
+    <item ID="2">4岁</item>
+    <item ID="3">5岁</item>
+    <item ID="4">6岁</item>
+  </string-array>
+  <string-array name="lnsfzz">
+    <item ID="2">头痛头晕</item>
+    <item ID="3">恶心呕吐</item>
+    <item ID="4">眼花耳鸣</item>
+    <item ID="5">呼吸困难</item>
+    <item ID="6">心悸胸闷</item>
+    <item ID="7">四肢发麻</item>
+    <item ID="8">下肢水肿</item>
+    <item ID="9">皮肤瘙痒</item>
+    <item ID="10">其他</item>
+  </string-array>
+  <string-array name="jdzl">
+    <item ID="1">白酒</item>
+    <item ID="2">红酒</item>
+    <item ID="3">黄酒</item>
+    <item ID="4">啤酒</item>
+    <item ID="5">米酒</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="kfxq">
+    <item ID="1">有</item>
+    <item ID="2">无</item>
+  </string-array>
+  <string-array name="knqt">
+    <item ID="1">低保对象</item>
+    <item ID="2">五保对象</item>
+    <item ID="3">特困残疾人</item>
+    <item ID="4">否</item>
+  </string-array>
+  <string-array name="cjcd">
+    <item ID="1">一级</item>
+    <item ID="2">二级</item>
+    <item ID="3">三级</item>
+    <item ID="4">四级</item>
+    <item ID="5">未评定</item>
+  </string-array>
+  <string-array name="kfmb">
+    <item ID="1">运动能力改善</item>
+    <item ID="2">感知能力提高</item>
+    <item ID="3">认知能力提高</item>
+    <item ID="4">交往能力提高</item>
+    <item ID="5">自理能力提高</item>
+    <item ID="6">适应能力提高</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="kfxm">
+    <item ID="1">功能训练</item>
+    <item ID="2">辅助器具</item>
+    <item ID="3">心理服务</item>
+    <item ID="4">知识普及</item>
+    <item ID="5">用药指导</item>
+    <item ID="6">转介服务</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="xldd">
+    <item ID="1">专业机构</item>
+    <item ID="2">家庭</item>
+    <item ID="3">社区</item>
+  </string-array>
+  <string-array name="cjsfsf">
+    <item ID="2">否</item>
+    <item ID="1">是</item>
+  </string-array>
+  <string-array name="pg">
+    <item ID="1">满意</item>
+    <item ID="2">一般</item>
+    <item ID="3">不满意</item>
+  </string-array>
+  <string-array name="jsbmz">
+    <item ID="1">未治</item>
+    <item ID="2">间断门诊治疗</item>
+    <item ID="3">连续门诊治疗</item>
+  </string-array>
+  <string-array name="jsbzd">
+    <item ID="1">精神分裂症</item>
+    <item ID="2">分裂情感性障碍</item>
+    <item ID="3">偏执性精神病</item>
+    <item ID="4">双相障碍</item>
+    <item ID="5">癫痫所致精神障碍</item>
+    <item ID="6">精神发育迟滞伴发精神障碍</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="zhyczlxg">
+    <item ID="1">治愈</item>
+    <item ID="2">好转</item>
+    <item ID="3">稳定</item>
+    <item ID="4">恶化</item>
+    <item ID="5">死亡</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="jjzz">
+    <item ID="1">贫困</item>
+    <item ID="2">非贫困</item>
+    <item ID="3">不详</item>
+  </string-array>
+  <string-array name="tw1">
+    <item ID="1">左枕前(LOA)</item>
+    <item ID="2">右枕前(ROA)</item>
+    <item ID="3">左枕后(LOP)</item>
+    <item ID="4">右枕后(ROP)</item>
+    <item ID="5">左枕横(LOT)</item>
+    <item ID="6">右枕横(ROT)</item>
+    <item ID="7">不详</item>
+  </string-array>
+  <string-array name="tw4">
+    <item ID="1">左颏前(LMA)</item>
+    <item ID="2">右颏前(RMA)</item>
+    <item ID="3">左颏后(LMP)</item>
+    <item ID="4">右颏后(RMP)</item>
+    <item ID="5">左颏横(LMT)</item>
+    <item ID="6">右颏横(RMT)</item>
+    <item ID="7">不详</item>
+  </string-array>
+  <string-array name="tw2">
+    <item ID="1">左骶前(LSA)</item>
+    <item ID="2">右骶前(RSA)</item>
+    <item ID="3">左骶后(LSP)</item>
+    <item ID="4">右骶后(RSP)</item>
+    <item ID="5">左骶横(LST)</item>
+    <item ID="6">右骶横(RST)</item>
+    <item ID="7">不详</item>
+  </string-array>
+  <string-array name="tw3">
+    <item ID="1">左肩前(LScA)</item>
+    <item ID="2">右肩前(RScA)</item>
+    <item ID="3">左肩后(LScP)</item>
+    <item ID="4">右肩后(RScP）</item>
+    <item ID="5">不详</item>
+  </string-array>
+  <string-array name="jkzk">
+    <item ID="1">健康</item>
+    <item ID="2">慢性病</item>
+    <item ID="3">传染病</item>
+  </string-array>
+  <string-array name="ts">
+    <item ID="1">单胎</item>
+    <item ID="2">双胎</item>
+    <item ID="3">三胎及以上</item>
+  </string-array>
+  <string-array name="csqk">
+    <item ID="1">顺产</item>
+    <item ID="2">胎头吸引</item>
+    <item ID="3">产钳</item>
+    <item ID="4">剖宫产</item>
+    <item ID="5">双多胎</item>
+    <item ID="6">臀位</item>
+    <item ID="7">其他</item>
+    <item ID="8">不详</item>
+  </string-array>
+  <string-array name="ccsfpg">
+    <item ID="1">满意</item>
+    <item ID="2">一般</item>
+    <item ID="3">不满意</item>
+  </string-array>
+  <string-array name="xlpg">
+    <item ID="1">满意</item>
+    <item ID="2">一般</item>
+    <item ID="3">不满意</item>
+  </string-array>
+  <string-array name="mcfmfs">
+    <item ID="1">阴道自然分娩</item>
+    <item ID="2">产钳助产</item>
+    <item ID="3">臀位助产</item>
+    <item ID="4">胎头吸引</item>
+    <item ID="5">剖宫产</item>
+    <item ID="6">头位阴道自然分娩</item>
+    <item ID="7">臀助产</item>
+    <item ID="8">胎头牵引</item>
+    <item ID="9">产钳</item>
+    <item ID="10">临产前剥宫产</item>
+    <item ID="11">临产后剥宫产</item>
+    <item ID="12">毁胎术</item>
+    <item ID="13">其他</item>
+    <item ID="14">不详</item>
+  </string-array>
+  <string-array name="mqrsqhbqk">
+    <item ID="1">糖尿病</item>
+    <item ID="2">妊娠高血压</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="xsejbsc">
+    <item ID="1">正常</item>
+    <item ID="2">未查</item>
+    <item ID="3">异常</item>
+  </string-array>
+  <string-array name="xseslsc">
+    <item ID="1">正常</item>
+    <item ID="2">未查</item>
+    <item ID="3">异常</item>
+  </string-array>
+  <string-array name="syqkdq">
+    <item ID="1">轻</item>
+    <item ID="2">中</item>
+    <item ID="3">重</item>
+  </string-array>
+  <string-array name="syqkmb">
+    <item ID="1">轻</item>
+    <item ID="2">中</item>
+    <item ID="3">重</item>
+  </string-array>
+  <string-array name="lnsfzqjy">
+    <item ID="1">无需</item>
+    <item ID="2">每2年</item>
+    <item ID="3">每年</item>
+    <item ID="4">每3个月</item>
+    <item ID="5">半年</item>
+  </string-array>
+  <string-array name="lnsfxz">
+    <item ID="1">一般人群</item>
+    <item ID="2">重点管理疾病的高危人群</item>
+    <item ID="3">患者</item>
+  </string-array>
+  <string-array name="lnxlzt">
+    <item ID="1">正常</item>
+    <item ID="2">紧张</item>
+    <item ID="3">抑郁</item>
+    <item ID="4">焦虑</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="lnsfpg">
+    <item ID="1">满意</item>
+    <item ID="2">一般</item>
+    <item ID="3">不满意</item>
+  </string-array>
+  <string-array name="nyxsy">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="nbxb">
+    <item ID="1">阴性</item>
+    <item ID="2">微量</item>
+    <item ID="3">少量＋</item>
+    <item ID="4">中量＋＋</item>
+    <item ID="5">大量＋＋＋</item>
+  </string-array>
+  <string-array name="ndb">
+    <item ID="1">阴性</item>
+    <item ID="2">微量</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+  </string-array>
+  <string-array name="nqx">
+    <item ID="1">阴性</item>
+    <item ID="2">微量</item>
+    <item ID="3">少量</item>
+    <item ID="4">中量</item>
+    <item ID="5">大量</item>
+  </string-array>
+  <string-array name="ntt">
+    <item ID="1">阴性</item>
+    <item ID="2">微量</item>
+    <item ID="3">少量</item>
+    <item ID="4">中量</item>
+    <item ID="5">大量</item>
+  </string-array>
+  <string-array name="ndhs">
+    <item ID="1">阴性</item>
+    <item ID="2">少量</item>
+    <item ID="3">中量</item>
+    <item ID="4">大量</item>
+  </string-array>
+  <string-array name="nxt">
+    <item ID="1">阴性</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+  </string-array>
+  <string-array name="wssc">
+    <item ID="1">阴性</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+  </string-array>
+  <string-array name="jclx">
+    <item ID="1">随机血糖</item>
+    <item ID="2">空腹血糖</item>
+    <item ID="3">餐后2小时血糖</item>
+  </string-array>
+  <string-array name="lbcxyjxm">
+    <item ID="3">健康体检</item>
+    <item ID="4">随访管理</item>
+  </string-array>
+  <string-array name="lbcxyjxm2">
+    <item ID="21">档案信息</item>
+    <item ID="22">签约情况</item>
+  </string-array>
+  <string-array name="lbcxyjxm3">
+    <item ID="31">快速体检</item>
+    <item ID="32">体质辨识</item>
+    <item ID="33">心理评估</item>
+    <item ID="34">老年评估</item>
+    <item ID="35">普通体检</item>
+  </string-array>
+  <string-array name="lbcxyjxm4">
+    <item ID="41">高血压</item>
+    <item ID="42">糖尿病</item>
+    <item ID="43">脑卒中</item>
+    <item ID="44">精神病</item>
+    <item ID="45">孕产访视</item>
+    <item ID="46">儿童访视</item>
+    <item ID="47">老年随访</item>
+    <item ID="48">残疾随访</item>
+  </string-array>
+  <string-array name="lbcxyjxm5">
+    <item ID="51">健康教育</item>
+  </string-array>
+  <string-array name="qstcx">
+    <item ID="02">血压</item>
+    <item ID="03">血糖</item>
+    <item ID="04">血脂</item>
+    <item ID="05">血氧</item>
+    <item ID="06">体重</item>
+    <item ID="07">腰围</item>
+  </string-array>
+  <string-array name="gzglyjxm">
+    <item ID="4">随访管理</item>
+  </string-array>
+  <string-array name="gzglyjxm2">
+    <item ID="21">档案信息</item>
+    <item ID="22">签约情况</item>
+  </string-array>
+  <string-array name="gzglyjxm3">
+    <item ID="31">快速体检</item>
+    <item ID="32">体质辨识</item>
+    <item ID="33">心理评估</item>
+    <item ID="34">老年评估</item>
+    <item ID="35">普通体检</item>
+  </string-array>
+  <string-array name="gzglyjxm4">
+    <item ID="41">高血压</item>
+    <item ID="42">糖尿病</item>
+    <item ID="43">脑卒中</item>
+    <item ID="44">精神病</item>
+    <item ID="45">孕产访视</item>
+    <item ID="46">儿童访视</item>
+    <item ID="47">老年随访</item>
+    <item ID="48">残疾随访</item>
+  </string-array>
+  <string-array name="gzglyjxm5">
+    <item ID="51">健康教育</item>
+  </string-array>
+  <string-array name="lnrjkzkzwpg">
+    <item ID="1">满意</item>
+    <item ID="2">基本满意</item>
+    <item ID="3">说不清楚</item>
+    <item ID="4">不太清楚</item>
+    <item ID="5">不满意</item>
+  </string-array>
+  <string-array name="lnrshzlnlzwpg">
+    <item ID="1">可自理</item>
+    <item ID="2">轻度依赖</item>
+    <item ID="3">中度依赖</item>
+    <item ID="4">不能自理</item>
+  </string-array>
+  <string-array name="dlpl">
+    <item ID="1">每天</item>
+    <item ID="2">每周一次以上</item>
+    <item ID="3">偶尔</item>
+    <item ID="4">不运动</item>
+  </string-array>
+  <string-array name="yjpl">
+    <item ID="1">从不</item>
+    <item ID="2">偶尔</item>
+    <item ID="3">经常</item>
+    <item ID="4">每天</item>
+  </string-array>
+  <string-array name="zqgntl">
+    <item ID="1">听见</item>
+    <item ID="2">听不清</item>
+    <item ID="3">无法听见</item>
+  </string-array>
+  <string-array name="zqgnydgn">
+    <item ID="1">可顺利完成</item>
+    <item ID="2">无法独立完成其中任何一个动作</item>
+  </string-array>
+  <string-array name="ctxl">
+    <item ID="1">心率齐</item>
+    <item ID="2">心率不齐</item>
+    <item ID="3">心率绝对不齐</item>
+  </string-array>
+  <string-array name="ncgndb">
+    <item ID="1">－</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+    <item ID="6">＋＋＋＋</item>
+    <item ID="7">＋＋＋＋以上</item>
+  </string-array>
+  <string-array name="ncgnt">
+    <item ID="1">－</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+    <item ID="6">＋＋＋＋</item>
+    <item ID="7">＋＋＋＋以上</item>
+  </string-array>
+  <string-array name="ncgntt">
+    <item ID="1">－</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+    <item ID="6">＋＋＋＋</item>
+    <item ID="7">＋＋＋＋以上</item>
+  </string-array>
+  <string-array name="ncgnqx">
+    <item ID="1">－</item>
+    <item ID="2">±</item>
+    <item ID="3">＋</item>
+    <item ID="4">＋＋</item>
+    <item ID="5">＋＋＋</item>
+    <item ID="6">＋＋＋＋</item>
+    <item ID="7">＋＋＋＋以上</item>
+  </string-array>
+  <string-array name="yxgybmky">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="yxgybmkt">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="yxgyekt">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="yxgyeky">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="yxgyhxkt">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="zytzphz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzqxz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzyaxz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzyixz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytztsz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzsrz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzxyz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytzqyz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zytztbz">
+    <item ID="1">是</item>
+    <item ID="2">基本是</item>
+    <item ID="3">倾向是</item>
+  </string-array>
+  <string-array name="zycj2">
+    <item ID="1">遗传、先天异常或发育障碍</item>
+    <item ID="2">白内障</item>
+    <item ID="3">青光眼</item>
+    <item ID="4">沙眼</item>
+    <item ID="5">角膜病</item>
+    <item ID="6">视神经病变</item>
+    <item ID="7">屈光不正</item>
+    <item ID="8">弱视</item>
+    <item ID="9">外伤</item>
+    <item ID="10">中毒</item>
+    <item ID="11">其他</item>
+    <item ID="12">原因不明</item>
+  </string-array>
+  <string-array name="zycj3">
+    <item ID="1">遗传</item>
+    <item ID="2">母孕期病毒感染</item>
+    <item ID="3">传染性疾病</item>
+    <item ID="4">自身免疫缺陷性疾病</item>
+    <item ID="5">全身性疾病</item>
+    <item ID="6">中耳炎</item>
+    <item ID="7">老年性耳聋</item>
+    <item ID="8">早产和低体重</item>
+    <item ID="9">新生儿窒息</item>
+    <item ID="10">高胆红素血症</item>
+    <item ID="11">药物中毒</item>
+    <item ID="12">创伤或意外伤害</item>
+    <item ID="13">噪声和爆震</item>
+    <item ID="14">其他</item>
+    <item ID="15">原因不明</item>
+  </string-array>
+  <string-array name="zycj4">
+    <item ID="1">唐氏综合症</item>
+    <item ID="2">脑性瘫痪</item>
+    <item ID="3">新生儿病理性黄疸</item>
+    <item ID="4">早产、低体重和过期产</item>
+    <item ID="5">腭裂病</item>
+    <item ID="6">脑梗死</item>
+    <item ID="7">脑出血</item>
+    <item ID="8">脑炎</item>
+    <item ID="9">脑囊虫病</item>
+    <item ID="10">喉、舌疾病术后</item>
+    <item ID="11">听力障碍</item>
+    <item ID="12">帕金森氏病</item>
+    <item ID="13">多发性硬化</item>
+    <item ID="13">脊髓侧索硬化</item>
+    <item ID="14">外伤</item>
+    <item ID="15">产伤</item>
+    <item ID="16">孤独症</item>
+    <item ID="17">癫痫</item>
+    <item ID="18">CO中毒</item>
+    <item ID="19">其他</item>
+    <item ID="20">原因不明</item>
+  </string-array>
+  <string-array name="zycj5">
+    <item ID="1">脑性瘫痪</item>
+    <item ID="2">发育畸形</item>
+    <item ID="3">侏儒症</item>
+    <item ID="4">其他先天性或发育障碍</item>
+    <item ID="5">脊髓灰质炎</item>
+    <item ID="6">脑血管疾病</item>
+    <item ID="7">周围血管疾病</item>
+    <item ID="8">肿瘤</item>
+    <item ID="9">骨关节病</item>
+    <item ID="10">地方病</item>
+    <item ID="11">脊髓疾病</item>
+    <item ID="12">工伤</item>
+    <item ID="13">交通事故</item>
+    <item ID="14">脊髓损伤</item>
+    <item ID="15">脑外伤</item>
+    <item ID="16">其他外伤</item>
+    <item ID="17">结核性感染</item>
+    <item ID="18">化脓性感染</item>
+    <item ID="19">中毒</item>
+    <item ID="20">其他</item>
+    <item ID="21">原因不明</item>
+  </string-array>
+  <string-array name="zycj6">
+    <item ID="1">遗传</item>
+    <item ID="2">脑疾病</item>
+    <item ID="3">内分泌障碍</item>
+    <item ID="4">惊厥性疾病</item>
+    <item ID="5">新生儿窒息</item>
+    <item ID="6">早产、低体重和过期产</item>
+    <item ID="7">发育畸形</item>
+    <item ID="8">营养不良</item>
+    <item ID="9">母孕期外伤及物理伤害</item>
+    <item ID="10">产伤</item>
+    <item ID="11">工伤</item>
+    <item ID="12">交通事故</item>
+    <item ID="13">其他外伤</item>
+    <item ID="14">中毒与过敏反应</item>
+    <item ID="15">不良社会文化因素</item>
+    <item ID="16">其他</item>
+    <item ID="17">原因不明</item>
+  </string-array>
+  <string-array name="zycj7">
+    <item ID="1">痴呆</item>
+    <item ID="2">其他器质性精神障碍</item>
+    <item ID="3">使用精神活性物质所致的障碍</item>
+    <item ID="4">精神分裂症</item>
+    <item ID="5">妄想性障碍</item>
+    <item ID="6">分裂情感性障碍</item>
+    <item ID="7">其它精神病性障碍</item>
+    <item ID="8">心境障碍</item>
+    <item ID="9">神经症性障碍</item>
+    <item ID="10">行为综合征</item>
+    <item ID="11">人格障碍</item>
+    <item ID="12">孤独症</item>
+    <item ID="13">癫痫</item>
+    <item ID="14">其他</item>
+    <item ID="15">原因不明</item>
+  </string-array>
+  <string-array name="zycj8">
+    <item ID="1">其他</item>
+    <item ID="2">原因不明</item>
+  </string-array>
+  <string-array name="qylx">
+    <item ID="1">60岁以上人群</item>
+    <item ID="2">儿童保健家庭</item>
+    <item ID="3">孕产妇保健家庭</item>
+  </string-array>
+  <string-array name="gxybkjzs">
+    <item ID="0">高血压</item>
+    <item ID="1">糖尿病</item>
+    <item ID="2">冠心病</item>
+    <item ID="3">脑卒中</item>
+    <item ID="4">以上都无</item>
+  </string-array>
+  <string-array name="scglyjxm">
+    <item ID="1">所有项目</item>
+    <item ID="2">档案信息</item>
+    <item ID="3">健康体检</item>
+    <item ID="4">随访管理</item>
+    <item ID="5">健康教育</item>
+  </string-array>
+  <string-array name="scglyjxm2">
+    <item ID="21">档案信息</item>
+    <item ID="22">签约情况</item>
+  </string-array>
+  <string-array name="scglyjxm3">
+    <item ID="31">快速体检</item>
+    <item ID="32">体质辨识</item>
+    <item ID="33">心理评估</item>
+    <item ID="34">老年评估</item>
+    <item ID="35">普通体检</item>
+  </string-array>
+  <string-array name="scglyjxm4">
+    <item ID="41">高血压</item>
+    <item ID="42">糖尿病</item>
+    <item ID="43">脑卒中</item>
+    <item ID="44">精神病</item>
+    <item ID="45">孕产访视</item>
+    <item ID="46">儿童访视</item>
+    <item ID="47">老年随访</item>
+    <item ID="48">残疾随访</item>
+  </string-array>
+  <string-array name="scglyjxm5">
+    <item ID="51">健康教育</item>
+  </string-array>
+  <string-array name="scglsjly">
+    <item ID="1">档案平台</item>
+    <item ID="2">非档案平台</item>
+  </string-array>
+  <string-array name="scglczbz">
+    <item ID="1">原始</item>
+    <item ID="2">新建</item>
+    <item ID="3">修改</item>
+  </string-array>
+  <string-array name="scglxmsx">
+    <item ID="21">档案</item>
+    <item ID="31">快速体检</item>
+    <item ID="41">高血压随访</item>
+    <item ID="42">糖尿病随访</item>
+  </string-array>
+  <string-array name="cjjb">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝炎</item>
+    <item ID="11">其他法定传染病</item>
+    <item ID="12">职业病</item>
+    <item ID="13">其他</item>
+  </string-array>
+  <string-array name="cjss">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝炎</item>
+    <item ID="11">其他法定传染病</item>
+    <item ID="12">职业病</item>
+    <item ID="13">其他</item>
+  </string-array>
+  <string-array name="cjsx">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝炎</item>
+    <item ID="11">其他法定传染病</item>
+    <item ID="12">职业病</item>
+    <item ID="13">其他</item>
+  </string-array>
+  <string-array name="cjws">
+    <item ID="2">高血压</item>
+    <item ID="3">糖尿病</item>
+    <item ID="4">冠心病</item>
+    <item ID="5">慢性阻塞性肺疾病</item>
+    <item ID="6">恶性肿瘤</item>
+    <item ID="7">脑卒中</item>
+    <item ID="8">重性精神疾病</item>
+    <item ID="9">结核病</item>
+    <item ID="10">肝炎</item>
+    <item ID="11">其他法定传染病</item>
+    <item ID="12">职业病</item>
+    <item ID="13">其他</item>
+  </string-array>
+  <string-array name="pttjzz">
+    <item ID="1">头痛</item>
+    <item ID="2">头晕</item>
+    <item ID="3">心悸</item>
+    <item ID="4">胸闷</item>
+    <item ID="5">胸痛</item>
+    <item ID="6">慢性咳嗽</item>
+    <item ID="7">咳痰</item>
+    <item ID="8">呼吸困难</item>
+    <item ID="9">多饮</item>
+    <item ID="10">多尿</item>
+    <item ID="11">体重下降</item>
+    <item ID="12">乏力</item>
+    <item ID="13">关节肿痛</item>
+    <item ID="14">视力模糊</item>
+    <item ID="15">手脚麻木</item>
+    <item ID="16">尿急</item>
+    <item ID="17">尿痛</item>
+    <item ID="18">便秘</item>
+    <item ID="19">腹泻</item>
+    <item ID="20">恶心呕吐</item>
+    <item ID="21">眼花</item>
+    <item ID="22">耳鸣</item>
+    <item ID="23">乳房胀痛</item>
+    <item ID="23">其他</item>
+  </string-array>
+  <string-array name="lnrrzgnpf">
+    <item ID="1">粗筛阴性</item>
+    <item ID="2">粗筛阳性</item>
+  </string-array>
+  <string-array name="lnrqgzt">
+    <item ID="1">粗筛阴性</item>
+    <item ID="2">粗筛阳性</item>
+  </string-array>
+  <string-array name="ysxg">
+    <item ID="1">荤素均衡</item>
+    <item ID="2">荤食为主</item>
+    <item ID="3">素食为主</item>
+    <item ID="4">嗜盐</item>
+    <item ID="5">嗜油</item>
+    <item ID="6">嗜糖</item>
+  </string-array>
+  <string-array name="xyqk">
+    <item ID="1">从不吸烟</item>
+    <item ID="2">过去吸</item>
+    <item ID="3">已戒烟</item>
+    <item ID="4">吸烟</item>
+  </string-array>
+  <string-array name="zqgnkc">
+    <item ID="1">红润</item>
+    <item ID="2">苍白</item>
+    <item ID="3">发绀</item>
+    <item ID="4">皲裂</item>
+    <item ID="5">疱疹</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="zqgncl">
+    <item ID="1">正常</item>
+    <item ID="2">缺齿</item>
+    <item ID="3">龋齿</item>
+    <item ID="4">义齿</item>
+  </string-array>
+  <string-array name="zqgnyb">
+    <item ID="1">无充血</item>
+    <item ID="2">充血</item>
+    <item ID="3">淋巴滤泡增生</item>
+  </string-array>
+  <string-array name="ctpf">
+    <item ID="1">潮红</item>
+    <item ID="2">苍白</item>
+    <item ID="3">发绀</item>
+    <item ID="4">黄染</item>
+    <item ID="5">色素沉着</item>
+    <item ID="6">湿疹</item>
+    <item ID="7">糜烂</item>
+    <item ID="8">其他</item>
+  </string-array>
+  <string-array name="ctgm">
+    <item ID="1">正常</item>
+    <item ID="2">黄染</item>
+    <item ID="3">充血</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="ctlbj">
+    <item ID="1">未触及</item>
+    <item ID="2">锁骨上</item>
+    <item ID="3">腋窝</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="ctly">
+    <item ID="1">干罗音</item>
+    <item ID="2">湿罗音</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="ctxzsz">
+    <item ID="1">无</item>
+    <item ID="2">单侧</item>
+    <item ID="3">双侧不对称</item>
+    <item ID="4">双侧对称</item>
+  </string-array>
+  <string-array name="gmzz">
+    <item ID="1">未及异常</item>
+    <item ID="2">触痛</item>
+    <item ID="3">包块</item>
+    <item ID="4">前列腺异常</item>
+    <item ID="5">其他</item>
+    <item ID="6">拒检</item>
+  </string-array>
+  <string-array name="ctrx">
+    <item ID="2">乳房切除</item>
+    <item ID="3">异常泌乳</item>
+    <item ID="4">乳腺包块</item>
+    <item ID="5">乳腺增生</item>
+    <item ID="6">溢液</item>
+    <item ID="7">其他</item>
+    <item ID="8">拒检</item>
+  </string-array>
+  <string-array name="dbqx">
+    <item ID="1">阴性</item>
+    <item ID="2">阳性</item>
+  </string-array>
+  <string-array name="nxgjb">
+    <item ID="1">缺血性卒中</item>
+    <item ID="2">脑出血</item>
+    <item ID="3">蛛网膜下腔出血</item>
+    <item ID="4">短暂性脑缺血</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="szjb">
+    <item ID="1">糖尿病肾病</item>
+    <item ID="2">肾功能衰竭</item>
+    <item ID="3">急性肾炎</item>
+    <item ID="4">慢性肾炎</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="xzjb">
+    <item ID="1">心肌梗死</item>
+    <item ID="2">心绞痛</item>
+    <item ID="3">冠状动脉血运重建</item>
+    <item ID="4">充血性心力</item>
+    <item ID="5">心前区疼痛</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="xgjb">
+    <item ID="1">夹层动脉瘤</item>
+    <item ID="2">动脉闭塞性疾病</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="ybjb">
+    <item ID="1">视网膜出血或渗出</item>
+    <item ID="2">视乳头水肿</item>
+    <item ID="3">白内障</item>
+    <item ID="4">其他</item>
+  </string-array>
+  <string-array name="yfjzsmc">
+    <item ID="1">乙型肝炎疫苗</item>
+    <item ID="2">结核疫苗</item>
+    <item ID="3">脊髓灰质炎疫苗</item>
+    <item ID="4">白喉百日咳破伤风疫苗</item>
+    <item ID="5">麻疹疫苗</item>
+    <item ID="6">乙型脑炎疫苗</item>
+    <item ID="7">脑膜炎球菌疫苗</item>
+    <item ID="8">麻疹流行性腮腺炎疫苗</item>
+    <item ID="9">麻疹风疹疫苗</item>
+    <item ID="10">白喉破伤风疫苗</item>
+    <item ID="11">麻疹流行性腮腺炎风疹疫苗</item>
+    <item ID="12">水痘疫苗</item>
+    <item ID="13">肺炎球菌疫苗</item>
+    <item ID="14">流行性感冒疫苗</item>
+    <item ID="15">甲型肝炎疫苗</item>
+    <item ID="16">风疹疫苗</item>
+    <item ID="17">流行性腮腺炎疫苗</item>
+    <item ID="18">流感嗜血杆菌疫苗</item>
+    <item ID="19">甲型肝炎乙型肝炎疫苗</item>
+    <item ID="20">狂犬病疫苗</item>
+    <item ID="21">轮状病毒疫苗</item>
+    <item ID="22">霍乱疫苗</item>
+    <item ID="23">钩端螺旋体疫苗</item>
+    <item ID="24">肾综合征出血热疫苗</item>
+    <item ID="25">炭疽疫苗</item>
+    <item ID="26">黄热病疫苗</item>
+    <item ID="27">伤寒疫苗(包含副伤寒)</item>
+    <item ID="28">气管炎疫苗</item>
+    <item ID="29">白喉疫苗</item>
+    <item ID="30">破伤风疫苗</item>
+    <item ID="31">百日咳疫苗</item>
+    <item ID="32">森林脑炎疫苗</item>
+    <item ID="33">布氏菌疫苗</item>
+    <item ID="34">鼠疫疫苗</item>
+    <item ID="35">痢疾疫苗</item>
+    <item ID="36">人类乳头瘤病毒疫苗</item>
+    <item ID="37">疖病疫苗</item>
+    <item ID="38">四联疫苗</item>
+    <item ID="39">五联疫苗</item>
+    <item ID="40">六联疫苗</item>
+    <item ID="41">狂犬病被动免疫制剂</item>
+    <item ID="42">破伤风被动免疫制剂</item>
+    <item ID="43">结核菌素</item>
+    <item ID="44">锡克试验毒素</item>
+    <item ID="45">乙型肝炎被动免疫制剂</item>
+    <item ID="46">人免疫球蛋白</item>
+    <item ID="47">其他</item>
+  </string-array>
+  <string-array name="jkzd">
+    <item ID="1">纳入慢性病患者健康管理</item>
+    <item ID="2">建议复查</item>
+    <item ID="3">建议转诊</item>
+  </string-array>
+  <string-array name="wxyskz">
+    <item ID="1">戒烟</item>
+    <item ID="2">健康饮酒</item>
+    <item ID="3">饮食</item>
+    <item ID="4">锻炼</item>
+    <item ID="5">减体重</item>
+    <item ID="6">建议接种疫苗（疫苗名称）</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="jtgz">
+    <item ID="1101">中国共产党中央委员会和地方各级党组织负责人</item> 
+  <item ID="1102">国家机关及其工作机构负责人</item> 
+  <item ID="1103">民主党派和社会团体及其工作机构负责人</item> 
+  <item ID="1104">事业单位负责人</item> 
+  <item ID="1105">企业负责人</item> 
+  <item ID="1201">科学研究人员</item> 
+  <item ID="1202">工程技术人员</item> 
+  <item ID="1203">农业技术人员</item> 
+  <item ID="1204">飞机和船舶技术人员</item> 
+  <item ID="1205">卫生专业技术人员</item> 
+  <item ID="1206">经济业务人员</item> 
+  <item ID="1207">金融业务人员</item> 
+  <item ID="1208">法律专业人员</item> 
+  <item ID="1209">教学人员</item> 
+  <item ID="1210">文学艺术工作人员</item> 
+  <item ID="1211">体育工作人员</item> 
+  <item ID="1212">新闻出版、文化工作人员</item> 
+  <item ID="1213">宗教职业者</item> 
+  <item ID="1214">其他专业技术人员</item> 
+  <item ID="1301">行政办公人员</item> 
+  <item ID="1302">安全保卫和消防人员</item> 
+  <item ID="1303">邮政和电信业务人员</item> 
+  <item ID="1304">其他办事人员和有关人员</item> 
+  <item ID="1401">购销人员</item> 
+  <item ID="1402">仓储人员</item> 
+  <item ID="1403">餐饮服务人员</item> 
+  <item ID="1404">饭店、旅游及健身娱乐场所服务人员</item> 
+  <item ID="1405">运输服务人员</item> 
+  <item ID="1406">医疗卫生辅助服务人员</item> 
+  <item ID="1407">社会服务和居民生活服务人员</item> 
+  <item ID="1408">其他商业、服务业人员</item> 
+  <item ID="1501">种植业生产人员</item> 
+  <item ID="1502">林业生产及野生动植物保护人员</item> 
+  <item ID="1503">畜牧业生产人员</item> 
+  <item ID="1504">渔业生产人员</item> 
+  <item ID="1505">水利设施管理养护人员</item> 
+  <item ID="1506">其他农、林、牧、渔、水利业生产人员</item> 
+  <item ID="1601">勘探及矿物开采人员</item> 
+  <item ID="1602">金属冶炼、轧制人员</item> 
+  <item ID="1603">化工产品生产人员</item> 
+  <item ID="1604">机电产品装配人员</item> 
+  <item ID="1605">机械制造加工人员</item> 
+  <item ID="1606">机械设备修理人员</item> 
+  <item ID="1607">电力设备安装、运行、检修及供点人员</item> 
+  <item ID="1608">电子元器件与设备制造、装配、调试及维修人员</item> 
+  <item ID="1609">橡胶和塑料制品生产人员</item> 
+  <item ID="1610">纺织、针织、印染人员</item> 
+  <item ID="1611">裁剪、缝纫和皮革、毛皮制品加工制作人员</item> 
+  <item ID="1612">粮油、食品、饮料生产加工及饲料生产加工人员</item> 
+  <item ID="1613">烟草及其制品加工人员</item> 
+  <item ID="1614">药品生产人员</item> 
+  <item ID="1615">木材加工、人造板生产、木制品制作及制浆、造纸和纸制品生产加工人员</item> 
+  <item ID="1616">建筑材料生产、加工人员</item> 
+  <item ID="1617">玻璃、陶瓷、搪瓷及其制品生产加工人员</item> 
+  <item ID="1618">广播影视制品制作、播放及文物保护作业人员</item> 
+  <item ID="1619">印刷人员</item> 
+  <item ID="1620">工艺、美术品制作人员</item> 
+  <item ID="1621">文化教育、体育用品制作人员</item> 
+  <item ID="1622">工程施工人员</item> 
+  <item ID="1623">运输设备操作人员及有关人员</item> 
+  <item ID="1624">环境监测与废物处理人员</item> 
+  <item ID="1625">检验、计量人员</item> 
+  <item ID="1626">其他生产、运输设备操作人员及有关人员</item> 
+  <item ID="x0">军人</item> 
+  <item ID="y0">不便分类的其他从业人员</item> 
+  <item ID="I0">婴幼儿、学龄前儿童</item> 
+  <item ID="J0">学生</item> 
+  <item ID="K0">家务</item> 
+  <item ID="L0">无业</item>
+  </string-array>
+  <string-array name="bkys">
+    <item ID="2035">包全荣</item>
+    <item ID="54">鲍建国</item>
+    <item ID="513">曹惠娜</item>
+    <item ID="86">车其辉</item>
+    <item ID="9013">陈根祥</item>
+    <item ID="2153">陈光耀</item>
+    <item ID="508">陈红</item>
+    <item ID="2191">陈磊</item>
+    <item ID="833">陈丽</item>
+    <item ID="98">陈平</item>
+    <item ID="65">陈乾辉</item>
+    <item ID="2256">陈贤</item>
+    <item ID="9031">陈燕琴</item>
+    <item ID="7066">仇利波</item>
+    <item ID="62">崔红耀</item>
+    <item ID="504">崔俏俊</item>
+    <item ID="15">崔艳萍</item>
+    <item ID="63">戴佩清</item>
+    <item ID="9016">丁晶晶</item>
+    <item ID="67">董红雷</item>
+    <item ID="1160">范方华</item>
+    <item ID="76">冯曙东</item>
+    <item ID="16">付国强</item>
+    <item ID="9246">葛映月</item>
+    <item ID="2253">顾驰江</item>
+    <item ID="2034">顾虹娜</item>
+    <item ID="41">何伟君</item>
+    <item ID="9012">何幼娜</item>
+    <item ID="5016">何舟</item>
+    <item ID="9503">胡佰文</item>
+    <item ID="2208">胡贤杰</item>
+    <item ID="23">胡燕燕</item>
+    <item ID="94">华静亚</item>
+    <item ID="7062">江永妃</item>
+    <item ID="2041">蒋如芬</item>
+    <item ID="1818">金春俭</item>
+    <item ID="514">金环</item>
+    <item ID="2068">金元旦</item>
+    <item ID="2011">金雯迪</item>
+    <item ID="52">景春波</item>
+    <item ID="37">孔秦华</item>
+    <item ID="74">乐世丽</item>
+    <item ID="2215">李斌</item>
+    <item ID="40">李峰豪</item>
+    <item ID="9132">李华</item>
+    <item ID="78">李静德</item>
+    <item ID="22">李坤</item>
+    <item ID="24">李蕾蕾</item>
+    <item ID="2251">李路</item>
+    <item ID="44">李钦苗</item>
+    <item ID="1301">李素荣</item>
+    <item ID="9151">李文杰</item>
+    <item ID="7069">李想凤</item>
+    <item ID="2022">李小平</item>
+    <item ID="2225">李新春</item>
+    <item ID="520">李亚珍</item>
+    <item ID="70">李依芬</item>
+    <item ID="1033">梁飞龙</item>
+    <item ID="2227">梁光珠</item>
+    <item ID="56">林峰</item>
+    <item ID="2211">林咸总</item>
+    <item ID="2020">凌纪根</item>
+    <item ID="39">刘斌</item>
+    <item ID="2021">柳燕</item>
+    <item ID="9021">楼柯柯</item>
+    <item ID="20">卢国平</item>
+    <item ID="2224">陆勇</item>
+    <item ID="92">陆云斌</item>
+    <item ID="28">马立波</item>
+    <item ID="3006">毛浩亮</item>
+    <item ID="47">毛红光</item>
+    <item ID="2071">潘燕</item>
+    <item ID="2069">任建平</item>
+    <item ID="9231">阮清钦</item>
+    <item ID="320">邵碧红</item>
+    <item ID="3041">邵莉</item>
+    <item ID="2228">沈立亮</item>
+    <item ID="501">沈亚红</item>
+    <item ID="2033">沈玺蓉</item>
+    <item ID="9161">盛臣毅</item>
+    <item ID="38">施吉耀</item>
+    <item ID="2070">施佳楠</item>
+    <item ID="71">施玉芳</item>
+    <item ID="2189">宋春宾</item>
+    <item ID="31">宋素兰</item>
+    <item ID="111">孙传</item>
+    <item ID="79">孙浩波</item>
+    <item ID="5">孙雅</item>
+    <item ID="82">汤秋波</item>
+    <item ID="58">唐方红</item>
+    <item ID="2182">唐世雄</item>
+    <item ID="9131">体检室</item>
+    <item ID="9508">童可辉</item>
+    <item ID="48">汪陈恩</item>
+    <item ID="9248">汪金兰</item>
+    <item ID="2204">王春明</item>
+    <item ID="567">王丹虹</item>
+    <item ID="777">王迪焕</item>
+    <item ID="515">王根裕</item>
+    <item ID="85">王海威</item>
+    <item ID="2062">王红亚</item>
+    <item ID="9242">王加敏</item>
+    <item ID="7063">王江君</item>
+    <item ID="2226">王清晴</item>
+    <item ID="2206">王盛春</item>
+    <item ID="9501">王胜煌</item>
+    <item ID="2255">王苏华</item>
+    <item ID="2217">王维星</item>
+    <item ID="2012">王文光</item>
+    <item ID="2171">王雪</item>
+    <item ID="7128">王翼天</item>
+    <item ID="2190">王越</item>
+    <item ID="49">王增元</item>
+    <item ID="507">王珍菊</item>
+    <item ID="9232">王忠平</item>
+    <item ID="3004">翁小飞</item>
+    <item ID="2152">翁旭东</item>
+    <item ID="9182">吴碧焕</item>
+    <item ID="46">吴国华</item>
+    <item ID="2250">吴海峰</item>
+    <item ID="13">吴锦国</item>
+    <item ID="2252">吴科科</item>
+    <item ID="77">吴立红</item>
+    <item ID="9181">吴挺杰</item>
+    <item ID="57">吴文龙</item>
+    <item ID="2">吴永康</item>
+    <item ID="999">吴正龙</item>
+    <item ID="17">夏亚波</item>
+    <item ID="2219">肖进</item>
+    <item ID="96">谢继平</item>
+    <item ID="2042">谢晶</item>
+    <item ID="60">徐彩飞</item>
+    <item ID="9221">徐春水</item>
+    <item ID="7">徐浩波</item>
+    <item ID="84">徐辉</item>
+    <item ID="9162">徐培源</item>
+    <item ID="108">徐孝芳</item>
+    <item ID="83">许崇辉</item>
+    <item ID="2210">许静刚</item>
+    <item ID="9241">许中杨</item>
+    <item ID="2212">许中友</item>
+    <item ID="2209">严金林</item>
+    <item ID="9018">杨浩</item>
+    <item ID="7070">杨静</item>
+    <item ID="59">杨立波</item>
+    <item ID="205">杨尚丽</item>
+    <item ID="19">姚恭敏</item>
+    <item ID="9228">殷雅君</item>
+    <item ID="9211">应云定</item>
+    <item ID="8">虞儿</item>
+    <item ID="25">虞立峰</item>
+    <item ID="3042">虞瑜辉</item>
+    <item ID="2229">章懿欣</item>
+    <item ID="9183">张丹丹</item>
+    <item ID="95">张静</item>
+    <item ID="9222">张丽娜</item>
+    <item ID="2064">张立君</item>
+    <item ID="2183">张立涛</item>
+    <item ID="216">张秋芬</item>
+    <item ID="66">张伟伟</item>
+    <item ID="2207">张星</item>
+    <item ID="2184">张旭群</item>
+    <item ID="73">张艳</item>
+    <item ID="2151">张逸</item>
+    <item ID="7061">张幼娜</item>
+    <item ID="2061">张裕芬</item>
+    <item ID="9998">诊间结算</item>
+    <item ID="8032">郑宝凤</item>
+    <item ID="2216">郑珊珊</item>
+    <item ID="69">周春亚</item>
+    <item ID="2223">周立军</item>
+    <item ID="191">周玲萍</item>
+    <item ID="9011">周亚彩</item>
+    <item ID="1100">周忠静</item>
+    <item ID="1165">朱红波</item>
+    <item ID="2121">朱华麟</item>
+    <item ID="6">朱珏</item>
+    <item ID="14">诸琳</item>
+    <item ID="831">庄恩大</item>
+    <item ID="11">庄磊</item>
+    <item ID="2172">邹薇</item>
+    <item ID="7068">邬春红</item>
+    <item ID="9">闫芳</item>
+    <item ID="101">缪红跃</item>
+    <item ID="1156">竺庆国</item>
+    <item ID="7123">竺益波</item>
+  </string-array>
+  <string-array name="bkdw">
+    <item ID="41961185">鄞州区石碶街道社区卫生服务中心</item>
+    <item ID="4196118511">石碶社区卫生服务站</item>
+    <item ID="4196118512">塘西社区卫生服务站</item>
+    <item ID="4196118514">栎社社区卫生服务站</item>
+    <item ID="4196118516">横涨社区卫生服务站</item>
+    <item ID="4196118517">迎春社区卫生服务站</item>
+    <item ID="4196118519">东方社区卫生服务站</item>
+    <item ID="4196118521">星光社区卫生服务站</item>
+    <item ID="4196118522">建庄社区卫生服务站</item>
+    <item ID="4196118523">上王社区卫生服务站</item>
+    <item ID="4196118524">黄隘社区卫生服务站</item>
+    <item ID="4196118525">西杨社区卫生服务站</item>
+    <item ID="4196118526">车何渡社区卫生服务站</item>
+    <item ID="4196118527">东杨社区卫生服务站</item>
+    <item ID="4196118528">冯仓社区卫生服务站</item>
+    <item ID="4196118529">联丰社区卫生服务站</item>
+  </string-array>
+<string-array name="tnbbkbfz">
+  <item ID="0">无</item>
+  <item ID="1">肾脏疾病</item>
+  <item ID="2">神经病变</item>
+  <item ID="3">血管病变</item>
+  <item ID="4">视网膜病变</item>
+  <item ID="5">皮肤感染</item>
+    </string-array>
+  <string-array name="ICDbm">
+    <item ID="1">E10=胰岛素依赖性糖尿病</item> 
+  <item ID="2">E10.0=胰岛素依赖性糖尿病，伴有昏迷</item> 
+  <item ID="3">E10.1=胰岛素依赖性糖尿病，伴有酮症酸中毒</item> 
+  <item ID="4">E10.2 = 胰岛素依赖型糖尿病，伴有肾的并发症</item> 
+  <item ID="5">E10.3 = 胰岛素依赖型糖尿病，伴有眼的并发症</item> 
+  <item ID="6">E10.4 = 胰岛素依赖型糖尿病，伴有神经的并发症</item> 
+  <item ID="7">E10.5 = 胰岛素依赖型糖尿病 ，伴有周围循环并发症</item> 
+  <item ID="8">E10.6 = 胰岛素依赖型糖尿病 ，伴有其他特指的并发症</item> 
+  <item ID="9">E10.7 = 胰岛素依赖型糖尿病，伴有多个并发症</item> 
+  <item ID="10">E10.8 = 胰岛素依赖型糖尿病，伴有未特指并发症</item> 
+  <item ID="11">E10.9 = 胰岛素依赖型糖尿病，不伴有并发症</item> 
+  <item ID="12">E11=非胰岛素依赖型糖尿病</item> 
+  <item ID="13">E11.0=非胰岛素依赖型糖尿病，伴有昏迷</item> 
+  <item ID="14">E11.1 = 非胰岛素依赖型糖尿病，伴有酮症酸中毒</item> 
+  <item ID="15">E11.2 = 非胰岛素依赖型糖尿病，伴有肾的并发症</item> 
+  <item ID="16">E11.3 = 非胰岛素依赖型糖尿病，伴有眼的并发症</item> 
+  <item ID="17">E11.4 = 非胰岛素依赖型糖尿病，伴有神经的并发症</item> 
+  <item ID="18">E11.5 = 非胰岛素依赖型糖尿病，伴有周围循环并发症</item> 
+  <item ID="19">E11.6 = 非胰岛素依赖型糖尿病，伴有其他特指的并发症</item> 
+  <item ID="20">E11.7 = 非胰岛素依赖型糖尿病，伴有多个并发症</item> 
+  <item ID="21">E11.8 = 非胰岛素依赖型糖尿病，伴有未特指并发症</item> 
+  <item ID="22">E11.9 = 非胰岛素依赖型糖尿病，不伴有并发症</item> 
+  <item ID="23">E12=营养不良相关性糖尿病</item> 
+  <item ID="24">E12.0=营养不良相关性糖尿病，伴有昏迷</item> 
+  <item ID="25">E12.1 = 营养不良相关性糖尿病，伴有酮症酸中毒</item> 
+  <item ID="26">E12.2 = 营养不良相关性糖尿病，伴有肾的并发症</item> 
+  <item ID="27">E12.3 = 营养不良相关性糖尿病 ，伴有眼的并发症</item> 
+  <item ID="28">E12.4 = 营养不良相关性糖尿病，伴有神经的并发症</item> 
+  <item ID="29">E12.5 = 营养不良相关性糖尿病，伴有周围循环并发症</item> 
+  <item ID="30">E12.6 = 营养不良相关性糖尿病，伴有其他特指的并发症</item> 
+  <item ID="31">E12.7 = 营养不良相关性糖尿病，伴有多个并发症</item> 
+  <item ID="32">E12.8 = 营养不良相关性糖尿病 ，伴有未特指并发症</item> 
+  <item ID="33">E12.9 = 营养不良相关性糖尿病，不伴有并发症</item> 
+  <item ID="34">E13=其他特指的糖尿病</item> 
+  <item ID="35">E13.0=其他特指的糖尿病，伴有昏迷</item> 
+  <item ID="36">E13.1 = 其他特指的糖尿病，伴有酮症酸中毒</item> 
+  <item ID="37">E13.2 = 其他特指的糖尿病，伴有肾的并发症</item> 
+  <item ID="38">E13.3 = 其他特指的糖尿病，伴有眼的并发症</item> 
+  <item ID="39">E13.4 = 其他特指的糖尿病，伴有神经的并发症</item> 
+  <item ID="40">E13.5 = 其他特指的糖尿病 ，伴有周围循环并发症</item> 
+  <item ID="41">E13.6 = 其他特指的糖尿病，伴有其他特指的并发症</item> 
+  <item ID="42">E13.7 = 其他特指的糖尿病，伴有多个并发症</item> 
+  <item ID="43">E13.8 = 其他特指的糖尿病，伴有未特指并发症</item> 
+  <item ID="44">E13.9 = 其他特指的糖尿病 ，不伴有并发症</item> 
+  <item ID="45">E14=未特指的糖尿病</item> 
+  <item ID="46">E14.0=未特指的糖尿病，伴有昏迷</item> 
+  <item ID="47">E14.1 = 未特指的糖尿病，伴有酮症酸中毒</item> 
+  <item ID="48">E14.2 = 未特指的糖尿病，伴有肾的并发症</item> 
+  <item ID="49">E14.3=未特指的糖尿病，伴有眼的并发症</item> 
+  <item ID="50">E14.4 = 未特指的糖尿病，伴有神经的并发症</item> 
+  <item ID="51">E14.5 = 未特指的糖尿病，伴有周围循环并发症</item> 
+  <item ID="52">E14.6 = 未特指的糖尿病，伴有其他特指的并发症</item> 
+  <item ID="53">E14.7=未特指的糖尿病，伴有多个并发症</item> 
+  <item ID="54">E14.8=未特指的糖尿病，伴有未特指并发</item> 
+  <item ID="55">E14.9=未特指的糖尿病，不伴有并发症</item> 
+  <item ID="56">024=妊娠期糖尿病</item> 
+  <item ID="57">024.0=原有的糖尿病，胰岛素依赖型</item> 
+  <item ID="58">024.1=原有的糖尿病，非胰岛素依赖型</item> 
+  <item ID="59">024.2=原有与营养不良有关的糖尿病</item> 
+  <item ID="60">024.3原有的糖尿病，未特指</item> 
+  <item ID="61">024.4=妊娠期发生的糖尿病</item> 
+  <item ID="62">024.9=妊娠期糖尿病，未特指</item> 
+  <item ID="63">P70.2=新生期糖尿病</item> 
+  <item ID="64">H28.0=糖尿病性白内障（Ｅ10－Ｅ14伴有共用第四位数.3）</item> 
+  <item ID="65">N08.3=糖尿病引起的肾小球疾患</item>
+  </string-array>
+  <string-array name="swicd10">
+    <item ID="1">传染病和寄生虫病</item>
+    <item ID="2">肿瘤</item>
+    <item ID="3">血液</item>
+    <item ID="4">造血器官及免疫的疾病</item>
+    <item ID="5">内分泌</item>
+    <item ID="6">营养和代谢的其他疾病</item>
+    <item ID="7">精神障碍</item>
+    <item ID="8">神经系统疾病</item>
+    <item ID="9">循环系统疾病</item>
+    <item ID="10">呼吸系统疾病</item>
+    <item ID="11">消化系统疾病</item>
+    <item ID="12">肌肉骨胳和结缔组织疾病</item>
+    <item ID="13">泌尿生殖系统疾病</item>
+    <item ID="14">妊娩、分娩和产褥期并发症</item>
+    <item ID="15">先天畸形</item>
+    <item ID="16">变性和染色体异常</item>
+    <item ID="17">诊断不明</item>
+    <item ID="18">其他疾病</item>
+  </string-array>
+  <string-array name="zslcbx">
+    <item ID="9">无临床症状</item>
+    <item ID="0">多饮、多尿</item>
+    <item ID="1">多食、常有饥饿感</item>
+    <item ID="2">乏力</item>
+    <item ID="3">体重下降</item>
+    <item ID="4">视力下降</item>
+    <item ID="5">肢体麻木</item>
+    <item ID="6">下肢浮肿</item>
+    <item ID="7">肢端溃疡</item>
+    <item ID="8">皮肤及外阴瘙痒</item>
+    <item ID="10">其他临床症状</item>
+  </string-array>
+  <string-array name="kxxbywzl">
+    <item ID="1">环氧合酶抑制剂</item>
+    <item ID="2">二磷酸腺苷（ADP）受体抑制剂</item>
+    <item ID="3">磷酸二酯酶抑制剂</item>
+    <item ID="4">糖蛋白II b/ III a抑制剂</item>
+    <item ID="5">血栓素抑制剂</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="jjzkysr">
+    <item ID="1">少于1000</item>
+    <item ID="2">1000-3000</item>
+    <item ID="3">3000-5000</item>
+    <item ID="4">大于5000</item>
+  </string-array>
+  <string-array name="ylfw">
+    <item ID="01">医保</item>
+    <item ID="02">城镇职工基本医疗保险</item>
+    <item ID="03">城镇居民基本医疗保险</item>
+    <item ID="04">新型农村合作医疗</item>
+    <item ID="05">贫困救助</item>
+    <item ID="06">商业医疗保险</item>
+    <item ID="07">公费医疗</item>
+    <item ID="08">全自费</item>
+    <item ID="09">大病统筹</item>
+    <item ID="10">其他</item>
+  </string-array>
+  <string-array name="sjbxxjb">
+    <item ID="1">老年痴呆</item>
+    <item ID="2">帕金森病</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="zlxg">
+    <item ID="1">痊愈</item>
+    <item ID="2">好转</item>
+    <item ID="3">无变化</item>
+    <item ID="4">加重</item>
+  </string-array>
+  <string-array name="yhazgx">
+    <item ID="1">配偶</item>
+    <item ID="2">子</item>
+    <item ID="3">女</item>
+    <item ID="4">孙子，孙女，或外孙子，外孙女</item>
+    <item ID="5">父母</item>
+    <item ID="6">主父母或外主父母</item>
+    <item ID="7">兄、弟、姐、妹</item>
+    <item ID="8">其他</item>
+    <item ID="10">其他情况配偶</item>
+    <item ID="11">夫</item>
+    <item ID="12">妻</item>
+    <item ID="20">儿子</item>
+    <item ID="21">养子</item>
+    <item ID="22">女婿</item>
+    <item ID="23">其他儿子</item>
+    <item ID="30">女儿</item>
+    <item ID="31">养女</item>
+    <item ID="32">儿媳</item>
+    <item ID="33">其他女儿</item>
+    <item ID="41">孙子</item>
+    <item ID="42">孙女</item>
+    <item ID="43">外孙子</item>
+    <item ID="44">外孙女</item>
+    <item ID="45">孙媳妇</item>
+    <item ID="46">孙女婿</item>
+    <item ID="47">曾孙子</item>
+    <item ID="48">曾孙女</item>
+    <item ID="49">其他孙子</item>
+    <item ID="51">父亲</item>
+    <item ID="52">母亲</item>
+    <item ID="53">公公</item>
+    <item ID="54">婆婆</item>
+    <item ID="55">岳父</item>
+    <item ID="56">岳母</item>
+    <item ID="57">继父</item>
+    <item ID="58">继母</item>
+    <item ID="59">其他父母关系</item>
+    <item ID="60">祖父母</item>
+    <item ID="61">祖父</item>
+    <item ID="62">祖母</item>
+    <item ID="63">外祖父</item>
+    <item ID="64">外祖母</item>
+    <item ID="65">配偶的祖父母</item>
+    <item ID="66">曾祖父</item>
+    <item ID="67">曾祖母</item>
+    <item ID="68">配偶的曾祖父母</item>
+    <item ID="69">其他祖父母</item>
+    <item ID="70">兄弟姐妹</item>
+    <item ID="71">兄</item>
+    <item ID="72">嫂</item>
+    <item ID="73">弟</item>
+    <item ID="74">弟媳</item>
+    <item ID="75">姐姐</item>
+    <item ID="76">姐夫</item>
+    <item ID="77">妹妹</item>
+    <item ID="78">妹夫</item>
+    <item ID="79">其他兄弟姐妹</item>
+    <item ID="81">伯父</item>
+    <item ID="82">伯母</item>
+    <item ID="83">叔父</item>
+    <item ID="84">婶母</item>
+    <item ID="85">舅父</item>
+    <item ID="86">舅母</item>
+    <item ID="87">姨父</item>
+    <item ID="88">姨母</item>
+    <item ID="89">姑父</item>
+    <item ID="90">姑母</item>
+    <item ID="91">堂兄弟</item>
+    <item ID="92">表兄弟</item>
+    <item ID="93">侄子</item>
+    <item ID="94">侄女</item>
+    <item ID="95">外甥</item>
+    <item ID="96">外甥女</item>
+    <item ID="97">其他亲属</item>
+    <item ID="98">保姆</item>
+    <item ID="99">非亲属</item>
+  </string-array>
+  <string-array name="d1cjkzd">
+    <item ID="1">个人卫生</item>
+    <item ID="2">心理</item>
+    <item ID="3">营养</item>
+    <item ID="4">避免致畸因素和疾病对胚胎的不良影响</item>
+    <item ID="5">产前筛查宣传告知</item>
+    <item ID="6">其他</item>
+  </string-array>
+  <string-array name="d3cjkzd">
+    <item ID="1">个人卫生</item>
+    <item ID="2">膳食营养</item>
+    <item ID="3">心理</item>
+    <item ID="4">母乳喂养</item>
+    <item ID="5">新生儿护理与喂养</item>
+    <item ID="6">运动</item>
+    <item ID="7">自我监测</item>
+    <item ID="8">分娩准备</item>
+    <item ID="9">避免致畸因素和疾病对胚胎的不良影响</item>
+    <item ID="10">产前筛查宣传告知</item>
+    <item ID="11">婴儿喂养与营养</item>
+    <item ID="12">性保健</item>
+    <item ID="13">避孕</item>
+    <item ID="14">其他</item>
+  </string-array>
+  <string-array name="d4cjkzd">
+    <item ID="1">个人卫生</item>
+    <item ID="2">性保健</item>
+    <item ID="3">避孕</item>
+    <item ID="4">婴儿喂养与营养</item>
+    <item ID="5">膳食营养</item>
+    <item ID="6">心理</item>
+    <item ID="7">母乳喂养</item>
+    <item ID="8">新生儿护理与喂养</item>
+    <item ID="9">运动</item>
+    <item ID="10">自我监测</item>
+    <item ID="11">分娩准备</item>
+    <item ID="12">避免致畸因素和疾病对胚胎的不良影响</item>
+    <item ID="13">产前筛查宣传告知</item>
+    <item ID="14">其他</item>
+  </string-array>
+  <string-array name="fscs">
+    <item ID="1">1</item>
+    <item ID="2">2</item>
+    <item ID="3">3(高危新生儿)</item>
+  </string-array>
+  <string-array name="etzd1">
+    <item ID="1">科学喂养</item>
+    <item ID="2">合理膳食</item>
+    <item ID="3">生长发育</item>
+    <item ID="4">疾病预防</item>
+    <item ID="5">预防意外伤害</item>
+    <item ID="5">口腔保健</item>
+    <item ID="5">其他</item>
+  </string-array>
+  <string-array name="fypg">
+    <item ID="1">通过</item>
+    <item ID="2">未通过</item>
+  </string-array>
+  <string-array name="lcfsjhbqk">
+    <item ID="1">未患病</item>
+    <item ID="2">患病</item>
+  </string-array>
+  <string-array name="jbzd2">
+    <item ID="1">贫血</item>
+    <item ID="2">先天性心脏病</item>
+    <item ID="3">其他</item>
+  </string-array>
+  <string-array name="etzd3">
+    <item ID="1">科学喂养</item>
+    <item ID="2">合理膳食</item>
+    <item ID="3">生长发育</item>
+    <item ID="4">疾病预防</item>
+    <item ID="5">预防意外伤害</item>
+    <item ID="6">口腔保健</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="etzd3">
+    <item ID="1">科学喂养</item>
+    <item ID="2">合理膳食</item>
+    <item ID="3">生长发育</item>
+    <item ID="4">疾病预防</item>
+    <item ID="5">预防意外伤害</item>
+    <item ID="6">口腔保健</item>
+    <item ID="7">其他</item>
+  </string-array>
+  <string-array name="Apf">
+    <item ID="1">1分</item>
+    <item ID="2">2分</item>
+    <item ID="3">3分</item>
+    <item ID="4">4分</item>
+    <item ID="5">5分</item>
+    <item ID="6">6分</item>
+    <item ID="7">7分</item>
+    <item ID="8">8分</item>
+    <item ID="9">9分</item>
+    <item ID="10">10分</item>
+  </string-array>
+  <string-array name="xlpg">
+    <item ID="1">满意</item>
+    <item ID="2">一般</item>
+    <item ID="3">不满意</item>
+  </string-array>
+  <string-array name="sqzt">
+    <item ID="1">授权中</item>
+    <item ID="2">通过</item>
+    <item ID="3">未通过</item>
+  </string-array>
+  <string-array name="ytnbsz">
+    <item ID="4">无</item>
+    <item ID="0">父</item>
+    <item ID="1">母</item>
+    <item ID="2">兄弟</item>
+    <item ID="3">姐妹</item>
+  </string-array>
+  <string-array name="sczt">
+    <item ID="0">未上传</item>
+    <item ID="1">已上传</item>
+  </string-array>
+  <string-array name="wczt">
+    <item ID="0">未完成</item>
+    <item ID="1">已完成</item>
+  </string-array>
+  <string-array name="xzzt">
+    <item ID="0">未下载</item>
+    <item ID="1">已下载</item>
+  </string-array>
+  <string-array name="w1y2" >
+    <item ID="1">否</item>
+    <item ID="2">是</item>
+  </string-array>
+  <string-array name="yyqkywmc" >
+    <item ID="100" keyword="JNT">吉诺通</item>
+  <item ID="101" keyword="JST">颉沙坦</item>
+  <item ID="102" keyword="KMXP">卡马西平</item>
+  <item ID="103" keyword="KSY">科素亚</item>
+  <item ID="104" keyword="LXDP">拉西地平</item>
+  <item ID="105" keyword="KDL">可达龙</item>
+  <item ID="107" keyword="LPT">立普妥</item>
+  <item ID="108" keyword="LH">利焕</item>
+  <item ID="109" keyword="LWNT">路维脑通</item>
+  <item ID="11" keyword="LNZ">螺内酯</item>
+  <item ID="110" keyword="LDX">洛丁新</item>
+  <item ID="111" keyword="LHX">洛活喜</item>
+  <item ID="112" keyword="MLSYNPL">马来酸依那普利</item>
+  <item ID="113" keyword="MDB">美多巴</item>
+  <item ID="114" keyword="MDQJ">美多曲肼</item>
+  <item ID="115" keyword="MT">脉通</item>
+  <item ID="116" keyword="NFK">脑富康</item>
+  <item ID="117" keyword="MBD">美吡达</item>
+  <item ID="118" keyword="FFDSDW">复方丹参滴丸</item>
+  <item ID="119" keyword="NXT">脑心通</item>
+  <item ID="120" keyword="NHL">诺和龙</item>
+  <item ID="121" keyword="NJP">诺金平</item>
+  <item ID="122" keyword="PTLK">培他乐克</item>
+  <item ID="123" keyword="QKLD">曲克卢丁</item>
+  <item ID="124" keyword="SHD">施慧达</item>
+  <item ID="125" keyword="SJZ">舒降之</item>
+  <item ID="126" keyword="SK">双克</item>
+  <item ID="127" keyword="SWD">斯维达</item>
+  <item ID="128" keyword="SWT">思维通</item>
+  <item ID="129" keyword="SLP">司乐平</item>
+  <item ID="130" keyword="SLXMKJN">松龄血脉康胶囊</item>
+  <item ID="131" keyword="TSQN">碳酸氢钠</item>
+  <item ID="132" keyword="TXLJN">通心络胶囊</item>
+  <item ID="133" keyword="WNLT">维脑络通</item>
+  <item ID="134" keyword="BSLE">比索洛尔</item>
+  <item ID="135" keyword="XSYSLZ">硝酸异山梨脂</item>
+  <item ID="136" keyword="XXT">消心痛</item>
+  <item ID="137" keyword="XFTT">辛伐他汀</item>
+  <item ID="138" keyword="YTA">尹特胺</item>
+  <item ID="139" keyword="YXY">银杏叶</item>
+  <item ID="14" keyword="MTLE">美托洛尔</item>
+  <item ID="140" keyword="YTA">伊特安</item>
+  <item ID="141" keyword="YS">依苏</item>
+  <item ID="142" keyword="BLZT">吡拉酯坦</item>
+  <item ID="143" keyword="XTD">心痛定</item>
+  <item ID="144" keyword="XST">血塞通</item>
+  <item ID="145" keyword="YSQMTQ">盐酸曲美他嗪</item>
+  <item ID="146" keyword="STP">圣通平</item>
+  <item ID="147" keyword="NGLN">那格列奈</item>
+  <item ID="148" keyword="YDXNT">银丹心脑通</item>
+  <item ID="149" keyword="AD">安定</item>
+  <item ID="15" keyword="TLZQ">特拉唑嗪</item>
+  <item ID="150" keyword="DCL">定喘灵</item>
+  <item ID="151" keyword="AMLZ">奥美拉唑</item>
+  <item ID="152" keyword="JSB">金水宝</item>
+  <item ID="153" keyword="YDS">胰岛素</item>
+  <item ID="154" keyword="BSSZN">雹酸双脂钠</item>
+  <item ID="155" keyword="XDA">心得安</item>
+  <item ID="156" keyword="BDSDJ">苯丁酸氮芥</item>
+  <item ID="157" keyword="BDSDJ">苯丁酸氮荠</item>
+  <item ID="158" keyword="BHDN">苯磺丁脲</item>
+  <item ID="159" keyword="BYQD">鼻咽清毒</item>
+  <item ID="16" keyword="BSLE">比索洛尔</item>
+  <item ID="160" keyword="BGLT">吡格列酮</item>
+  <item ID="161" keyword="XKW">消渴丸</item>
+  <item ID="162" keyword="JTS">降糖舒</item>
+  <item ID="163" keyword="HQSMY">黄芪生脉饮</item>
+  <item ID="164" keyword="XTP">雪糖平</item>
+  <item ID="165" keyword="RGLN">瑞格列耐</item>
+  <item ID="166" keyword="FLD">孚来迪</item>
+  <item ID="167" keyword="GEQ">格尔齐</item>
+  <item ID="168" keyword="YJT">优降糖</item>
+  <item ID="169" keyword="FNJ">奋乃静</item>
+  <item ID="170" keyword="MBD">美吡达</item>
+  <item ID="171" keyword="YLX YSLGLT">宜力喜 盐酸罗格列酮</item>
+  <item ID="172" keyword="FFJT">复方降糖</item>
+  <item ID="173" keyword="MDK">美迪康</item>
+  <item ID="174" keyword="GRS">干扰素</item>
+  <item ID="175" keyword="DMKHSP">达美康缓释片</item>
+  <item ID="176" keyword="GLBN">格列苯脲</item>
+  <item ID="177" keyword="GHZ">格华止</item>
+  <item ID="178" keyword="GLBQ">格列吡嗪</item>
+  <item ID="179" keyword="NHL">诺和龙</item>
+  <item ID="18" keyword="PNLE">普萘洛尔</item>
+  <item ID="180" keyword="GLD">格列达</item>
+  <item ID="181" keyword="GLMN">格列美尿</item>
+  <item ID="182" keyword="GYSTMXF">枸缘酸他莫昔芬</item>
+  <item ID="183" keyword="JTP">降糖平</item>
+  <item ID="184" keyword="JYL">降压灵</item>
+  <item ID="185" keyword="YF">怡方</item>
+  <item ID="186" keyword="KZL">抗肿瘤</item>
+  <item ID="187" keyword="JLF">吉拉芬</item>
+  <item ID="188" keyword="RGLN">瑞格列奈</item>
+  <item ID="189" keyword="LPT">利培酮</item>
+  <item ID="19" keyword="LST">氯沙坦</item>
+  <item ID="190" keyword="LX">氯硝</item>
+  <item ID="191" keyword="BW">斑骛</item>
+  <item ID="192" keyword="XAP">消癌平</item>
+  <item ID="193" keyword="LZS">利之舒</item>
+  <item ID="194" keyword="LKJ">联可君</item>
+  <item ID="195" keyword="XBA">小檗胺</item>
+  <item ID="196" keyword="JDYTS">甲地孕酮散</item>
+  <item ID="197" keyword="LZ">灵芝</item>
+  <item ID="198" keyword="XGR">香菇肉</item>
+  <item ID="199" keyword="NQDP">尼群地平</item>
+  <item ID="2" keyword="QLSQ">氢氯噻嗪</item>
+  <item ID="20" keyword="XST">缬沙坦</item>
+  <item ID="200" keyword="LBQ">氯丙嗪</item>
+  <item ID="201" keyword="LDP">氯氮平</item>
+  <item ID="202" keyword="LPSD">氯普噻吨</item>
+  <item ID="203" keyword="YBQ">异丙嗪</item>
+  <item ID="204" keyword="MBD">美必得</item>
+  <item ID="205" keyword="MSL">敏使朗</item>
+  <item ID="206" keyword="NXB">宁心宝</item>
+  <item ID="207" keyword="NHL">诺和灵</item>
+  <item ID="208" keyword="TSP">唐适平</item>
+  <item ID="209" keyword="QWTP">芪味糖平</item>
+  <item ID="21" keyword="NQDP">尼群地平</item>
+  <item ID="210" keyword="FGLT">伏格列酮</item>
+  <item ID="211" keyword="SXJXW">速效救心丸</item>
+  <item ID="212" keyword="XLP">心率平</item>
+  <item ID="213" keyword="SYWSQ">十一味参芪</item>
+  <item ID="214" keyword="ST">舒妥</item>
+  <item ID="215" keyword="SLF">速力菲</item>
+  <item ID="216" keyword="LXZ">螺旋藻</item>
+  <item ID="217" keyword="HQSEW">黄芪十二味</item>
+  <item ID="218" keyword="LSJ">利司君</item>
+  <item ID="219" keyword="TSK">糖舒康</item>
+  <item ID="22" keyword="FLDPHSP">非洛地平缓释片</item>
+  <item ID="220" keyword="WST">维思通</item>
+  <item ID="221" keyword="XH">西黄</item>
+  <item ID="222" keyword="XLD">希罗达</item>
+  <item ID="223" keyword="FFBA">复方斑螯</item>
+  <item ID="224" keyword="YN">伊那</item>
+  <item ID="226" keyword="YML">优泌林</item>
+  <item ID="227" keyword="KS">科苏</item>
+  <item ID="228" keyword="SCJY">山茶降压</item>
+  <item ID="229" keyword="YTA">吲特安</item>
+  <item ID="23" keyword="TMST">替米沙坦</item>
+  <item ID="230" keyword="CO">CO降压</item>
+  <item ID="231" keyword="YDA">伊得安</item>
+  <item ID="232" keyword="">斯乐定</item>
+  <item ID="233" keyword="">司东平</item>
+  <item ID="234" keyword="EJSGP">二甲双胍片</item>
+  <item ID="235" keyword="XFTT">辛伐他汀</item>
+  <item ID="236" keyword="TXLJN">通心络胶囊</item>
+  <item ID="237" keyword="WDY">文迪雅</item>
+  <item ID="238" keyword="WEY">维尔亚</item>
+  <item ID="239" keyword="BLW">波利维</item>
+  <item ID="24" keyword="XBDP">硝苯地平</item>
+  <item ID="240" keyword="YNPLYSP">依那普利叶酸片</item>
+  <item ID="241" keyword="YNPLYSP">依那普利叶酸片</item>
+  <item ID="25" keyword="EBST">厄贝沙坦</item>
+  <item ID="26" keyword="XBDPKSP">硝苯地平控释片</item>
+  <item ID="27" keyword="KDST">坎地沙坦</item>
+  <item ID="28" keyword="XBDPHSP">硝苯地平缓释片</item>
+  <item ID="29" keyword="KTPL">卡托普利</item>
+  <item ID="3" keyword="KLD">可乐定</item>
+  <item ID="30" keyword="ALDP">氨氯地平</item>
+  <item ID="31" keyword="YNPL">依那普利</item>
+  <item ID="35" keyword="LMPL">雷米普利</item>
+  <item ID="36" keyword="PDPL">培哚普利</item>
+  <item ID="37" keyword="LNPL">赖诺普利</item>
+  <item ID="38" keyword="ASPL">阿司匹林</item>
+  <item ID="39" keyword="ABW">安博维</item>
+  <item ID="4" keyword="YDPA">吲哒帕胺</item>
+  <item ID="40" keyword="ABN">安博诺</item>
+  <item ID="41" keyword="ALDP">氨氯地平</item>
+  <item ID="42" keyword="ANZ">安内真</item>
+  <item ID="43" keyword="BASPLCRP">拜阿司匹林肠溶片</item>
+  <item ID="44" keyword="ACJ">氨茶碱</item>
+  <item ID="45" keyword="ATFTTG">阿托伐他汀钙</item>
+  <item ID="46" keyword="BXT">拜新同</item>
+  <item ID="47" keyword="ABST">安贝沙坦</item>
+  <item ID="48" keyword="BXS">薄西山</item>
+  <item ID="49" keyword="BLZ">保列治</item>
+  <item ID="50" keyword="BSK">保肾康</item>
+  <item ID="51" keyword="SXBXW">麝香保心丸</item>
+  <item ID="52" keyword="BJ0H">北京0号</item>
+  <item ID="53" keyword="BNPL">贝纳普利</item>
+  <item ID="54" keyword="BTLK">倍他乐克</item>
+  <item ID="55" keyword="BHSALDP">苯磺酸氨氯地平</item>
+  <item ID="56" keyword="BHSZXALD">苯磺酸左旋氨氯地平</item>
+  <item ID="57" keyword="BYD">波依定</item>
+  <item ID="58" keyword="CYJYY">常用降压药</item>
+  <item ID="59" keyword="ASPLCR">阿司匹林肠溶</item>
+  <item ID="6" keyword="KWDL">卡维地洛</item>
+  <item ID="60" keyword="DW">代文</item>
+  <item ID="61" keyword="FFDSP">复方丹参片</item>
+  <item ID="62" keyword="NMDP">尼莫地平</item>
+  <item ID="63" keyword="DAXXK">地奥心血康</item>
+  <item ID="64" keyword="DGX">地高辛</item>
+  <item ID="65" keyword="DXKJN">多稀康胶囊</item>
+  <item ID="67" keyword="EJSG">二甲双胍</item>
+  <item ID="69" keyword="FXPL">福辛普利</item>
+  <item ID="7" keyword="FSM">呋塞米</item>
+  <item ID="70" keyword="FFJY">复方降压</item>
+  <item ID="71" keyword="FFKTPL">复方卡托普利</item>
+  <item ID="72" keyword="FFLXP">复方利血平</item>
+  <item ID="73" keyword="FFLSSJQQ">复方硫酸双肼曲嗪</item>
+  <item ID="74" keyword="FFLD">复方卢丁</item>
+  <item ID="75" keyword="FFLBM">复方罗布麻</item>
+  <item ID="76" keyword="FFSJQQ">复方双肼屈嗪</item>
+  <item ID="77" keyword="KFT">开富特</item>
+  <item ID="78" keyword="KBP">卡搏平</item>
+  <item ID="79" keyword="ZJJYP">珍菊降压片</item>
+  <item ID="8" keyword="ABDD">氨苯蝶啶</item>
+  <item ID="80" keyword="JSXJN">角鲨烯胶囊</item>
+  <item ID="81" keyword="FNBT">非诺贝特</item>
+  <item ID="82" keyword="AKBT">阿卡波糖</item>
+  <item ID="84" keyword="AWSPQ">阿魏酸哌嗪</item>
+  <item ID="85" keyword="BTP">拜糖平</item>
+  <item ID="86" keyword="SBS">寿比山</item>
+  <item ID="87" keyword="BML">倍美力</item>
+  <item ID="88" keyword="BDSTZ">钡地沙坦酯</item>
+  <item ID="89" keyword="DMK">达美康</item>
+  <item ID="90" keyword="DBZ">地巴唑</item>
+  <item ID="91" keyword="DKDE">丁咯地尔</item>
+  <item ID="92" keyword="DKX">都可喜</item>
+  <item ID="93" keyword="GTL">高特灵</item>
+  <item ID="94" keyword="GYX">高易肖</item>
+  <item ID="95" keyword="GLQT">格列齐特</item>
+  <item ID="96" keyword="HJY">海捷亚</item>
+  <item ID="97" keyword="HBS">合贝爽</item>
+  <item ID="98" keyword="HLX">活络喜</item>
+  <item ID="99" keyword="JFLQ">吉非罗齐</item>
+  <item ID="A1612" keyword="FNJP(TY)">奋乃静片(糖衣)(2mg)</item>
+  <item ID="A1613" keyword="FNJP(BMY">奋乃静片(薄膜衣)(2mg)</item>
+  <item ID="A1619" keyword="YSLBQP(T">盐酸氯丙嗪片(糖衣)(25mg)</item>
+  <item ID="A1630" keyword="YSLBQP(T">盐酸氯丙嗪片(糖衣)(50mg)</item>
+  <item ID="A1639" keyword="YSLBQZSY">盐酸氯丙嗪注射液(1ml:25mg)</item>
+  <item ID="A1641" keyword="YSLBQZSY">盐酸氯丙嗪注射液(2ml:50mg)</item>
+  <item ID="A1642" keyword="FPDCP(TY">氟哌啶醇片(糖衣)(2mg)</item>
+  <item ID="A1644" keyword="FPDCZSY(">氟哌啶醇注射液(1ml:5mg)</item>
+  <item ID="A1645" keyword="GSFPDCZS">癸酸氟哌啶醇注射液(1ml:50mg)</item>
+  <item ID="A1671" keyword="XSGYP(0.">硝酸甘油片(0.5mg)</item>
+  <item ID="A1676" keyword="XSGYZSY(">硝酸甘油注射液(1ml:5mg)</item>
+  <item ID="A1677" keyword="XSGYZSY(">硝酸甘油注射液(1ml:5mg)</item>
+  <item ID="A1679" keyword="XSYSLZP(">硝酸异山梨酯片(5mg)</item>
+  <item ID="A1683" keyword="XSYSLZZS">硝酸异山梨酯注射液(10ml:10mg)</item>
+  <item ID="A1685" keyword="XSYSLZZS">硝酸异山梨酯注射液(5ml:5mg)</item>
+  <item ID="A1691" keyword="XBDPP(BM">硝苯地平片(薄膜衣)(5mg)</item>
+  <item ID="A1694" keyword="XBDPP(TY">硝苯地平片(糖衣)(10mg)</item>
+  <item ID="A1698" keyword="XBDPP(TY">硝苯地平片(糖衣)(10mg)</item>
+  <item ID="A1729" keyword="YSPNLEP(">盐酸普萘洛尔片(10mg)</item>
+  <item ID="A1732" keyword="YSPNLEP(">盐酸普萘洛尔片(10mg)</item>
+  <item ID="A1737" keyword="YSPNLEP(">盐酸普萘洛尔片(10mg)</item>
+  <item ID="A1742" keyword="ATLEP(TY">阿替洛尔片(糖衣)(25mg)</item>
+  <item ID="A1743" keyword="ATLEP(25">阿替洛尔片(25mg)</item>
+  <item ID="A1751" keyword="ATLEP(TY">阿替洛尔片(糖衣)(25mg)</item>
+  <item ID="A1753" keyword="ATLEP(50">阿替洛尔片(50mg)</item>
+  <item ID="A1756" keyword="ATLEP(12">阿替洛尔片(12.5mg)</item>
+  <item ID="A1757" keyword="JSSMTLEP">酒石酸美托洛尔片(25mg)</item>
+  <item ID="A1760" keyword="JSSMTLEP">酒石酸美托洛尔片(50mg)</item>
+  <item ID="A1762" keyword="JSSMTLEP">酒石酸美托洛尔片(50mg)</item>
+  <item ID="A1765" keyword="JSSMTLEZ">酒石酸美托洛尔注射液(2ml:2mg)</item>
+  <item ID="A1767" keyword="JSSMTLEZ">酒石酸美托洛尔注射液(5ml:5mg)</item>
+  <item ID="A1777" keyword="YSWLPMP(">盐酸维拉帕米片(薄膜衣)(40mg)</item>
+  <item ID="A1778" keyword="YSWLPMP(">盐酸维拉帕米片(糖衣)(40mg)</item>
+  <item ID="A1779" keyword="YSWLPMP(">盐酸维拉帕米片(糖衣)(40mg)</item>
+  <item ID="A1781" keyword="YSWLPMZS">盐酸维拉帕米注射液(2ml:5mg)</item>
+  <item ID="A1787" keyword="KTPLP(12">卡托普利片(12.5mg)</item>
+  <item ID="A1790" keyword="KTPLP(12">卡托普利片(12.5mg)</item>
+  <item ID="A1796" keyword="KTPLP(TY">卡托普利片(糖衣)(25mg)</item>
+  <item ID="A1801" keyword="KTPLP(25">卡托普利片(25mg)</item>
+  <item ID="A1841" keyword="MLSYNPLP">马来酸依那普利片(5mg)</item>
+  <item ID="A1843" keyword="MLSYNPLP">马来酸依那普利片(5mg)</item>
+  <item ID="A1844" keyword="MLSYNPLP">马来酸依那普利片(5mg)</item>
+  <item ID="A1845" keyword="MLSYNPLP">马来酸依那普利片(5mg)</item>
+  <item ID="A1846" keyword="MLSYNPLP">马来酸依那普利片(10mg)</item>
+  <item ID="A1851" keyword="MLSYNPLP">马来酸依那普利片(10mg)</item>
+  <item ID="A1852" keyword="MLSYNPLF">马来酸依那普利分散片(5mg)</item>
+  <item ID="A1853" keyword="MLSYNPLF">马来酸依那普利分散片(5mg)</item>
+  <item ID="A1855" keyword="MLSYNPLJ">马来酸依那普利胶囊(5mg)</item>
+  <item ID="A1857" keyword="MLSYNPLJ">马来酸依那普利胶囊(5mg)</item>
+  <item ID="A1859" keyword="MLSYNPLJ">马来酸依那普利胶囊(10mg)</item>
+  <item ID="A1860" keyword="ZSYXPN(D">注射用硝普钠(冻干)(50mg)</item>
+  <item ID="A1865" keyword="LSMZSY(1">硫酸镁注射液(10ml:2.5g)</item>
+  <item ID="A1867" keyword="LSMZSY(1">硫酸镁注射液(10ml:2.5g)</item>
+  <item ID="A1880" keyword="NQDPP(10">尼群地平片(10mg)</item>
+  <item ID="A1892" keyword="NQDPP(10">尼群地平片(10mg)</item>
+  <item ID="A1894" keyword="NQDPRJN(">尼群地平软胶囊(10mg)</item>
+  <item ID="A1895" keyword="NQDPRJN(">尼群地平软胶囊(10mg)</item>
+  <item ID="A1896" keyword="NQDPRJN(">尼群地平软胶囊(10mg)</item>
+  <item ID="A1900" keyword="YDPAP(BM">吲达帕胺片(薄膜衣)(2.5mg)</item>
+  <item ID="A1902" keyword="YDPAHSP(">吲达帕胺缓释片(1.5mg)</item>
+  <item ID="A1904" keyword="YDPAHSP(">吲达帕胺缓释片(1.5mg)</item>
+  <item ID="A1905" keyword="YDPAJN(2">吲达帕胺胶囊(2.5mg)</item>
+  <item ID="A1906" keyword="YDPAJN(2">吲达帕胺胶囊(2.5mg)</item>
+  <item ID="A1909" keyword="YDPAHSJN">吲达帕胺缓释胶囊(1.5mg)</item>
+  <item ID="A1910" keyword="ZSYJHSFT">注射用甲磺酸酚妥拉明(冻干)(10mg)</item>
+  <item ID="A1913" keyword="JHSFTLMZ">甲磺酸酚妥拉明注射液(1ml:10mg)</item>
+  <item ID="A1915" keyword="FFLXPP(B">复方利血平片(薄膜衣)(复方)</item>
+  <item ID="A1916" keyword="FFLXPP(F">复方利血平片(复方)</item>
+  <item ID="A1926" keyword="FFLXPABD">复方利血平氨苯蝶啶片(薄膜衣)(复方)</item>
+  <item ID="A1927" keyword="FFLXPABD">复方利血平氨苯蝶啶片(薄膜衣)(复方)</item>
+  <item ID="A1951" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(5mg)</item>
+  <item ID="A1953" keyword="XFTTP(5m">辛伐他汀片(5mg)</item>
+  <item ID="A1956" keyword="XFTTP(10">辛伐他汀片(10mg)</item>
+  <item ID="A1958" keyword="XFTTP(10">辛伐他汀片(10mg)</item>
+  <item ID="A1959" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(20mg)</item>
+  <item ID="A1961" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(20mg)</item>
+  <item ID="A1965" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(40mg)</item>
+  <item ID="A1966" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(40mg)</item>
+  <item ID="A1967" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(40mg)</item>
+  <item ID="A1968" keyword="XFTTP(40">辛伐他汀片(40mg)</item>
+  <item ID="A1969" keyword="XFTTP(40">辛伐他汀片(40mg)</item>
+  <item ID="A1970" keyword="XFTTFSP(">辛伐他汀分散片(20mg)</item>
+  <item ID="A1972" keyword="XFTTJN(1">辛伐他汀胶囊(10mg)</item>
+  <item ID="A1976" keyword="XFTTJN(2">辛伐他汀胶囊(20mg)</item>
+  <item ID="A2357" keyword="LBSZP(25">联苯双酯片(25mg)</item>
+  <item ID="A2358" keyword="LBSZP(25">联苯双酯片(25mg)</item>
+  <item ID="A2363" keyword="LBSZDW(1">联苯双酯滴丸(1.5mg)</item>
+  <item ID="A2418" keyword="FSMP(20m">呋塞米片(20mg)</item>
+  <item ID="A2426" keyword="ZSYFSM(D">注射用呋塞米(冻干)(20mg)</item>
+  <item ID="A2432" keyword="FSMZSY(2">呋塞米注射液(2ml:20mg)</item>
+  <item ID="A2438" keyword="FSMZSY(2">呋塞米注射液(2ml:20mg)</item>
+  <item ID="A2439" keyword="FSMZSY(2">呋塞米注射液(2ml:20mg)</item>
+  <item ID="A2443" keyword="QLSQP(10">氢氯噻嗪片(10mg)</item>
+  <item ID="A2447" keyword="QLSQP(25">氢氯噻嗪片(25mg)</item>
+  <item ID="A2448" keyword="QLSQP(25">氢氯噻嗪片(25mg)</item>
+  <item ID="A2457" keyword="LNZP(20m">螺内酯片(20mg)</item>
+  <item ID="A2458" keyword="LNZP(20m">螺内酯片(20mg)</item>
+  <item ID="A2462" keyword="LNZP(20m">螺内酯片(20mg)</item>
+  <item ID="A2473" keyword="YSTLZQP(">盐酸特拉唑嗪片(2mg)</item>
+  <item ID="A2475" keyword="YSTLZQP(">盐酸特拉唑嗪片(2mg)</item>
+  <item ID="A2476" keyword="YSTLZQJN">盐酸特拉唑嗪胶囊(2mg)</item>
+  <item ID="A2689" keyword="YDSZSY(1">胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2691" keyword="YDSZSY(1">胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2692" keyword="JDBXYDSZ">精蛋白锌胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2693" keyword="JDBXYDSZ">精蛋白锌胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2694" keyword="DJDBXYDS">低精蛋白锌胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2695" keyword="JDBXYDSZ">精蛋白锌胰岛素注射液(30R)(10ml:400IU)</item>
+  <item ID="A2696" keyword="JDBXYDSZ">精蛋白锌胰岛素注射液(30R)(3ml:300IU)</item>
+  <item ID="A2697" keyword="ZXYDSZSY">中性胰岛素注射液(10ml:400IU)</item>
+  <item ID="A2698" keyword="ZXYDSZSY">中性胰岛素注射液(3ml:300IU)</item>
+  <item ID="A2714" keyword="YSEJSGP(">盐酸二甲双胍片(糖衣)(0.25g)</item>
+  <item ID="A2733" keyword="YSEJSGP(">盐酸二甲双胍片(薄膜衣)(0.25g)</item>
+  <item ID="A2734" keyword="YSEJSGP(">盐酸二甲双胍片(薄膜衣)(0.25g)</item>
+  <item ID="A2749" keyword="YSEJSGP(">盐酸二甲双胍片(薄膜衣)(0.25g)</item>
+  <item ID="A2760" keyword="YSEJSGCR">盐酸二甲双胍肠溶片(0.25g)</item>
+  <item ID="A2762" keyword="YSEJSGCR">盐酸二甲双胍肠溶片(0.25g)</item>
+  <item ID="A2770" keyword="YSEJSGJN">盐酸二甲双胍胶囊(0.25g)</item>
+  <item ID="A2771" keyword="YSEJSGCR">盐酸二甲双胍肠溶胶囊(0.25g)</item>
+  <item ID="A2772" keyword="YSEJSGCR">盐酸二甲双胍肠溶胶囊(0.25g)</item>
+  <item ID="A2774" keyword="YSEJSGCR">盐酸二甲双胍肠溶胶囊(0.5g)</item>
+  <item ID="A2785" keyword="GLBNP(2.">格列本脲片(2.5mg)</item>
+  <item ID="A2787" keyword="GLBQP(5m">格列吡嗪片(5mg)</item>
+  <item ID="A2788" keyword="GLBQP(5m">格列吡嗪片(5mg)</item>
+  <item ID="A2790" keyword="GLBQJN(5">格列吡嗪胶囊(5mg)</item>
+  <item ID="A4430" keyword="HGP(BMY)">护肝片(薄膜衣)(0.36g)</item>
+  <item ID="A4442" keyword="HGP(BMY)">护肝片(薄膜衣)(0.36g)</item>
+  <item ID="A4443" keyword="HGP(TY)(">护肝片(糖衣)(0.35g)</item>
+  <item ID="A4445" keyword="HGJN(0.3">护肝胶囊(0.35g)</item>
+  <item ID="A4446" keyword="HGJN(0.3">护肝胶囊(0.35g)</item>
+  <item ID="A4450" keyword="YZHKFY(1">茵栀黄口服液(10ml)</item>
+  <item ID="A4451" keyword="YZHKL(3g">茵栀黄颗粒(3g)</item>
+  <item ID="A4682" keyword="XKW(NSSW">消渴丸(浓缩水丸)(52.5g)</item>
+  <item ID="A4684" keyword="SMZSY(10">参麦注射液(10ml)</item>
+  <item ID="A4685" keyword="SMZSY(10">参麦注射液(10ml)</item>
+  <item ID="A4690" keyword="SMZSY(50">参麦注射液(50ml)</item>
+  <item ID="A4691" keyword="SMZSY(50">参麦注射液(50ml)</item>
+  <item ID="A4695" keyword="SMZSY(20">参麦注射液(20ml)</item>
+  <item ID="A4696" keyword="SMZSY(20">参麦注射液(20ml)</item>
+  <item ID="A4704" keyword="SMZSY(20">生脉注射液(20ml)</item>
+  <item ID="A4708" keyword="SMJN(/)">生脉胶囊(/)</item>
+  <item ID="A4709" keyword="SMJN(0.3">生脉胶囊(0.35g)</item>
+  <item ID="A4710" keyword="SMJN(0.3">生脉胶囊(0.3g)</item>
+  <item ID="A4714" keyword="SMY(10ml">生脉饮(10ml)</item>
+  <item ID="A4717" keyword="SMY(DSF)">生脉饮(党参方)(10ml)</item>
+  <item ID="A4720" keyword="SMY(DSF">生脉饮(党参方、低糖)(10ml)</item>
+  <item ID="A4777" keyword="DSZSY(10">丹参注射液(10ml)</item>
+  <item ID="A4778" keyword="DSZSY(20">丹参注射液(20ml)</item>
+  <item ID="A4779" keyword="SXBXW(SW">麝香保心丸(水丸)(22.5mg)</item>
+  <item ID="A4833" keyword="FFDSP(TY">复方丹参片(糖衣)(每片重0.26g)</item>
+  <item ID="A4834" keyword="FFDSP(BM">复方丹参片(薄膜衣)(0.3g)</item>
+  <item ID="A4862" keyword="FFDSP(BM">复方丹参片(薄膜衣)(/)</item>
+  <item ID="A4863" keyword="FFDSP(BM">复方丹参片(薄膜衣)(/)</item>
+  <item ID="A4866" keyword="FFDSP(BM">复方丹参片(薄膜衣)(0.26g)</item>
+  <item ID="A4889" keyword="FFDSP(BM">复方丹参片(薄膜衣)(/)</item>
+  <item ID="A4893" keyword="FFDSDW(B">复方丹参滴丸(薄膜衣丸每丸27mg)</item>
+  <item ID="A4895" keyword="XFZYW(DM">血府逐瘀丸(大蜜丸)(9g)</item>
+  <item ID="A4898" keyword="MLNZSY(1">脉络宁注射液(10ml)</item>
+  <item ID="A4908" keyword="GXSHW(DM">冠心苏合丸(大蜜丸)(/)</item>
+  <item ID="A4910" keyword="GXSHW(DM">冠心苏合丸(大蜜丸)(/)</item>
+  <item ID="A4911" keyword="SXJXW(40">速效救心丸(40mg)</item>
+  <item ID="A4912" keyword="DAXXKJN(">地奥心血康胶囊(0.1g)</item>
+  <item ID="A4913" keyword="TXLJN(0.">通心络胶囊(0.26g)</item>
+  <item ID="A5055" keyword="XZKJN(0.">血脂康胶囊(0.3g)</item>
+  <item ID="A省另增" keyword="XFTTP(BM">辛伐他汀片(薄膜衣)(20mg)</item>
+  <item ID="B336" keyword="ZSYMDASJ">注射用门冬氨酸钾镁(冻干)(0.85g/0.114g/0.042g)</item>
+  <item ID="B338" keyword="ZSYMDASJ">注射用门冬氨酸钾镁(冻干)(1.7g/0.228g/0.084g)</item>
+  <item ID="B341" keyword="ZSYMDASJ">注射用门冬氨酸钾镁(冻干)(1.0g:门冬氨酸钾0.5g与门冬氨酸)</item>
+  <item ID="B342" keyword="ZSYMDASJ">注射用门冬氨酸钾镁(冻干)(2.0g:门冬氨酸钾1g与门冬氨酸镁1)</item>
+  <item ID="B343" keyword="ZSYMDASJ">注射用门冬氨酸钾镁(冻干)(2.0g:门冬氨酸钾1g与门冬氨酸镁1)</item>
+  <item ID="B346" keyword="MDASJMZS">门冬氨酸钾镁注射液(10ml)</item>
+  <item ID="B350" keyword="MDASJMZS">门冬氨酸钾镁注射液(10ml:(无水门冬氨酸镁0.4g、无水)</item>
+  <item ID="B410" keyword="YSBGLTP(">盐酸吡格列酮片(15mg)</item>
+  <item ID="B412" keyword="YSBGLTP(">盐酸吡格列酮片(15mg)</item>
+  <item ID="B415" keyword="YSBGLTP(">盐酸吡格列酮片(薄膜衣)(30mg)</item>
+  <item ID="B424" keyword="YSBGLTJN">盐酸吡格列酮胶囊(15mg)</item>
+  <item ID="B428" keyword="GLQTP(2)">格列齐特片(Ⅱ)(80mg)</item>
+  <item ID="B429" keyword="GLQTHSP(">格列齐特缓释片(30mg)</item>
+  <item ID="B431" keyword="GLQTHSP(">格列齐特缓释片(30mg)</item>
+  <item ID="B434" keyword="GLQTFSP(">格列齐特分散片(40mg)</item>
+  <item ID="B438" keyword="GLQTHSJN">格列齐特缓释胶囊(30mg)</item>
+  <item ID="B444" keyword="GLMNP(2m">格列美脲片(2mg)</item>
+  <item ID="B446" keyword="GLMNP(2m">格列美脲片(2mg)</item>
+  <item ID="B447" keyword="GLMNJN(2">格列美脲胶囊(2mg)</item>
+  <item ID="B448" keyword="AKBTP(50">阿卡波糖片(50mg)</item>
+  <item ID="B450" keyword="AKBTJN(5">阿卡波糖胶囊(50mg)</item>
+  <item ID="B452" keyword="RGLNP(0.">瑞格列奈片(0.5mg)</item>
+  <item ID="B453" keyword="RGLNP(2.">瑞格列奈片(2.0mg)</item>
+  <item ID="B454" keyword="YSLGLTP(">盐酸罗格列酮片(薄膜衣)(4mg)</item>
+  <item ID="B455" keyword="YSLGLTP(">盐酸罗格列酮片(薄膜衣)(4mg)</item>
+  <item ID="B458" keyword="YSLGLTJN">盐酸罗格列酮胶囊(4mg(以罗格列酮计))</item>
+  <item ID="B461" keyword="JSSLGLTF">酒石酸罗格列酮分散片(4mg(以罗格列酮计))</item>
+  <item ID="B495" keyword="SBLP(0.1">舒必利片(0.1g)</item>
+  <item ID="B500" keyword="LDPP(25m">氯氮平片(25mg)</item>
+  <item ID="B507" keyword="LDPP(25m">氯氮平片(25mg)</item>
+  <item ID="B576" keyword="GCSEAZSY">甘草酸二铵注射液(10ml:50mg)</item>
+  <item ID="B580" keyword="GCSEAZSY">甘草酸二铵注射液(10ml:150mg)</item>
+  <item ID="B583" keyword="DXSYSLZP">单硝酸异山梨酯片(10mg)</item>
+  <item ID="B585" keyword="DXSYSLZP">单硝酸异山梨酯片(20mg)</item>
+  <item ID="B591" keyword="DXSYSLZJ">单硝酸异山梨酯胶囊(20mg)</item>
+  <item ID="B592" keyword="DXSYSLZJ">单硝酸异山梨酯胶囊(10mg)</item>
+  <item ID="B593" keyword="MLSALDPP">马来酸氨氯地平片(5mg)</item>
+  <item ID="B594" keyword="MDASALDP">门冬氨酸氨氯地平片(5mg)</item>
+  <item ID="B599" keyword="BHSALDPP">苯磺酸氨氯地平片(5mg)</item>
+  <item ID="B602" keyword="BHSALDPF">苯磺酸氨氯地平分散片(5mg(以氨氯地平计))</item>
+  <item ID="B605" keyword="BHSALDPJ">苯磺酸氨氯地平胶囊(5mg)</item>
+  <item ID="B607" keyword="MLSZXALD">马来酸左旋氨氯地平片(2.5mg)</item>
+  <item ID="B609" keyword="BHSZXALD">苯磺酸左旋氨氯地平片(2.5mg)</item>
+  <item ID="B610" keyword="BHSZXALD">苯磺酸左旋氨氯地平片(2.5mg)</item>
+  <item ID="B611" keyword="BHSZXALD">苯磺酸左旋氨氯地平片(2.5mg)</item>
+  <item ID="B617" keyword="FLDPP(5m">非洛地平片(5mg)</item>
+  <item ID="B619" keyword="FLDPP(2.">非洛地平片(2.5mg)</item>
+  <item ID="B623" keyword="FLDPHSJN">非洛地平缓释胶囊(2.5mg)</item>
+  <item ID="B624" keyword="YSQMTQP(">盐酸曲美他嗪片(薄膜衣)(20mg)</item>
+  <item ID="B626" keyword="YSQMTQP(">盐酸曲美他嗪片(薄膜衣)(20mg)</item>
+  <item ID="B629" keyword="YSKLDP(7">盐酸可乐定片(75μg)</item>
+  <item ID="B631" keyword="DBZP(10m">地巴唑片(10mg)</item>
+  <item ID="B636" keyword="FFKTPLP(">复方卡托普利片(16mg(10mg/6mg))</item>
+  <item ID="B644" keyword="YSBNPLP(">盐酸贝那普利片(薄膜衣)(10mg)</item>
+  <item ID="B645" keyword="FXPLNP(1">福辛普利钠片(10mg)</item>
+  <item ID="B648" keyword="LSTJP(BM">氯沙坦钾片(薄膜衣)(50mg)</item>
+  <item ID="B649" keyword="LSTJP(BM">氯沙坦钾片(薄膜衣)(50mg)</item>
+  <item ID="B652" keyword="LSTJJN(5">氯沙坦钾胶囊(50mg)</item>
+  <item ID="B654" keyword="XSTFSP(8">缬沙坦分散片(80mg)</item>
+  <item ID="B655" keyword="XSTFSP(4">缬沙坦分散片(40mg)</item>
+  <item ID="B659" keyword="XSTJN(80">缬沙坦胶囊(80mg)</item>
+  <item ID="B661" keyword="TMSTP(40">替米沙坦片(40mg)</item>
+  <item ID="B668" keyword="TMSTP(80">替米沙坦片(80mg)</item>
+  <item ID="B670" keyword="TMSTP(20">替米沙坦片(20mg)</item>
+  <item ID="B671" keyword="TMSTP(20">替米沙坦片(20mg)</item>
+  <item ID="B673" keyword="TMSTJN(2">替米沙坦胶囊(20mg)</item>
+  <item ID="B677" keyword="TMSTJN(4">替米沙坦胶囊(40mg)</item>
+  <item ID="B678" keyword="TMSTJN(4">替米沙坦胶囊(40mg)</item>
+  <item ID="B680" keyword="EBSTP(75">厄贝沙坦片(75mg)</item>
+  <item ID="B682" keyword="EBSTP(75">厄贝沙坦片(75mg)</item>
+  <item ID="B684" keyword="EBSTP(BM">厄贝沙坦片(薄膜衣)(0.15g)</item>
+  <item ID="B686" keyword="EBSTJN(0">厄贝沙坦胶囊(0.15g)</item>
+  <item ID="B688" keyword="EBSTJN(7">厄贝沙坦胶囊(75mg)</item>
+  <item ID="B707" keyword="FNBTP(0.">非诺贝特片(0.1g)</item>
+  <item ID="B715" keyword="FNBTJN(2">非诺贝特胶囊(Ⅱ)(0.1g)</item>
+  <item ID="B717" keyword="FNBTJN(2">非诺贝特胶囊(Ⅱ)(0.2g)</item>
+  <item ID="B718" keyword="FNBTJN(2">非诺贝特胶囊(Ⅱ)(0.2g)</item>
+  <item ID="B723" keyword="ATFTTGJN">阿托伐他汀钙胶囊(10mg)</item>
+  <item ID="B724" keyword="ATFTTGJN">阿托伐他汀钙胶囊(20mg)</item>
+  <item ID="B891" keyword="HQSMY(10">黄芪生脉饮(10ml)</item>
+  <item ID="B893" keyword="HQSMY(WT">黄芪生脉饮(无糖型)(10ml(未添加蔗糖))</item>
+  <item ID="B921" keyword="QYSAP(BM">七叶神安片(薄膜衣)(0.1g)</item>
+  <item ID="B929" keyword="XSXMNJN(">血栓心脉宁胶囊(0.5g)</item>
+  <item ID="B937" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷9.6mg、萜类内)</item>
+  <item ID="B940" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷9.6mg、萜类内)</item>
+  <item ID="B941" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷9.6mg、萜类内)</item>
+  <item ID="B947" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷19.2mg、萜类内)</item>
+  <item ID="B948" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷19.2mg、萜类内)</item>
+  <item ID="B954" keyword="YXYP(BMY">银杏叶片(薄膜衣)(每片含总黄酮醇苷19.2mg、萜类内)</item>
+  <item ID="B956" keyword="YXYJN(0.">银杏叶胶囊(0.12g(相当于银杏叶提取物80mg))</item>
+  <item ID="B958" keyword="YXYJN(ML">银杏叶胶囊(每粒装0.2g(相当于银杏叶提取物4)</item>
+  <item ID="B959" keyword="YXYJN(ML">银杏叶胶囊(每粒装0.2g(相当于银杏叶提取物4)</item>
+  <item ID="B963" keyword="DZHSP(20">灯盏花素片(20mg)</item>
+  <item ID="B978" keyword="ZJJYP(BM">珍菊降压片(薄膜衣)(/)</item>
+  <item ID="B986" keyword="ZJJYP(BM">珍菊降压片(薄膜衣)(0.25g)</item>
+  <item ID="B992" keyword="ZJJYP(BM">珍菊降压片(薄膜衣)(0.25g)</item>
+  <item ID="B998" keyword="ZJJYP(BM">珍菊降压片(薄膜衣)(0.25g)</item>
+  </string-array>
+  <string-array name="yyqkywlx" >
+    <item ID="1">西药</item>
+    <item ID="2">中成药</item>
+    <item ID="3">中草药</item>
+    <item ID="4">其他中药</item>
+    <item ID="5">为使用</item>
+  </string-array>
+  <string-array name="yyqkywdw" >
+    <item ID="1">升</item>
+    <item ID="2">毫升</item>
+    <item ID="3">微升</item>
+    <item ID="4">卡</item>
+    <item ID="5">人次</item>
+    <item ID="6">胎</item>
+    <item ID="7">根</item>
+    <item ID="8">次</item>
+    <item ID="9">支</item>
+    <item ID="10">组</item>
+    <item ID="11">粒</item>
+    <item ID="12">例</item>
+    <item ID="13">项</item>
+    <item ID="14">片</item>
+    <item ID="15">张</item>
+    <item ID="16">盒</item>
+    <item ID="17">包</item>
+    <item ID="18">瓶</item>
+    <item ID="19">袋</item>
+    <item ID="20">板</item>
+    <item ID="21">把</item>
+    <item ID="22">本</item>
+    <item ID="23">尺</item>
+    <item ID="24">打</item>
+    <item ID="25">刀</item>
+    <item ID="26">对</item>
+    <item ID="27">份</item>
+    <item ID="28">副</item>
+    <item ID="29">付</item>
+    <item ID="30">个</item>
+    <item ID="31">件</item>
+    <item ID="32">斤</item>
+    <item ID="33">具</item>
+    <item ID="34">卷</item>
+    <item ID="35">块</item>
+    <item ID="36">捆</item>
+    <item ID="37">辆</item>
+    <item ID="38">枚</item>
+    <item ID="39">批</item>
+    <item ID="40">束</item>
+    <item ID="41">双</item>
+    <item ID="42">台</item>
+    <item ID="43">套</item>
+    <item ID="44">条</item>
+    <item ID="45">贴</item>
+    <item ID="46">桶</item>
+    <item ID="47">丸</item>
+    <item ID="48">箱</item>
+    <item ID="49">只</item>
+    <item ID="50">千克</item>
+    <item ID="51">克</item>
+    <item ID="52">毫克</item>
+    <item ID="53">微克</item>
+  </string-array>
+  <string-array name="yyqkyf" >
+    <item ID="qd">一日1次</item>
+    <item ID="bid">一日2次</item>
+    <item ID="tid">一日3次</item>
+    <item ID="qid">一日4次</item>
+    <item ID="prn">必要时</item>
+    <item ID="st">临时</item>
+    <item ID="q8h">8小时1次</item>
+    <item ID="q6h">6小时1次</item>
+    <item ID="q12h">12小时1次</item>
+    <item ID="q4h">4小时1次</item>
+    <item ID="qm">早上1次</item>
+    <item ID="qn">晚上1次</item>
+    <item ID="q2h">2小时1次</item>
+    <item ID="qod">隔日1次</item>
+    <item ID="biw">每周2次</item>
+    <item ID="qw">每周1次</item>
+    <item ID="q3d">一周2次</item>
+    <item ID="10am">10am</item>
+    <item ID="4pm">4pm</item>
+    <item ID="12n">12n</item>
+    <item ID="q22">q12h</item>
+    <item ID="bidc">bid餐前</item>
+    <item ID="qdcq">qd餐前</item>
+    <item ID="tidc">tid餐前</item>
+    <item ID="ls">LS</item>
+    <item ID="tiw">tiw</item>
+    <item ID="zz">遵嘱</item>
+    <item ID="2pm">2pm</item>
+    <item ID="6am">6am</item>
+    <item ID="2am">2am</item>
+    <item ID="q3h">3小时1次</item>
+    <item ID="q5h">5小时1次</item>
+    <item ID="q1h">1小时1次</item>
+    <item ID="w3d">一周3次</item>
+    <item ID="ivqd">一日1次静推</item>
+    <item ID="ivbi">一日2次静推</item>
+    <item ID="ivq6">6小时1次静推</item>
+    <item ID="ivq8">8小时1次静推</item>
+    <item ID="iv12">12小时1次静</item>
+    <item ID="qdch">qd餐后</item>
+    <item ID="bidh">bid餐后</item>
+    <item ID="tidh">tid餐后</item>
+  </string-array>
+  <string-array name="yyqkgyfs" >
+    <item ID="ivgtt">静滴</item>
+    <item ID="po">口服</item>
+    <item ID="im">肌注</item>
+    <item ID="wy">外用</item>
+    <item ID="iv">静推</item>
+    <item ID="dy">滴眼</item>
+    <item ID="jz">jz</item>
+    <item ID="ih">皮下注射</item>
+    <item ID="jf">局封</item>
+    <item ID="gc">灌肠</item>
+    <item ID="whxr">雾化吸入</item>
+    <item ID="sg">纳肛</item>
+    <item ID="qt">其它</item>
+    <item ID="qz ">鞘内注射</item>
+    <item ID="qnzs">腔内注射</item>
+    <item ID="tpn">肠外营养</item>
+    <item ID="sxhf">舌下含服</item>
+    <item ID="bs">鼻饲</item>
+    <item ID="sk">漱口</item>
+    <item ID="zyy ">造影用</item>
+    <item ID="shdcx">上颌窦冲洗</item>
+    <item ID="xt">吸痰</item>
+    <item ID="db">滴鼻</item>
+    <item ID="de">滴耳</item>
+    <item ID="dsss">带手术室</item>
+    <item ID="jm ">局部麻醉</item>
+    <item ID="xejd">小儿静滴 </item>
+    <item ID="wbzs">微泵注射 </item>
+    <item ID="jmxz">结膜下注射</item>
+    <item ID="qgndr">气管内滴入</item>
+    <item ID="kh">口含</item>
+    <item ID="ny">纳阴</item>
+    <item ID="ssy">手术用</item>
+    <item ID="ps">皮试</item>
+    <item ID="pw">喷雾 </item>
+    <item ID="qhzs">球后注射</item>
+    <item ID="prn">必要时吸痰</item>
+    <item ID="qpzs">球旁注射</item>
+    <item ID="ldcx">泪道冲洗</item>
+    <item ID="cf">冲服</item>
+  </string-array>
+  <string-array name="w1bx2y3">
+    <item ID="1">否</item>
+    <item ID="2">不详</item>
+    <item ID="3">有</item>
+  </string-array>
+  <string-array name="jjzk">
+    <item ID="1">&lt;1000元</item>
+    <item ID="2">1000-3000元</item>
+    <item ID="3">3000-5000元</item>
+    <item ID="4">>5000元</item>
+  </string-array>
+  <string-array name="xtszmksz">
+    <item ID="1">快速体检</item>
+    <item ID="2">体质辨识</item>
+    <item ID="3">老年评估</item>
+    <item ID="4">普通体检</item>
+    <item ID="5">心理评估</item>
+    <item ID="6">高血压</item>
+    <item ID="7">糖尿病</item>
+    <item ID="8">脑卒中</item>
+    <item ID="9">精神病</item>
+    <item ID="10">孕产访视</item>
+    <item ID="11">儿童访视</item>
+    <item ID="12">老年随访</item>
+    <item ID="13">残疾随访</item>
+    <item ID="14">血压监护</item>
+    <item ID="15">血氧监护</item>
+    <item ID="16">心电监护</item>
+  </string-array>
+  <string-array name="xtszdalusz">
+    <item ID="1">身份证号可编辑</item>
+    <item ID="2">按身份证号搜索档案</item>
+    <item ID="3">姓名可编辑</item>
+    <item ID="4">按姓名搜索档案</item>
+    <item ID="5">卡号可编辑</item>
+    <item ID="6">按卡号搜索档案</item>
+  </string-array>
+  <string-array name="xtsztjsrxz">
+    <item ID="1">体温</item>
+    <item ID="2">血脂检测</item>
+    <item ID="3">体质指数</item>
+    <item ID="4">血氧检测</item>
+    <item ID="5">三围测量</item>
+    <item ID="6">心电分析</item>
+    <item ID="7">血压测量</item>
+    <item ID="8">人体成分</item>
+    <item ID="9">血糖测量</item>
+    <item ID="10">体液检测</item>
+  </string-array>
+  <string-array name="blsbj">
+        <item ID="1">无</item>
+        <item ID="2">有</item>
+  </string-array>
+  <string-array name="ycbsbj">
+        <item ID="1">无</item>
+        <item ID="2">有</item>
+  </string-array>
+  <string-array name="cjqkbj">
+        <item ID="1">无</item>
+        <item ID="2">有</item>
+  </string-array>
+  <string-array name="gxyblfybj">
+        <item ID="1">无</item>
+        <item ID="2">有</item>
+  </string-array>
+  <string-array name="tnbblfybj">
+        <item ID="1">无</item>
+        <item ID="2">有</item>
+  </string-array>
+  <string-array name="tjxm">
+        <item ID="01">身高体重</item>
+        <item ID="02">血压</item>
+        <item ID="03">血糖</item>
+        <item ID="04">骨密度</item>
+        <item ID="05">心血管</item>
+        <item ID="06">肺功能</item>
+        <item ID="07">微循环</item>
+        <item ID="08">人体成份</item>
+        <item ID="09">动脉硬化</item>
+        <item ID="10">心电图</item>
+        <item ID="11">视力</item>
+        <item ID="12">中医体质</item>
+        <item ID="13">舌像仪</item>
+        <item ID="14">心理咨询</item>
+        <item ID="15">甘油三酯</item>
+        <item ID="17">胆固醇</item>
+        <item ID="18">三围</item>
+        <item ID="19">常规检查</item>
+        <item ID="20">高密度脂蛋白</item>
+        <item ID="21">低密度脂蛋白</item>
+        <item ID="22">视力</item>
+        <item ID="23">其他检查</item>
+        <item ID="24">尿酸</item>
+        <item ID="25">血氧</item>
+        <item ID="26">体液</item>
+  </string-array>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp40"
+            android:text="机构代码："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jgdmTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:text="2354469"
+            android:textColor="@color/jz_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:src="@drawable/sfgl_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="机构名称："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jgmcTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:text="上海新科医院"
+            android:textColor="@color/jz_text_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/titleLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp55"
+            android:background="@color/bl_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="176dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="序号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="148dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="仪器名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="148dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="仪器类型"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="176dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="品牌"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="176dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="型号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="编号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/jgxxListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

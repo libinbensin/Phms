@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/text0"
+            style="@style/compound_jzs_button_style"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="right|center_vertical"
+            android:text="可疑佝偻病症状："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="儿童访视-1岁内-体格检查-可疑佝偻病症状" >
+
+            <CheckBox
+                android:id="@+id/kyglbzz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/text0"
+                android:text="1.未脱" />
+
+            <CheckBox
+                android:id="@+id/kyglbzz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/kyglbzz01CheckBox"
+                android:text="2.脱落" />
+
+            <CheckBox
+                android:id="@+id/kyglbzz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/kyglbzz02CheckBox"
+                android:text="3.脐部有渗出" />
+
+            <CheckBox
+                android:id="@+id/kyglbzz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/kyglbzz03CheckBox"
+                android:text="4.其他" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/compound_jzs_button_style"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="right|center_vertical"
+            android:text="可疑佝偻病体征："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="儿童访视-1岁内-体格检查情况-可疑佝偻病体征" >
+
+            <CheckBox
+                android:id="@+id/kyglbtz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_toRightOf="@+id/text0"
+                android:text="1.未见异常" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/kyglbtz01CheckBox"
+                android:text="2.潮红" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/kyglbtz02CheckBox"
+                android:text="3.苍白 " />
+
+            <CheckBox
+                android:id="@+id/kyglbtz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/kyglbtz03CheckBox"
+                android:text="4.发绀" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/kyglbtz04CheckBox"
+                android:text="5.黄染" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/kyglbtz01CheckBox"
+                android:layout_below="@+id/kyglbtz01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="6.色素沉着" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/kyglbtz02CheckBox"
+                android:layout_below="@+id/kyglbtz02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.湿疹" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/kyglbtz03CheckBox"
+                android:layout_below="@+id/kyglbtz03CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="8.糜烂" />
+
+            <CheckBox
+                android:id="@+id/kyglbtz10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/kyglbtz04CheckBox"
+                android:layout_below="@+id/kyglbtz04CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="9.其他" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="肛门/外生殖器："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-1岁内-体格检查-肛门/外生殖器" >
+
+            <RadioButton
+                android:id="@+id/sz01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/sz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/sz02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="髋关节活动："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-1岁内-体格检查-髋关节活动" >
+
+            <RadioButton
+                android:id="@+id/kgjhd01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/kgjhd02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/kgjhd03RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="血红蛋白值(g/L):   "
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-体格检查-血红蛋白值(g/L)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

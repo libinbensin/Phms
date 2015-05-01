@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gzglLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/gxCheckBox"
+            style="@style/checkbox_style"
+            android:layout_width="40dip"
+            android:layout_marginLeft="20dip" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/xhTextView"
+            android:layout_width="141dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="序号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/xmTextView"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_name_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/xbTextView"
+            android:layout_width="90dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_xb_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/xmmcTextView"
+            android:layout_width="182dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="项目名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/jgTextView"
+            android:layout_width="142dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="机构"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/zrysTextView"
+            android:layout_width="131dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="责任医生"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/wcztTextView"
+            android:layout_width="131dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="完成状态"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/xzztTextView"
+            android:layout_width="131dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="下载状态"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+            android:id="@+id/wcrqTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="完成日期"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

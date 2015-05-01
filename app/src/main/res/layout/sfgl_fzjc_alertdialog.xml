@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dip"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView 
+	        android:focusable="true"
+	        android:focusableInTouchMode="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="辅检项目："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+        
+       	<EditText 
+       	    android:id="@+id/project_edit"
+	        android:layout_marginLeft="124dip"
+       	    android:layout_width="230dip"
+       	    android:layout_height="38dip"
+       	    android:paddingLeft="10dip"
+       	    android:textSize="20sp"
+       	    android:background="@drawable/edit_box"/> 
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_marginTop="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="辅检结果："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+        
+       	<EditText 
+       	    android:id="@+id/result_edit"
+	        android:layout_marginLeft="124dip"
+       	    android:layout_width="230dip"
+       	    android:layout_height="38dip"
+       	    android:paddingLeft="10dip"
+       	    android:textSize="20sp"
+       	    android:background="@drawable/edit_box"/> 
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_marginTop="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="检查人："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+        
+       	<EditText 
+       	    android:id="@+id/operator_edit"
+	        android:layout_marginLeft="124dip"
+       	    android:layout_width="230dip"
+       	    android:layout_height="38dip"
+       	    android:paddingLeft="10dip"
+       	    android:textSize="20sp"
+       	    android:background="@drawable/edit_box"/> 
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_marginTop="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="检查日期："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+	    <DatePicker
+	        android:id="@+id/date_picker"
+	        android:layout_marginLeft="114dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+</LinearLayout>

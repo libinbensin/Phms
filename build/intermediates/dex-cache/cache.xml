@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-9c6559a9f9396161ecc990c837a0eeba7cb37389.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\BaseProject.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6244f0939eea8791ed874639cfc2bed261b1c564">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\BaseProject-ddfcddec36c45652dc22ec2b147e5ac9b4a56ccb.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\pinyin.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="67968b87f8903252596fd6192d5f84bd149967c3">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\pinyin-d9b5ca43b0f873384431ca155182d5cebc678f56.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\lifesense-ble-1.2.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0274d12d0f1d3dfab23e65bfaae76ac41e8e80c5">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\lifesense-ble-1.2.3-71007954c64f8f52a1c39459830524b5de6a24fa.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\achartengine-1.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\achartengine-1.0.0-dcece2d34811733dacf6bfee5793b53d28801b16.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\ksoap2-android-assembly-2.4-jar-with-dependencies.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\ksoap2-android-assembly-2.4-jar-with-dependencies-7cbd67a7cd05b754fa18c79f3d2393021c3ed620.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\ant.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1d33711018e7649a8427fff62a87f94f4e7d310f">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\ant-025d34334f22e0f9604fac83ade053d4d6cc5c11.jar" />
+    </item>
+    <item
+        jar="E:\Phms\app\libs\commons-codec-1.7.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9cd61d269c88f9fb0eb36cea1efcd596ab74772f">
+        <dex dex="E:\Phms\app\build\intermediates\pre-dexed\debug\commons-codec-1.7-28dbd32171ab8dbcc52a82ef93d64765d5e90a16.jar" />
+    </item>
+
+</items>

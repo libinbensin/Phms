@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="神经变性性疾病："
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-神经变性性疾病" >
+
+            <RadioButton
+                android:id="@+id/nrjsr01Radiobutton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/nrjsr02Radiobutton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="75.0dip"
+                android:layout_toRightOf="@id/nrjsr01Radiobutton" />
+
+            <RadioButton
+                android:id="@+id/nrjsr03Radiobutton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="75.0dip"
+                android:layout_toRightOf="@id/nrjsr02Radiobutton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="诊断时间：" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/sfzEditText"
+                style="@style/idc_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-诊断时间" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="类型：" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/xmEditText"
+                style="@style/text_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-类型" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="消化系统疾病："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/sfyjRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-消化系统疾病" >
+
+            <RadioButton
+                android:id="@+id/sfyj01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/sfyj02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-消化系统疾病-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="肿瘤："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-肿瘤" >
+
+            <RadioButton
+                android:id="@+id/zl01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/zl02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-肿瘤-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="风湿病："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-风湿病" >
+
+            <RadioButton
+                android:id="@+id/fsb01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/fsb02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-风湿病-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="内分泌病(不含糖尿病)："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-内分泌病(不含糖尿病)" >
+
+            <RadioButton
+                android:id="@+id/nfmb01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/nfmb02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-内分泌病(不含糖尿病)-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="其他及用药："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="400.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:numeric="integer"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-其他及用药" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="家族史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="高血压："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-家族史-高血压" >
+
+            <RadioButton
+                android:id="@+id/jzsgxy01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jzsgxy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-家族史-高血压-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="心脏病："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中报卡-个人系统疾病史-家族史-心脏病" >
+
+            <RadioButton
+                android:id="@+id/jzsxzb01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jzsxzb02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:hint="请详细描述"
+                android:numeric="integer"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-家族史-心脏病-请详细描述" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

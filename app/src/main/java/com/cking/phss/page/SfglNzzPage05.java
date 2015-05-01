@@ -1,0 +1,61 @@
+/* Xinhuaxing Inc. (C) 2014. All rights reserved.
+ *
+ * SfglNzzPage01.java
+ * classes : com.cking.phss.page.SfglNzzPage01
+ * @author Wation.Haliyoo
+ * V 1.0.0
+ * Create at 2014-8-5 上午11:15:56
+ */
+package com.cking.phss.page;
+
+import java.util.Map;
+
+import net.xinhuaxing.util.GlobalUtil;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.Toast;
+
+import com.cking.phss.R;
+import com.cking.phss.bean.IBean;
+import com.cking.phss.global.Global;
+import com.cking.phss.util.TispToastFactory;
+
+/**
+ * com.cking.phss.page.SfglNzzPage01
+ * @author Wation.Haliyoo <br/>
+ * create at 2014-8-5 上午11:15:56
+ */
+public class SfglNzzPage05 extends MyPage2 {
+    private static final String TAG = "SfglNzzPage05";
+    private Toast mToast;
+    private Map<String, IBean> beanMap;
+
+    /**
+     * @param context
+     * @param beanMap
+     */
+    public SfglNzzPage05(Context context, Map<String, IBean> beanMap) {
+        super(context);
+        this.beanMap = beanMap;
+        // init(context);
+    }
+
+    protected void init(Context context) {
+        mToast = TispToastFactory.getToast(context, "");
+        LayoutInflater.from(context).inflate(R.layout.fragment_sfgl_nzz_05_layout, this);
+
+        loadPage(context, this);
+    }
+
+    public void loadPage(Context context, ViewGroup viewGroup) {
+
+    }
+
+    @Override
+    public void setValue() { if (!hasInit) {return;}
+        super.setValue();
+        GlobalUtil.getInstance().setWidgetValue((ViewGroup) getContentView(), "脑卒中-评分-随访医生签名",
+                Global.doctorName);
+    }
+}

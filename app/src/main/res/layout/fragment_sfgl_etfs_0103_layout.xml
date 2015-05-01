@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="黄疸部位："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-黄疸部位" >
+
+            <RadioButton
+                android:id="@+id/gj01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/gj02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/gj03RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/gj04RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/gj05RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/gj06RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <RadioButton
+                android:id="@+id/gj07RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="前囟:   "
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="横径"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-前囟：横径" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:gravity="right"
+                android:text="cm"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:gravity="right"
+                android:text="x"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="纵径"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-前囟：纵径" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:gravity="right"
+                android:text="cm"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="前囟情况："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-新生儿-体格检查情况-前囟情况" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="眼外观："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-眼外观" >
+
+            <RadioButton
+                android:id="@+id/ywg01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/ywg02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/ywg02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="耳外观："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-耳外观" >
+
+            <RadioButton
+                android:id="@+id/ewg01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/ewg02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/ewg02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="鼻："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-鼻" >
+
+            <RadioButton
+                android:id="@+id/b01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/b02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/b02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="口腔："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-口腔" >
+
+            <RadioButton
+                android:id="@+id/kq01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/kq02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/kq02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="肺部听诊："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-肺部听诊" >
+
+            <RadioButton
+                android:id="@+id/fbtz01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/fbtz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/fbtz02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="心脏听诊："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视-新生儿-体格检查情况-心脏听诊" >
+
+            <RadioButton
+                android:id="@+id/xztz01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/xztz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                app:referentId="@+id/xztz02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

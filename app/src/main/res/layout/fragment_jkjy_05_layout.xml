@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body_bg"
+    android:paddingBottom="@dimen/dp30"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingRight="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="30dp" >
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/result1_refer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/jktj_title"
+                        android:gravity="left|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/fpfxTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="30.0dip"
+                            android:text="肥胖分析"
+                            android:textColor="@color/jz_text_color"
+                            android:textSize="@dimen/dp20" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@drawable/jktj_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result1_refer"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="30dp" >
+
+                <LinearLayout
+                    android:id="@+id/result2_refer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/jktj_title"
+                        android:gravity="left|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/fxysTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="30.0dip"
+                            android:text="风险因素"
+                            android:textColor="@color/jz_text_color"
+                            android:textSize="@dimen/dp20" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@drawable/jktj_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result2_refer"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginTop="30dp" >
+
+                <LinearLayout
+                    android:id="@+id/result3_refer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/jktj_title"
+                        android:gravity="left|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/ydcfTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="30.0dip"
+                            android:text="运动处方"
+                            android:textColor="@color/jz_text_color"
+                            android:textSize="@dimen/dp20" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@drawable/jktj_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result3_refer"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout3"
+                android:layout_marginTop="30dp" >
+
+                <LinearLayout
+                    android:id="@+id/result4_refer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/jktj_title"
+                        android:gravity="left|center"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/sszdTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10.0dip"
+                            android:paddingRight="30.0dip"
+                            android:text="膳食指导"
+                            android:textColor="@color/jz_text_color"
+                            android:textSize="@dimen/dp20" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@drawable/jktj_line" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/result4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/result4_refer"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

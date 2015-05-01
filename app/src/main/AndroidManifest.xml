@@ -1,0 +1,188 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cking.phss"
+    android:versionCode="19"
+    android:versionName="2.0.0.019" >
+
+    <application
+        android:name="com.cking.phss.util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
+        </activity>
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.DeviceInfoActivity"
+            android:label="@string/title_activity_device_info"
+            android:theme="@style/dialog" >
+        </activity>
+
+        <provider
+            android:name=".bluetooth.lifesense.ble.ui.DeviceContentProvider"
+            android:authorities="com.cking.phss.dataBase" >
+        </provider>
+
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.ConfigPreferenceActivity"
+            android:label="@string/title_activity_config_preference"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.SetUserInfoActivity"
+            android:label="@string/title_activity_set_user_info"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.GlucoseMeterActivity"
+            android:label="@string/title_activity_glucose_meter"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.TestMainActivity"
+            android:label="@string/title_activity_test_main"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".bluetooth.lifesense.ble.ui.AddDeviceActivity"
+            android:label="@string/title_activity_main_new"
+            android:theme="@style/dialog" >
+        </activity>
+        <activity
+            android:name=".test.Test_PinyinActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_AChartEngine1Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_AChartEngine2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_YyzdActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4Bm2000Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4HandeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4SpRmtiiiActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4CardioChekActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4Bp3mActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4BeneCheckActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_XmlFactoryActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_BluetoothClient4Ls501Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".test.Test_EkgActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <service android:name="com.cking.phss.update.UpdateService" >
+            <intent-filter>
+                <action android:name="com.cking.phss.service.update_service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.cking.phss.service.ListenNetStateService" >
+        </service>
+
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/bklistDialog" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
+</manifest>

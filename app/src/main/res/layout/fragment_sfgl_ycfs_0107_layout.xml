@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="阴道分泌物："
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.CheckBoxGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                app:switchItem="@+id/jzslb01CheckBox"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-阴道分泌物" >
+
+                <CheckBox
+                    android:id="@+id/jzslb01CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:text="1.未见异常 " />
+
+                <CheckBox
+                    android:id="@+id/jzslb02CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="18dip"
+                    android:layout_toRightOf="@+id/jzslb01CheckBox"
+                    android:text="2.滴虫" />
+
+                <CheckBox
+                    android:id="@+id/jzslb03CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="18dip"
+                    android:layout_toRightOf="@+id/jzslb02CheckBox"
+                    android:text="3.假丝酵母菌" />
+
+                <CheckBox
+                    android:id="@+id/jzslb04CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="18dip"
+                    android:layout_toRightOf="@+id/jzslb03CheckBox"
+                    android:text="4.其他" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/jzslbEditText"
+                    style="@style/text_edittext_style"
+                    android:layout_width="100.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginLeft="6dip"
+                    android:layout_toRightOf="@+id/jzslb04CheckBox"
+                    app:referentId="@+id/jzslb04CheckBox" />
+            </net.xinhuaxing.widget.CheckBoxGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="阴道清洁度："
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-阴道清洁度" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="乙型肝炎五项："
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="乙型肝炎表面抗原："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-乙型肝炎五项-乙型肝炎表面抗原" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="乙型肝炎e抗原："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-乙型肝炎五项-乙型肝炎e抗原" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="乙型肝炎五项："
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="乙型肝炎表面抗体："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-乙型肝炎五项-乙型肝炎表面抗体" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="乙型肝炎e抗体："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-乙型肝炎五项-乙型肝炎e抗体" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="乙型肝炎五项："
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="乙型肝炎核心抗体："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-乙型肝炎五项-乙型肝炎核心抗体" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="梅毒血清学试验："
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-梅毒血清学试验" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="HIV抗体检测："
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinner_dropdown_style"
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="孕产访视-第1次产前-辅助检查-HIV抗体检测" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="B超："
+            android:textColor="@color/jz_text_color"
+            android:textSize="@dimen/dp20" />
+
+        <net.xinhuaxing.widget.EditText
+            style="@style/text_edittext_style"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:hint="请详细描述"
+            app:widgetTag="孕产访视-第1次产前-辅助检查-B超" />
+    </LinearLayout>
+
+</LinearLayout>

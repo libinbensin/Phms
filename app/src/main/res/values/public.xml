@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <public id="0x7f010027" name="beginWith" type="attr" />
+    <public id="0x7f01000c" name="checked" type="attr" />
+    <public id="0x7f010012" name="checkedValue" type="attr" />
+    <public id="0x7f010015" name="choiceAText" type="attr" />
+    <public id="0x7f010016" name="choiceBText" type="attr" />
+    <public id="0x7f010017" name="choiceCText" type="attr" />
+    <public id="0x7f010018" name="choiceDText" type="attr" />
+    <public id="0x7f01001b" name="dataSource" type="attr" />
+    <public id="0x7f010022" name="evenLineBackgroundColor" type="attr" />
+    <public id="0x7f010023" name="evenLineTextColor" type="attr" />
+    <public id="0x7f010001" name="fadeEnabled" type="attr" />
+    <public id="0x7f010009" name="iconDrawableNormal" type="attr" />
+    <public id="0x7f010008" name="iconDrawablePress" type="attr" />
+    <public id="0x7f01001a" name="indexFrom1" type="attr" />
+    <public id="0x7f010024" name="listItemLayout" type="attr" />
+    <public id="0x7f010019" name="maxQuestions" type="attr" />
+    <public id="0x7f01001d" name="name" type="attr" />
+    <public id="0x7f010020" name="oddLineBackgroundColor" type="attr" />
+    <public id="0x7f010021" name="oddLineTextColor" type="attr" />
+    <public id="0x7f010011" name="otherHint" type="attr" />
+    <public id="0x7f010010" name="otherText" type="attr" />
+    <public id="0x7f010003" name="outlineColor" type="attr" />
+    <public id="0x7f010002" name="outlineEnabled" type="attr" />
+    <public id="0x7f010014" name="questionText" type="attr" />
+    <public id="0x7f010025" name="referentId" type="attr" />
+    <public id="0x7f010000" name="style" type="attr" />
+    <public id="0x7f010026" name="switchItem" type="attr" />
+    <public id="0x7f01000b" name="textNormal" type="attr" />
+    <public id="0x7f01000a" name="textPress" type="attr" />
+    <public id="0x7f010013" name="tipsText" type="attr" />
+    <public id="0x7f01001f" name="titleLayout" type="attr" />
+    <public id="0x7f01000f" name="titleText" type="attr" />
+    <public id="0x7f010004" name="transitionDrawable" type="attr" />
+    <public id="0x7f010005" name="transitionDrawableLength" type="attr" />
+    <public id="0x7f010007" name="transitionTextColorDown" type="attr" />
+    <public id="0x7f010006" name="transitionTextColorUp" type="attr" />
+    <public id="0x7f01001e" name="type" type="attr" />
+    <public id="0x7f01001c" name="valueSource" type="attr" />
+    <public id="0x7f01000d" name="valueTag" type="attr" />
+    <public id="0x7f01000e" name="widgetTag" type="attr" />
+    <public id="0x7f010028" name="clickEvent" type="attr" />
+    <public id="0x7f010029" name="valueType" type="attr" />
+
+</resources>

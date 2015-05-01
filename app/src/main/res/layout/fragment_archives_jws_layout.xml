@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingRight="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/jktj_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/jw_jb_text"
+                        android:textColor="@color/jz_text_color"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jwsjb_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/add_menu_bg"
+                    android:paddingLeft="@dimen/dp30"
+                    android:text="@string/cm_add_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jwsjbTitleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/bl_bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="170dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jws_jbmc_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="171dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_qzsj_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cm_cz_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <com.cking.phss.widget.JbxxJwsLayout
+                android:id="@+id/jwsjb_layout"
+                style="@style/listview_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/jktj_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="@string/jw_shous_text"
+                        android:textColor="@color/jz_text_color"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jwsss_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/add_menu_bg"
+                    android:paddingLeft="@dimen/dp30"
+                    android:text="@string/cm_add_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jwsssTitleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/bl_bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="170dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_ssmc_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="171dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_sssj_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="@string/cm_cz_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <com.cking.phss.widget.JbxxJwsLayout
+                android:id="@+id/jwsss_layout"
+                style="@style/listview_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/jktj_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="@string/jw_ws_text"
+                        android:textColor="@color/jz_text_color"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jwsws_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/add_menu_bg"
+                    android:paddingLeft="@dimen/dp30"
+                    android:text="@string/cm_add_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jwswsTitleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/bl_bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="170dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_wsmc_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="171dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_sssj_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cm_cz_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <com.cking.phss.widget.JbxxJwsLayout
+                android:id="@+id/jwsws_layout"
+                style="@style/listview_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/jktj_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="@string/jw_sx_text"
+                        android:textColor="@color/jz_text_color"
+                        android:textSize="@dimen/dp20" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/jwssx_add_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/add_menu_bg"
+                    android:paddingLeft="@dimen/dp30"
+                    android:text="@string/cm_add_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/jwssxTitleLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/bl_bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="170dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_sxmc_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="171dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/jw_sssj_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:background="@color/bl_line_color" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cm_cz_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <com.cking.phss.widget.JbxxJwsLayout
+                android:id="@+id/jwssx_layout"
+                style="@style/listview_style" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

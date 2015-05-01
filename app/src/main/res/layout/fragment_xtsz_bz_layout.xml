@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp30" >
+
+    <Button
+        android:id="@+id/ckbzwdButton"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dip"
+        android:background="@drawable/comfrim_bg"
+        android:text="查看帮助文档"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:layout_marginTop="20dip"
+        android:focusable="true"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/jstRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/jst01RadioButton"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:tag="0"
+                    android:text="最近一周" />
+
+                <RadioButton
+                    android:id="@+id/jst02RadioButton"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="1"
+                    android:text="最近一月" />
+
+                <RadioButton
+                    android:id="@+id/jst03RadioButton"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="2"
+                    android:text="最近三月" />
+
+                <RadioButton
+                    android:id="@+id/jst04RadioButton"
+                    style="@style/sjgl_radio_style"
+                    android:layout_width="112dip"
+                    android:layout_height="42dip"
+                    android:layout_marginTop="20dip"
+                    android:tag="3"
+                    android:text="自定义时间" />
+
+                <Button
+                    android:id="@+id/zdyButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/biaoqian2"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingTop="16dip"
+                    android:text="2014-05-1 ~ 2014-07-01"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/chartLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/rightbottomLinearLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dip"
+                android:background="@drawable/answer_normal"
+                android:orientation="vertical"
+                android:paddingBottom="18dip"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="8dip" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rightbottomLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/ckzTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正常血压参考值:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/ckz01TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="收缩压"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/ckz02TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:text="90-130mmHg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/ckz03TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="舒张压"
+                    android:textColor="@color/yellow"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:id="@+id/ckz04TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dip"
+                    android:text="60-85mmHg"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

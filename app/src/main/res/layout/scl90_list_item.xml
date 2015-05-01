@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/zb_text"
+        android:text="阳性项目平均分："
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:textColor="@color/text_black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ysf_text"
+        android:text="原始分"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="70dp"
+        android:textColor="@color/text_black"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pjf_text"
+        android:text="平均分"
+        android:textSize="18sp"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="20dp"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ckzd_text"
+        android:text="参考诊断"
+        android:textSize="18sp"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="20dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/jf_bzc_text"
+        android:text="均分±标准差"
+        android:textColor="@color/text_black"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

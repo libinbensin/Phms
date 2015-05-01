@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/radiogroup_lnpg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_zilipg"
+                    style="@style/health_left_style"
+                    android:layout_width="0.0dip"
+                    android:tag="0"
+                    android:text="@string/lnpg_zilipg_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_yypg"
+                    style="@style/health_middle_style"
+                    android:layout_width="0.0dip"
+                    android:tag="1"
+                    android:text="@string/lnpg_yiyupg_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_zhilipg"
+                    style="@style/health_middle_style"
+                    android:layout_width="0.0dip"
+                    android:tag="2"
+                    android:text="@string/lnpg_zhilipg_text" />
+
+                <Button
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7.0"
+                    android:background="@drawable/health_right"
+                    android:button="@null"
+                    android:tag="8" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

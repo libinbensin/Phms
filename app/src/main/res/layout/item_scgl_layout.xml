@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/scglLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+        	android:id="@+id/gxCheckBox"
+            style="@style/checkbox_style"
+            android:layout_width="45dip"
+            android:layout_marginLeft="20dip" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/xhTextView"
+            android:layout_width="157dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="序号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/xmTextView"
+            android:layout_width="98dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_name_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/xbTextView"
+            android:layout_width="98dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/jtcy_xb_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/xmmcTextView"
+            android:layout_width="197dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="项目名称"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/sjlyTextView"
+            android:layout_width="198dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="数据来源"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/czbzTextView"
+            android:layout_width="139dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="操作标志"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/scbzTextView"
+            android:layout_width="139dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="上传标志"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+
+        <View
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:background="@color/bl_line_color" />
+
+        <TextView
+        	android:id="@+id/czsjTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="操作时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

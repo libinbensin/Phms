@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingTop="@dimen/dp30" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/bxlb01CheckBox"
+            style="@style/compound_button_style" />
+
+        <EditText
+            android:id="@+id/ybkhEditText"
+            android:layout_width="300.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/edit_bg"
+            android:hint="@string/bx_hint_text"
+            android:numeric="integer"
+            android:paddingLeft="@dimen/dp10" />
+    </LinearLayout>
+
+    <com.adinnet.xd.medical.widget.RelativeGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20" >
+
+        <CheckBox
+            android:id="@+id/bxlb02CheckBox"
+            style="@style/compound_button_style" />
+
+        <CheckBox
+            android:id="@+id/bxlb03CheckBox"
+            style="@style/compound_button_style"
+            android:layout_marginLeft="@dimen/dp180"
+            android:layout_toRightOf="@+id/bxlb02CheckBox" />
+
+        <CheckBox
+            android:id="@+id/bxlb04CheckBox"
+            style="@style/compound_button_style"
+            android:layout_marginLeft="@dimen/dp100"
+            android:layout_toRightOf="@+id/bxlb03CheckBox" />
+
+        <CheckBox
+            android:id="@+id/bxlb05CheckBox"
+            style="@style/compound_button_style"
+            android:layout_below="@+id/bxlb02CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb06CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb03CheckBox"
+            android:layout_below="@+id/bxlb03CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb07CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb04CheckBox"
+            android:layout_below="@+id/bxlb04CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb08CheckBox"
+            style="@style/compound_button_style"
+            android:layout_below="@+id/bxlb05CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb09CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb03CheckBox"
+            android:layout_below="@+id/bxlb05CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb10CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb04CheckBox"
+            android:layout_below="@+id/bxlb06CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb11CheckBox"
+            style="@style/compound_button_style"
+            android:layout_below="@+id/bxlb08CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb12CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb03CheckBox"
+            android:layout_below="@+id/bxlb08CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+
+        <CheckBox
+            android:id="@+id/bxlb13CheckBox"
+            style="@style/compound_button_style"
+            android:layout_alignLeft="@+id/bxlb04CheckBox"
+            android:layout_below="@+id/bxlb09CheckBox"
+            android:layout_marginTop="@dimen/dp30" />
+    </com.adinnet.xd.medical.widget.RelativeGroup>
+
+</LinearLayout>

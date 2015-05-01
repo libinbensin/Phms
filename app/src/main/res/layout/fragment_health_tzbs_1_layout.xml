@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/tzbs_gs"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dip"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <Button
+            android:id="@+id/ksjcButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/comfrim_bg"
+            android:text="@string/cm_ksjc_text"
+            android:textColor="@color/confrim_text_color"
+            android:textSize="@dimen/dp20" />
+
+        <Button
+            android:id="@+id/scjgButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/cancel_bg"
+            android:text="@string/cm_scjg_text"
+            android:textColor="@color/cancel_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

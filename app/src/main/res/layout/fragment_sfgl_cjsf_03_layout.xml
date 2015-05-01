@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xhx="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="训练评估："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/xlpgSpinnerUtil"
+                xhx:name="pg"
+                style="@style/spinnerbtndropdown"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/xlpg_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="转介服务："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:gravity="right"
+                android:text="原因："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/yyEditText"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="转介去向："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/zjqxEditText"
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="生活方式指导"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="是否吸烟："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.RadioGroup
+            android:id="@+id/sfxyRadioGroup"
+            xhx:name="cjsfsf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sfxy01RadioButton"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/sfgl_cjsf_shzdfs_false_text" />
+
+            <RadioButton
+                android:id="@+id/sfxy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:text="@string/sfgl_cjsf_shzdfs_true_text" />
+        </com.cking.phss.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="日吸烟量："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/rxylEditText"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="次"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="是否饮酒："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.RadioGroup
+            android:id="@+id/sfyjRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xhx:name="cjsfsf"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sfyj01RadioButton"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/sfgl_cjsf_shzdfs_false_text" />
+
+            <RadioButton
+                android:id="@+id/sfyj02RadioButton"
+                android:layout_marginLeft="50.0dip"
+                style="@style/radio_button_style"
+                android:text="@string/sfgl_cjsf_shzdfs_true_text" />
+        </com.cking.phss.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="酒的种类："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/jdzlSpinnerUtil"
+                xhx:name="jdzl"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/jdzl_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="日饮酒量："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/ryjlEditText"
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:text="两/次"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="是否运动："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.RadioGroup
+            android:id="@+id/sfydRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xhx:name="cjsfsf"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sfyd01RadioButton"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="@string/sfgl_cjsf_shzdfs_false_text" />
+
+            <RadioButton
+                android:id="@+id/sfyd02RadioButton"
+                android:layout_marginLeft="50.0dip"
+                style="@style/radio_button_style"
+                android:text="@string/sfgl_cjsf_shzdfs_true_text" />
+        </com.cking.phss.widget.RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="运动频率："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ydpl01EditText"
+                android:layout_width="74dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="次/周"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ydpl02EditText"
+                android:layout_width="74dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="分钟/次"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="运动项目："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/ydxmEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="摄盐情况（克/天）："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/syl01EditText"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/edit_bg"
+                android:hint="当前值"
+                android:numeric="integer"
+                android:paddingLeft="10dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/syl02EditText"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/edit_bg"
+                android:hint="目标值"
+                android:numeric="integer"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/syl01SpinnerUtil"
+                xhx:name="syqkdq"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="120.0dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/syqkdq_prompt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:text="/"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/syl02SpinnerUtil"
+                xhx:name="syqkmb"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="120.0dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/syqkdq_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dip"
+            android:gravity="center"
+            android:text="心理调整："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/xltzSpinnerUtil"
+            xhx:name="xltz"
+            style="@style/spinnerbtndropdown"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/spinner_bg"
+            android:prompt="@string/xltz_prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="遵医行为："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/zyxwSpinnerUtil"
+            xhx:name="zyxw"
+            style="@style/spinnerbtndropdown"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/spinner_bg"
+            android:prompt="@string/zyxw_prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:gravity="center"
+            android:text="随访评估："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.SpinnerUtil
+            android:id="@+id/sfpgSpinnerUtil"
+            xhx:name="pg"
+            style="@style/spinnerbtndropdown"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/spinner_bg"
+            android:prompt="@string/sfpg_prompt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dip"
+            android:gravity="center"
+            android:text="康复建议："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/kfjyEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/edit_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="下次随访日期："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <com.cking.phss.widget.CalendarText
+            android:id="@+id/xcsfrqCalendarText"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_date_bg"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:text="随访医生签名："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/sfysqmEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/edit_bg" />
+    </LinearLayout>
+
+</LinearLayout>

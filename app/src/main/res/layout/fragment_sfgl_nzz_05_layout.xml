@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="其他血管事件"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="35.0dip"
+            android:gravity="right"
+            android:text="心脏病："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            app:widgetTag="脑卒中-终点事件-其他血管事件-心脏病" >
+
+            <CheckBox
+                android:id="@+id/checkbox0"
+                style="@style/compound_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.心衰" />
+
+            <net.xinhuaxing.widget.CalendarText
+                android:id="@+id/xsCalendarText"
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/checkbox0"
+                android:background="@drawable/edit_date_bg"
+                app:referentId="@+id/checkbox0" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                style="@style/compound_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/xsCalendarText"
+                android:text="2.AF" />
+
+            <net.xinhuaxing.widget.CalendarText
+                android:id="@+id/afCalendarText"
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/checkbox1"
+                android:background="@drawable/edit_date_bg"
+                app:referentId="@+id/checkbox1" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                style="@style/compound_button_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/afCalendarText"
+                android:text="2.心梗" />
+
+            <net.xinhuaxing.widget.CalendarText
+                android:id="@+id/xgCalendarText"
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/checkbox2"
+                android:background="@drawable/edit_date_bg"
+                app:referentId="@+id/checkbox2" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="PAD："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:id="@+id/xy01EditText"
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-终点事件-其他血管事件-PAD" />
+
+        <net.xinhuaxing.widget.CalendarText
+            style="@style/common_text_style"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_date_bg"
+            app:widgetTag="脑卒中-终点事件-其他血管事件-PAD2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="220dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="其他重大疾病或死亡："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="300dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-终点事件-其他血管事件-其他重大疾病或死亡" />
+
+        <net.xinhuaxing.widget.CalendarText
+            style="@style/common_text_style"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_date_bg"
+            app:widgetTag="脑卒中-终点事件-其他血管事件-其他重大疾病或死亡2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="评分"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="MRS："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-MRS" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="right"
+            android:text="分"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/edit_bg"
+            android:hint="MRS评分结果"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-MRS-评分结果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="BI："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-BI" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="right"
+            android:text="分"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/edit_bg"
+            android:hint="BI评分结果"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-BI-评分结果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="膳食评分："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-膳食评分" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="right"
+            android:text="分"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="400dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/edit_bg"
+            android:hint="膳食评分评分结果"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-膳食评分-评分结果" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="260dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="随访医生签名："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:numeric="decimal"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-评分-随访医生签名" />
+    </LinearLayout>
+
+</LinearLayout>

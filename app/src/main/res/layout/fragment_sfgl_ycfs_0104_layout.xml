@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="孕产史"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:widgetTag="孕产访视-第1次产前-孕产史" >
+
+            <CheckBox
+                android:id="@+id/jzslb01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.流产" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/qt01EditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/jzslb01CheckBox"
+                app:referentId="@+id/jzslb01CheckBox"
+                app:widgetTag="孕产访视-第1次产前-孕产史-流产" />
+
+            <CheckBox
+                android:id="@+id/jzslb02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/qt01EditText"
+                android:text="2.死胎" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/qt02EditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/jzslb02CheckBox"
+                app:referentId="@+id/jzslb02CheckBox"
+                app:widgetTag="孕产访视-第1次产前-孕产史-死胎" />
+
+            <CheckBox
+                android:id="@+id/jzslb03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/qt02EditText"
+                android:text="3.死产" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/qt03EditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/jzslb03CheckBox"
+                app:referentId="@+id/jzslb03CheckBox"
+                app:widgetTag="孕产访视-第1次产前-孕产史-死产" />
+
+            <CheckBox
+                android:id="@+id/jzslb04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/qt03EditText"
+                android:text="4.新生儿死亡" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/qt04EditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/jzslb04CheckBox"
+                app:referentId="@+id/jzslb04CheckBox"
+                app:widgetTag="孕产访视-第1次产前-孕产史-新生儿死亡" />
+
+            <CheckBox
+                android:id="@+id/jzslb05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/qt04EditText"
+                android:text="5.出生缺陷儿" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/qt05EditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="60.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="6dip"
+                android:layout_toRightOf="@+id/jzslb05CheckBox"
+                app:referentId="@+id/jzslb05CheckBox"
+                app:widgetTag="孕产访视-第1次产前-孕产史-出生缺陷儿" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="听诊"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="心脏："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-第1次产前-听诊-心脏" >
+
+            <RadioButton
+                android:id="@+id/xz01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/xz02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/xz02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="肺部："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-第1次产前-听诊-肺部" >
+
+            <RadioButton
+                android:id="@+id/fb01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/fb02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/fb02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="妇科检查"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="外阴："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-第1次产前-妇科检查-外阴" >
+
+            <RadioButton
+                android:id="@+id/wy01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/wy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/wy02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="阴道："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-第1次产前-妇科检查-阴道" >
+
+            <RadioButton
+                android:id="@+id/yd01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/yd02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/yd02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

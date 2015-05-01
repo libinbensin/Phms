@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phss="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/body_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="@dimen/dp10" >
+    </RelativeLayout>
+
+    <SlidingDrawer
+        android:id="@+id/sliding"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/allApps"
+        android:handle="@+id/imageViewIcon"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chouti_up_bg" />
+
+        <ImageView
+            android:id="@+id/allApps"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chouti_bg" />
+    </SlidingDrawer>
+
+    <RelativeLayout
+        android:id="@+id/gnRelativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/daxxMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_daxx"
+                    android:onClick="onClick"
+                    android:tag="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/daxxMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="档案信息"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/jktjMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_jktj"
+                    android:onClick="onClick"
+                    android:tag="2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jktjMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="健康体检"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/sfglMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_sfgl"
+                    android:onClick="onClick"
+                    android:tag="3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sfglMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="随访管理"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/ycjhMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_ycjh"
+                    android:tag="4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ycjhMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="远程监护"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/jkjyMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_jkjy"
+                    android:onClick="onClick"
+                    android:tag="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jkjyMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="健康教育"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip" >
+
+                <com.adinnet.xd.medical.widget.MyButton
+                    android:id="@+id/yyzdMyButton"
+                    android:layout_width="80dip"
+                    android:layout_height="90dip"
+                    android:background="@drawable/chouti_yyzd"
+                    android:onClick="onClick"
+                    android:tag="6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/yyzdMyButton"
+                    android:layout_centerHorizontal="true"
+                    android:text="用药指导"
+                    android:textColor="@color/jz_text_color" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

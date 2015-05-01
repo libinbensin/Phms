@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dip" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="请选择过敏史种类，并选择过敏原种类："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/gmszl_spinner"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="150dip"
+            android:layout_height="38dip"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/gmszl_prompt" />
+
+        <Spinner
+            android:id="@+id/gmyzl_spinner"
+            style="@style/spinnerbtndropdown"
+            android:layout_width="180dip"
+            android:layout_height="38dip"
+            android:layout_alignTop="@id/gmszl_spinner"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/gmszl_spinner"
+            android:background="@drawable/spinner"
+            android:paddingLeft="10dip"
+            android:prompt="@string/gmyzl_prompt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发病时间："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <com.cking.phss.widget.CalendarText
+            android:id="@+id/fbsj_date_text"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/edit_date_bg"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dip"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发病原因："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/fbyy_text"
+            android:layout_width="200dip"
+            android:layout_height="36dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/edit_box"
+            android:paddingLeft="10dip"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="治疗描述："
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/zlms_text"
+            android:layout_width="200dip"
+            android:layout_height="36dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dip"
+            android:background="@drawable/edit_box"
+            android:paddingLeft="10dip"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

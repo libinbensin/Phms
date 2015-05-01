@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="肝功能：总蛋白："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-总蛋白" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="白蛋白："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-白蛋白" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="总胆："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-总胆" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="ATL："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-ATL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="AST："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-AST" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="肾功能：Cr："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-Cr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="BUN："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-BUN" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="UA："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-UA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="血糖："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-血糖" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="糖化血红蛋白："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-糖化血红蛋白" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="TC："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-TC" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="TG："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-TG" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="HDL："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-HDL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="LDL："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-LDL" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="脂蛋白a："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-脂蛋白a" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="EKG："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-EKG" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="胸片："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/decimal_edittext_style"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-胸片" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="本次诊断"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/jktj_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cm_add_text"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dp20" />
+
+                <ImageView
+                    android:id="@+id/xzImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@string/hello_world"
+                    android:src="@drawable/add_label_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp10"
+            android:focusable="true"
+            android:orientation="vertical" >
+
+            <com.cking.phss.widget.ListView
+                android:id="@+id/tnbyyqkListView"
+                style="@style/listview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:addButton="@id/xzImageView"
+                app:addDialogLayout="@layout/dialog_add_bczd_layout2"
+                app:evenLineBackgroundColor="@color/list_osh_background_color"
+                app:evenLineTextColor="@color/black"
+                app:listItemLayout="@layout/item_bczd_layout2"
+                app:oddLineBackgroundColor="@color/list_jsh_background_color"
+                app:oddLineTextColor="@color/black"
+                app:titleLayout="@layout/item_bczd_title_layout2"
+                app:type="excel"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-本次诊断" >
+            </com.cking.phss.widget.ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="260.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="本次处理：生活方式改变："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="260dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-本次处理-生活方式改变" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="带药："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="260dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-本次处理-带药" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="260.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="检查："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="260dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-本次处理-检查" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="康复："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="260dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="脑卒中报卡-个人系统疾病史-本次处理-康复" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/qrButton"
+                android:layout_width="120dip"
+                android:layout_height="49dip"
+                android:layout_marginRight="60dip"
+                android:layout_toLeftOf="@+id/fhButton"
+                android:background="@drawable/custom_button_bg"
+                android:text="确认"
+                android:textColor="@color/custom_text_color"
+                android:textSize="@dimen/dp20" />
+
+            <Button
+                android:id="@+id/fhButton"
+                android:layout_width="120dip"
+                android:layout_height="49dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dip"
+                android:background="@drawable/cancel_bg"
+                android:text="返回"
+                android:textColor="@color/cancel_text_color"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

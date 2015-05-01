@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_pfss_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/cfpfssSpinnerUtil"
+                spinnerutil:name="cfpfss"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_yy_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/yySpinnerUtil"
+                spinnerutil:name="yy"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_sysf_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/cfsyfsSpinnerUtil"
+                spinnerutil:name="cfsyfs"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:gravity="right"
+                android:text="@string/shhj_rllx_text"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/rllxSpinnerUtil"
+                spinnerutil:name="rllx"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_ys_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/ysSpinnerUtil"
+                spinnerutil:name="ys"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_qcl_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/qclSpinnerUtil"
+                spinnerutil:name="qcl"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_wscs_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/wscsSpinnerUtil"
+                spinnerutil:name="wsgc"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_fwscs_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/fwscsSpinnerUtil"
+                spinnerutil:name="fwsgc"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_ljcl_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/ljclSpinnerUtil"
+                spinnerutil:name="ljcl"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_ws_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/wsSpinnerUtil"
+                spinnerutil:name="ws"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_wscl_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/wsclSpinnerUtil"
+                spinnerutil:name="wscl"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_fwlx_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/fwlxSpinnerUtil"
+                spinnerutil:name="fwlx"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_zfxz_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zfxzSpinnerUtil"
+                spinnerutil:name="zfxz"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_zfjs_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/zfjsEditText"                
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:numeric="integer"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_zfcg_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zfcgSpinnerUtil"
+                spinnerutil:name="zfcg"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_zftf_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zftfSpinnerUtil"
+                spinnerutil:name="zftf"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_zfbr_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zfbnSpinnerUtil"
+                spinnerutil:name="zfbn"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_kqsd_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/kqsdSpinnerUtil"
+                spinnerutil:name="kqsd"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_jydq_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.MultipleChoiceText
+                android:id="@+id/jydqMultipleChoiceText"
+                spinnerutil:name="jydq"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_jtgj_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.MultipleChoiceText
+                android:id="@+id/jtgjMultipleChoiceText"
+                spinnerutil:name="jtgj"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_wtsb_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.MultipleChoiceText
+                android:id="@+id/wtsbMultipleChoiceText"
+                spinnerutil:name="wtsb"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="190.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_rjmj_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/zmjEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:numeric="integer"
+                android:background="@drawable/edit_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:text="@string/cm_xg_text" />
+
+            <EditText
+                android:id="@+id/rjmjEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:numeric="integer"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="170.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/shhj_grda_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/grdaztSpinnerUtil"
+                spinnerutil:name="grdazt"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

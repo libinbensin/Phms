@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="既往治疗情况"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="门诊："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/mzSpinnerUtil"
+                spinnerutil:name="jsbmz"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="280.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="首次抗精神病药治疗时间："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/sckjsbyzlsjCalendarText"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="360.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="住院（既往精神专科住院次数）："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/jwjszkzycsEditText"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="目前诊断情况"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/zdTextView"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="诊断："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/zd01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@+id/zdTextView"
+                android:text="1.精神分裂症" />
+
+            <CheckBox
+                android:id="@+id/zd02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/zd01CheckBox"
+                android:text="2.分裂情感性障碍" />
+
+            <CheckBox
+                android:id="@+id/zd03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/zd02CheckBox"
+                android:text="3.偏执性精神病" />
+
+            <CheckBox
+                android:id="@+id/zd04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/zd03CheckBox"
+                android:text="4.双相障碍" />
+
+            <CheckBox
+                android:id="@+id/zd05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="30.0dip"
+                android:layout_toRightOf="@+id/zd04CheckBox"
+                android:text="5.精神分裂症" />
+
+            <CheckBox
+                android:id="@+id/zd06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd01CheckBox"
+                android:layout_below="@+id/zd01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="6.精神发育迟滞伴发精神障碍" />
+
+            <CheckBox
+                android:id="@+id/zd07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd03CheckBox"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.其他" />
+
+            <EditText
+                android:id="@+id/qtEditText"
+                android:layout_width="300.0dip"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/zd07CheckBox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="确诊住院："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/qzzyEditText"
+                android:layout_width="180.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="280.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="确诊时间："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/qzsjCalendarText"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="最近一次治疗效果："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zjyczlxgSpinnerUtil"
+                spinnerutil:name="zhyczlxg"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

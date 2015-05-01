@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dip"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:layout_marginTop="2dip"
+    android:background="@drawable/yyzd_bg" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="16dip" >
+
+            <TextView
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="搜索:"
+                android:textSize="20sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/yyzd_ypmc_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dip"
+                android:layout_toRightOf="@+id/search_text"
+                android:background="@drawable/yyzd_ss"
+                android:completionThreshold="1"
+                android:gravity="center_vertical"
+                android:hint="请输入药物名称"
+                android:paddingLeft="20dip"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/yyzd_search_img"
+                android:layout_width="120dip"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@+id/yyzd_ypmc_edit"
+                android:background="@drawable/custom_button_bg"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/custom_text_color"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip" >
+
+            <include
+                android:id="@+id/data_yyzd_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/tab_radio"
+                layout="@layout/fragment_yyzd_detail_layout" />
+
+            <RadioGroup
+                android:id="@+id/tab_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/yyzd_left"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/radio_ylx"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_top_bg"
+                    android:text="药理学"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_tnb"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_middle_bg"
+                    android:text="适用症"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_jsb"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_middle_bg"
+                    android:text="禁忌症"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_cjsf"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_middle_bg"
+                    android:text="不良反应"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_lnsf"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_middle_bg"
+                    android:text="注意事项"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_etsf"
+                    style="@style/left_radio_style"
+                    android:background="@drawable/radiobutton_yyzd_middle_bg"
+                    android:text="相互作用"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="210dp"
+                    android:background="@drawable/radiobutton_yyzd_bottom_bg" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

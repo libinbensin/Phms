@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grid" >
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="药物名称"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="90dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grid" >
+
+        <TextView
+            android:id="@+id/dosage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用量"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grid" >
+
+        <TextView
+            android:id="@+id/unit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="单位"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="160dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grid"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/usage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用法"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="54dp"
+        android:background="@drawable/grid"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/way_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="给药方式"
+            android:textColor="@color/text_gray"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

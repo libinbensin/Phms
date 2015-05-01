@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="诊断信息"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="最高诊断单位："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/zgzddwSpinnerUtil"
+                spinnerutil:name="zgzddw"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="160dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="首次诊断日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/sczdrqCalendarText"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡医生："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/bkysSpinnerUtil"
+                spinnerutil:name="bkys"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/bkys_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.CalendarText
+                android:id="@+id/bkrqCalendarText"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="110dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="报卡单位："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/bkdwSpinnerUtil"
+                spinnerutil:name="bkdw"
+                style="@style/spinnerbtndropdown"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/bkdw_prompt" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="诊断血压："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/zdxy01EditText"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_bg"
+                android:digits="0123456789."
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dip"
+                android:text="/"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/zdxy02EditText"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dip"
+                android:background="@drawable/edit_bg"
+                android:digits="0123456789."
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="933dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="血压级别："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/xyjbSpinnerUtil"
+                spinnerutil:name="xyjb"
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="60dip"
+                android:gravity="right"
+                android:text="高血压类型："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <com.cking.phss.widget.SpinnerUtil
+                android:id="@+id/gxylxSpinnerUtil"
+                spinnerutil:name="gxylx"
+                style="@style/spinnerbtndropdown"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/suifang_prompt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="150.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="个人史："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/grsEditText"
+                    android:layout_width="480.0dip"
+                    android:layout_height="40.0dip"
+                    android:background="@drawable/edit_bg"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip" >
+
+            <TextView
+                android:id="@+id/bqgshqkTextView"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="2dip"
+                android:gravity="right"
+                android:text="家族史："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <CheckBox
+                android:id="@+id/jzs01CheckBox"
+                style="@style/compound_button_style"
+                android:layout_toRightOf="@+id/bqgshqkTextView"
+                android:text="高血压" />
+
+            <CheckBox
+                android:id="@+id/jzs02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_toRightOf="@+id/jzs01CheckBox"
+                android:text="冠心病" />
+
+            <CheckBox
+                android:id="@+id/jzs03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_toRightOf="@+id/jzs02CheckBox"
+                android:text="糖尿病" />
+
+            <CheckBox
+                android:id="@+id/jzs04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/jzs03CheckBox"
+                android:text="脑卒中" />
+
+            <CheckBox
+                android:id="@+id/jzs05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_marginLeft="20.0dip"
+                android:layout_toRightOf="@+id/jzs04CheckBox"
+                android:text="以上都无" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dip"
+                android:gravity="center"
+                android:text="过敏史："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/gmsRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/gms01RadioButton"
+                    style="@style/radio_button_style"
+                    android:text="无" />
+
+                <RadioButton
+                    android:id="@+id/gms02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:text="有" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/gmsEditText"
+                android:layout_width="240dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/edit_bg"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="最后一次检查情况"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="身高："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/sgEditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="170dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="cm"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:gravity="right"
+            android:text="体重："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tzEditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="Kg"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:gravity="right"
+            android:text="脉搏："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/mbEditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="次/分"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="血压："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/xy01EditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="75dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dip"
+            android:text="/"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/xy02EditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="75dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="mmHg"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:gravity="right"
+            android:text="心率："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/xlEditText"
+            style="@style/integer_edittext_style"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="次/分"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip"
+            android:gravity="right"
+            android:text="血糖："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/xtEditText"
+            style="@style/decimal_edittext_style"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="mmol/L"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

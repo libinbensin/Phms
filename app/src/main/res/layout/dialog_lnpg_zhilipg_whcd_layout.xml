@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="700.0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/closeImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/close_bg" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="30dip"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp30" >
+
+            <TextView
+                android:id="@+id/question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/dp50"
+                android:layout_marginRight="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp20"
+                android:text="您现在的文化程度如何？"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp30" />
+
+            <RadioGroup
+                android:id="@+id/radio_bar_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp80"
+                android:layout_marginTop="@dimen/dp20" >
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer1"
+                    style="@style/answer_button_style"
+                    android:layout_width="wrap_content"
+                    android:tag="0"
+                    android:text="文盲（未受教育）" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer2"
+                    style="@style/answer_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:tag="1"
+                    android:text="小学程度（受教育年限≤6年）" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer3"
+                    style="@style/answer_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:tag="2"
+                    android:text="中学（包括中专）程度" />
+
+                <RadioButton
+                    android:id="@+id/radio_tzps_answer4"
+                    style="@style/answer_button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:tag="3"
+                    android:text="大学（包括大专）程度" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="style">
+        <enum name="standard" value="0" />
+        <enum name="tablet" value="1" />
+        <enum name="cubein" value="2" />
+        <enum name="cubeout" value="3" />
+        <enum name="flipvertical" value="4" />
+        <enum name="fliphorizontal" value="5" />
+        <enum name="stack" value="6" />
+        <enum name="zoomin" value="7" />
+        <enum name="zoomout" value="8" />
+        <enum name="rotateup" value="9" />
+        <enum name="rotatedown" value="10" />
+        <enum name="accordion" value="11" />
+    </attr>
+    <attr name="fadeEnabled" format="boolean" />
+    <attr name="outlineEnabled" format="boolean" />
+    <attr name="outlineColor" format="reference|color" />
+
+    <declare-styleable name="SmoothButton">
+        <attr name="transitionDrawable" format="reference" />
+        <attr name="transitionDrawableLength" format="integer" />
+        <attr name="transitionTextColorUp" format="color" />
+        <attr name="transitionTextColorDown" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MenuRadioButton">
+        <attr name="iconDrawablePress" format="reference" />
+        <attr name="iconDrawableNormal" format="reference" />
+        <attr name="textPress" format="reference|string" />
+        <attr name="textNormal" format="reference|string" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="Widget">
+        <attr name="valueType">
+            <enum name="string" value="0" />
+            <enum name="beanmap" value="1" />
+            <enum name="list" value="2" />
+        </attr>
+        <attr name="valueTag" format="string" />
+        <!-- 组件编号 -->
+        <attr name="widgetTag" format="string" />
+
+        <!-- 标题内容 -->
+        <attr name="titleText" format="reference|string" />
+        <!-- 其他内容 -->
+        <attr name="otherText" format="reference|string" />
+        <attr name="otherHint" format="reference|string" />
+        <!-- 选中值，根据该值可设置哪些项选中 -->
+        <attr name="checkedValue">
+            <flag name="wu" value="0x0000" />
+            <flag name="fb" value="0x0001" />
+            <flag name="gxb" value="0x0002" />
+            <flag name="gxy" value="0x0004" />
+            <flag name="jhb" value="0x0008" />
+            <flag name="jsjb" value="0x0010" />
+            <flag name="nzz" value="0x0020" />
+            <flag name="qt" value="0x0040" />
+            <flag name="tgy" value="0x0080" />
+            <flag name="tnb" value="0x0100" />
+            <flag name="tzl" value="0x0200" />
+            <flag name="xtx" value="0x0400" />
+        </attr>
+        <!-- 提示内容 -->
+        <attr name="tipsText" format="reference|string" />
+        <!-- 问题内容 -->
+        <attr name="questionText" format="reference|string" />
+        <attr name="choiceAText" format="reference|string" />
+        <attr name="choiceBText" format="reference|string" />
+        <attr name="choiceCText" format="reference|string" />
+        <attr name="choiceDText" format="reference|string" />
+        <!-- 最大数 -->
+        <attr name="maxQuestions" format="integer" />
+        <!-- 序号 -->
+        <attr name="indexFrom1" format="integer" />
+        <attr name="allowEmpty" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="MultiValue">
+        <attr name="dataSource" format="reference" />
+        <!-- spinner数据源 -->
+        <attr name="valueSource" format="reference" />
+        <!-- spinner的数据源对应的值 -->
+        <!-- spinner数据源名称 -->
+        <attr name="name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ListView">
+        <attr name="type">
+            <flag name="excel" value="0x0000" />
+            <flag name="weibo" value="0x0001" />
+        </attr>
+        <attr name="titleLayout" format="reference" />
+        <attr name="oddLineBackgroundColor" format="color" />
+        <attr name="oddLineTextColor" format="color" />
+        <attr name="evenLineBackgroundColor" format="color" />
+        <attr name="evenLineTextColor" format="color" />
+        <attr name="listItemLayout" format="reference" />
+        <attr name="addButton" format="reference" />
+        <attr name="addDialogLayout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CompoundTextView">
+        <attr name="referentId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CheckBoxGroup">
+        <attr name="switchItem" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="IndexTextView">
+        <attr name="beginWith" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="Button">
+        <attr name="clickEvent" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="病史摘要"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="主诉/临床表现："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="18dip" >
+
+                <CheckBox
+                    android:id="@+id/zslcbx01CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:text="1.无症状" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx02CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/zslcbx01CheckBox"
+                    android:text="2.多饮、多尿" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx03CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@+id/zslcbx02CheckBox"
+                    android:text="3.多食" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx04CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@+id/zslcbx03CheckBox"
+                    android:text="4.乏力" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx05CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@+id/zslcbx04CheckBox"
+                    android:text="5.体温下降" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx06CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_toRightOf="@+id/zslcbx05CheckBox"
+                    android:text="6.视力下降" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx07CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_alignLeft="@+id/zslcbx01CheckBox"
+                    android:layout_below="@+id/zslcbx01CheckBox"
+                    android:layout_marginTop="18dip"
+                    android:text="7.肢体麻木" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx08CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_alignLeft="@+id/zslcbx02CheckBox"
+                    android:layout_below="@+id/zslcbx02CheckBox"
+                    android:layout_marginTop="18dip"
+                    android:text="8.下肢浮肿" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx09CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_alignLeft="@+id/zslcbx03CheckBox"
+                    android:layout_below="@+id/zslcbx03CheckBox"
+                    android:layout_marginTop="18dip"
+                    android:text="9.肢端溃疡" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx10CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_alignLeft="@+id/zslcbx05CheckBox"
+                    android:layout_below="@+id/zslcbx05CheckBox"
+                    android:layout_marginTop="18dip"
+                    android:text="10.皮肤及外阴瘙痒" />
+
+                <CheckBox
+                    android:id="@+id/zslcbx11CheckBox"
+                    style="@style/compound_jzs_button_style"
+                    android:layout_alignLeft="@+id/zslcbx07CheckBox"
+                    android:layout_below="@+id/zslcbx07CheckBox"
+                    android:layout_marginTop="18dip"
+                    android:text="11.其他临床症状" />
+
+                <EditText
+                    android:id="@+id/qtlczzEditText"
+                    android:layout_width="300.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_below="@+id/zslcbx08CheckBox"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="14dip"
+                    android:layout_toRightOf="@+id/zslcbx11CheckBox"
+                    android:background="@drawable/edit_bg"
+                    android:hint="@string/personal_qt_text"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textSize="@dimen/dp20" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="主要检查情况："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="身高："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sgEditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="cm"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dip"
+                android:gravity="right"
+                android:text="体重："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tzEditText"
+                style="@style/integer_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="Kg"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dip"
+                android:gravity="right"
+                android:text="BMI："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/bmiEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="E-1空腹血糖值："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/kfxtzEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="mmol/L"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dip"
+                android:gravity="right"
+                android:text="E-2随机血糖值："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sjxtzEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="mmol/L"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="360dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="E-3OGTT实验，2小时血浆葡萄糖水平："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ogttsyEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="mmol/L"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="E-4总胆固醇："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/zdgcEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="mmol/L"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dip"
+                android:gravity="right"
+                android:text="E-5 HDL-C："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/hdlcEditText"
+                style="@style/decimal_edittext_style"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10.0dip"
+                android:text="mmol/L"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.adinnet.xd.medical.widget.MyButton
+        android:id="@+id/gnMyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/gnTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gnMyButton"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

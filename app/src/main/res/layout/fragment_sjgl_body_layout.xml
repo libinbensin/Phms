@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:spinnerutil="http://schemas.android.com/apk/res/com.cking.phss"
+    android:id="@id/one_main_fragment_right_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/sjglRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sjgl01RadioButton"
+                style="@style/sjgl_left_style"
+                android:layout_width="0.0dip"
+                android:tag="0"
+                android:text="居民查询" />
+
+            <RadioButton
+                android:id="@+id/sjgl02RadioButton"
+                style="@style/sjgl_middle_style"
+                android:layout_width="0.0dip"
+                android:tag="1"
+                android:text="工作管理" />
+
+            <RadioButton
+                android:id="@+id/sjgl03RadioButton"
+                style="@style/sjgl_right_style"
+                android:layout_width="0.0dip"
+                android:tag="2"
+                android:text="上传管理" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

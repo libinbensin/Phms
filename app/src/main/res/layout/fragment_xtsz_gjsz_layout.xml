@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/gjszRadioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/gjsz01RadioButton"
+                    style="@style/health_left_style"
+                    android:layout_width="0.0dip"
+                    android:tag="0"
+                    android:text="用户管理" />
+
+                <RadioButton
+                    android:id="@+id/gjsz02RadioButton"
+                    style="@style/health_middle_style"
+                    android:layout_width="0.0dip"
+                    android:tag="1"
+                    android:text="模块设置" />
+
+                <RadioButton
+                    android:id="@+id/gjsz03RadioButton"
+                    style="@style/health_middle_style"
+                    android:layout_width="0.0dip"
+                    android:tag="2"
+                    android:text="档案录入设置" />
+
+                <RadioButton
+                    android:id="@+id/gjsz04RadioButton"
+                    style="@style/health_middle_style"
+                    android:layout_width="0.0dip"
+                    android:tag="3"
+                    android:text="体检输入限制" />
+
+                <Button
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0"
+                    android:background="@drawable/health_right"
+                    android:button="@null"
+                    android:tag="8" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

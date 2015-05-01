@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phss="http://schemas.android.com/apk/res/com.cking.phss"
+    android:id="@+id/gallery_pannel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp20"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp20" >
+
+    <com.cking.phss.widget.JzsItemWidget
+        android:id="@+id/jzs_fq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        phss:checkedValue="wu"
+        phss:otherHint="其他疾病"
+        phss:titleText="父亲" >
+
+        <!-- android:background="@drawable/box" -->
+
+    </com.cking.phss.widget.JzsItemWidget>
+
+    <com.cking.phss.widget.JzsItemWidget
+        android:id="@+id/jzs_mq"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        phss:checkedValue="wu"
+        phss:otherHint="其他疾病"
+        phss:titleText="母亲" >
+
+        <!-- android:background="@drawable/box" -->
+
+    </com.cking.phss.widget.JzsItemWidget>
+
+    <com.cking.phss.widget.JzsItemWidget
+        android:id="@+id/jzs_xdjm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        phss:checkedValue="wu"
+        phss:otherHint="其他疾病"
+        phss:titleText="兄弟姐妹" >
+    </com.cking.phss.widget.JzsItemWidget>
+
+    <!-- 基本信息的每个页面都是经过我计算过的，请不要随意修改 -->
+
+    <com.cking.phss.widget.JzsItemWidget
+        android:id="@+id/jzs_zn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        phss:checkedValue="wu"
+        phss:otherHint="其他疾病"
+        phss:titleText="子女" >
+
+        <!-- android:background="@drawable/box" -->
+
+    </com.cking.phss.widget.JzsItemWidget>
+
+</LinearLayout>

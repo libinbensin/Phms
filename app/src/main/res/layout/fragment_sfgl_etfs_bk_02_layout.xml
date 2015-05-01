@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="家庭基本信息-父亲"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="身份证：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/idc_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-身份证" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="姓名：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-姓名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/text_gray" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="联系电话：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/phone_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-联系电话" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="出生日期：" />
+
+            <net.xinhuaxing.widget.CalendarText
+                android:layout_width="180.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_date_bg"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-出生日期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="文化程度：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-文化程度" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:text="职业：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-职业" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="工作单位：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-工作单位" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="孕管地：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-家庭基本信息-母亲-孕管地" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="疾病家族史："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/jbjzsRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视报卡-家庭基本信息-母亲-疾病家族史" >
+
+            <RadioButton
+                android:id="@+id/jbjzs01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jbjzs02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:referentId="@+id/jbjzs02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="健康状况："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/jkzkRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="儿童访视报卡-家庭基本信息-母亲-健康状况" >
+
+            <RadioButton
+                android:id="@+id/jkzk01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/jkzk02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:referentId="@+id/jkzk02RadioButton" />
+
+            <RadioButton
+                android:id="@+id/jkzk03RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="100.0dip"
+                android:layout_height="40.0dip"
+                app:referentId="@+id/jkzk03RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="产时情况-母亲"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="胎数：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-胎数" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="胎次：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/integer_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-胎次" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="@color/text_gray" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="产次：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/phone_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-产次" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:text="出生孕周(周)：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/phone_edittext_style"
+                android:layout_width="140.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-出生孕周(周)" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:text="末次分娩方式：" />
+
+            <net.xinhuaxing.widget.Spinner
+                style="@style/spinnerbtndropdown"
+                android:background="@drawable/spinner_bg"
+                android:prompt="@string/gender_prompt"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-末次分娩方式" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="100.0dip"
+                android:layout_height="wrap_content"
+                android:text="助产机构：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/phone_edittext_style"
+                android:layout_width="180.0dip"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-助产机构" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/title_right_text_style"
+                android:layout_width="140.0dip"
+                android:layout_height="wrap_content"
+                android:text="产时并发症：" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                app:widgetTag="儿童访视报卡-产时情况-母亲-产时并发症" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

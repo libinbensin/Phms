@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp50"
+    android:paddingRight="@dimen/dp50"
+    android:paddingTop="@dimen/dp10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="血氧检测："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <Button
+                    android:id="@+id/hqsjButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comfrim_bg"
+                    android:text="@string/jktj_get_data_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="饱和度："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/bhdEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="decimal"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_baifenbi_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="脉率："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/mlEditText"
+                    android:layout_width="130.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:numeric="integer"
+                    android:textSize="@dimen/dp20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/cm_ci_fen1_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="90.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="血氧结论："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp18" />
+
+                <EditText
+                    android:id="@+id/jlEditText"
+                    android:layout_width="170.0dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_trans_bg"
+                    android:enabled="false"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/xy_window"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tsxxTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:gravity="left"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp18" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="40.0dip"
+                    android:text="@string/pttj_jkpj_text"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/pttj_jkpj_s_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/jkpj01RadioButton"
+                    android:layout_gravity="center_vertical"
+                    style="@style/radio_button_style"
+                    android:text="@string/pttj_tjwyc_text" />
+
+                <RadioButton
+                    android:id="@+id/jkpj02RadioButton"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50.0dip"
+                    style="@style/radio_button_style"
+                    android:text="@string/cm_youyc_text" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/pttj_yic1_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/yc01EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pttj_yic2_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/yc02EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pttj_yic3_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <EditText
+                    android:id="@+id/yc03EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="40.0dip"
+                    android:text="@string/pttj_jkzd_text"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/pttj_jkzd_s_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35.0dip"
+                android:orientation="horizontal" >
+
+                <com.adinnet.xd.medical.widget.RelativeGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <CheckBox
+                        android:id="@+id/jkzd01CheckBox"
+                        style="@style/compound_button_style"
+                        android:text="@string/pttj_1_jkgl_text" />
+
+                    <CheckBox
+                        android:id="@+id/jkzd02CheckBox"
+                        style="@style/compound_button_style"
+                        android:layout_marginLeft="@dimen/dp80"
+                        android:layout_toRightOf="@+id/jkzd01CheckBox"
+                        android:text="@string/pttj_2_jyfc_text" />
+
+                    <CheckBox
+                        android:id="@+id/jkzd03CheckBox"
+                        style="@style/compound_button_style"
+                        android:layout_marginLeft="@dimen/dp80"
+                        android:layout_toRightOf="@+id/jkzd02CheckBox"
+                        android:text="@string/pttj_3_jyzz_text" />
+                </com.adinnet.xd.medical.widget.RelativeGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:gravity="left|center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="40.0dip"
+                    android:text="@string/pttj_wxyskz_text"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@drawable/jktj_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="20.0dip" >
+
+            <TextView
+                android:id="@+id/textview_kchun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/pttj_wxyskz_s_text"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <com.adinnet.xd.medical.widget.RelativeGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_kchun" >
+
+                <CheckBox
+                    android:id="@+id/wxyskz01CheckBox"
+                    style="@style/compound_button_style"
+                    android:text="@string/pttj_1_jy_text" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz02CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_toRightOf="@+id/wxyskz01CheckBox"
+                    android:text="@string/pttj_2_jkyj_text" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz03CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_toRightOf="@+id/wxyskz02CheckBox"
+                    android:text="@string/pttj_3_ys_text" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz04CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_toRightOf="@+id/wxyskz03CheckBox"
+                    android:text="@string/pttj_4_dl_text" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz05CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_below="@+id/wxyskz01CheckBox"
+                    android:layout_marginTop="30.0dip"
+                    android:text="@string/pttj_5_jtz_text" />
+
+                <EditText
+                    android:id="@+id/mbEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="50.0dip"
+                    android:layout_toRightOf="@+id/wxyskz05CheckBox"
+                    android:background="@drawable/edit_bg" />
+
+                <TextView
+                    android:id="@+id/text_kg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="55.0dip"
+                    android:layout_toRightOf="@+id/mbEditText"
+                    android:text="@string/cm_dkg_text"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz06CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:layout_marginTop="55.0dip"
+                    android:layout_toRightOf="@+id/text_kg"
+                    android:text="@string/pttj_6_jyjz_text" />
+
+                <EditText
+                    android:id="@+id/jyjzymEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="50.0dip"
+                    android:layout_toRightOf="@+id/wxyskz06CheckBox"
+                    android:background="@drawable/edit_bg" />
+
+                <CheckBox
+                    android:id="@+id/wxyskz07CheckBox"
+                    style="@style/compound_button_style"
+                    android:layout_below="@+id/wxyskz05CheckBox"
+                    android:layout_marginTop="30.0dip"
+                    android:text="@string/pttj_7_qt_text" />
+
+                <EditText
+                    android:id="@+id/qtEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="110.0dip"
+                    android:layout_toRightOf="@+id/wxyskz07CheckBox"
+                    android:background="@drawable/edit_bg" />
+            </com.adinnet.xd.medical.widget.RelativeGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

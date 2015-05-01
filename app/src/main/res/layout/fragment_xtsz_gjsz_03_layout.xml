@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:orientation="vertical" >
+
+        <com.adinnet.xd.medical.widget.RelativeGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dip" >
+
+            <CheckBox
+                android:id="@+id/jktj01CheckBox"
+                style="@style/compound_button_style"
+                android:text="身份证号可编辑" />
+
+            <CheckBox
+                android:id="@+id/jktj02CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj01CheckBox"
+                android:layout_below="@+id/jktj01CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="按身份证号搜索档案" />
+
+            <CheckBox
+                android:id="@+id/jktj03CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj02CheckBox"
+                android:layout_below="@+id/jktj02CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="姓名可编辑" />
+
+            <CheckBox
+                android:id="@+id/jktj04CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj03CheckBox"
+                android:layout_below="@+id/jktj03CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="按姓名搜索档案" />
+
+            <CheckBox
+                android:id="@+id/jktj05CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj04CheckBox"
+                android:layout_below="@+id/jktj04CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="卡号可编辑" />
+
+            <CheckBox
+                android:id="@+id/jktj06CheckBox"
+                style="@style/compound_button_style"
+                android:layout_alignLeft="@+id/jktj05CheckBox"
+                android:layout_below="@+id/jktj05CheckBox"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="按卡号搜索档案" />
+        </com.adinnet.xd.medical.widget.RelativeGroup>
+    </LinearLayout>
+
+</LinearLayout>

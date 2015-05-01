@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="家族史(种类)"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="孕产访视-第1次产前-家族史(种类)" >
+
+            <CheckBox
+                android:id="@+id/zz01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.无" />
+
+            <CheckBox
+                android:id="@+id/zz02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="70.0dip"
+                android:layout_toRightOf="@+id/zz01CheckBox"
+                android:text="2.高血压" />
+
+            <CheckBox
+                android:id="@+id/zz03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zz02CheckBox"
+                android:text="3.糖尿病" />
+
+            <CheckBox
+                android:id="@+id/zz04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zz03CheckBox"
+                android:text="4.冠心病" />
+
+            <CheckBox
+                android:id="@+id/zz05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zz04CheckBox"
+                android:text="5.慢性阻塞性肺疾病" />
+
+            <CheckBox
+                android:id="@+id/zz06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/zz05CheckBox"
+                android:text="6.恶性肿瘤" />
+
+            <CheckBox
+                android:id="@+id/zz07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz01CheckBox"
+                android:layout_below="@+id/zz01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.脑卒中" />
+
+            <CheckBox
+                android:id="@+id/zz08CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz02CheckBox"
+                android:layout_below="@+id/zz02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="8.重性精神疾病" />
+
+            <CheckBox
+                android:id="@+id/zz09CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz03CheckBox"
+                android:layout_below="@+id/zz03CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="9.结核病" />
+
+            <CheckBox
+                android:id="@+id/zz10CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz04CheckBox"
+                android:layout_below="@+id/zz04CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="10.肝脏疾病" />
+
+            <CheckBox
+                android:id="@+id/zz11CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz05CheckBox"
+                android:layout_below="@+id/zz05CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="11.先天畸形" />
+
+            <CheckBox
+                android:id="@+id/zz12CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zz06CheckBox"
+                android:layout_below="@+id/zz06CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="12.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/zzEditText"
+                android:layout_width="120.0dip"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/zz06CheckBox"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/zz12CheckBox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20"
+                app:referentId="@+id/zz08CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="个人史"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="18dip"
+            app:widgetTag="孕产访视-第1次产前-个人史" >
+
+            <CheckBox
+                android:id="@+id/jzslb01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.吸烟" />
+
+            <CheckBox
+                android:id="@+id/jzslb02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb01CheckBox"
+                android:text="2.饮酒" />
+
+            <CheckBox
+                android:id="@+id/jzslb03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb02CheckBox"
+                android:text="3.服用药物" />
+
+            <CheckBox
+                android:id="@+id/jzslb04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb03CheckBox"
+                android:text="4.接触有毒有害物质" />
+
+            <CheckBox
+                android:id="@+id/jzslb05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/jzslb04CheckBox"
+                android:text="5.接触放射线" />
+
+            <CheckBox
+                android:id="@+id/jzslb06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/jzslb01CheckBox"
+                android:layout_below="@+id/jzslb01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="6.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/jzslbEditText"
+                android:layout_width="300.0dip"
+                android:layout_height="40.0dip"
+                android:layout_below="@+id/jzslb02CheckBox"
+                android:layout_marginLeft="6dip"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/jzslb06CheckBox"
+                android:background="@drawable/edit_bg"
+                android:hint="@string/personal_qt_text"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/dp20"
+                app:referentId="@+id/jzslb06CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="30.0dip"
+                android:text="妇科手术史"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35.0dip"
+            android:orientation="horizontal"
+            app:widgetTag="孕产访视-第1次产前-妇科手术史" >
+
+            <RadioButton
+                android:id="@+id/fsb01RadioButton"
+                style="@style/radio_button_style" />
+
+            <RadioButton
+                android:id="@+id/fsb02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="400.0dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/fsb02RadioButton" />
+        </net.xinhuaxing.widget.RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

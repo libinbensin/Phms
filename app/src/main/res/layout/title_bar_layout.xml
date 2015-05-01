@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:background="@drawable/title_bar_bg" >
+
+    <Button
+        android:id="@id/button_head_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:background="@drawable/head_back_bg"
+        android:text="@string/head_back_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp20" />
+
+    <TextView
+        android:id="@id/textview_head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/head_ycjh_text"
+        android:textColor="@color/head_textcolor"
+        android:textSize="@dimen/dp24" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.adinnet.xd.medical.widget.MyButton
+            android:id="@id/imageview_head_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/head_search"
+            android:onClick="onClick" />
+
+        <com.adinnet.xd.medical.widget.MyButton
+            android:id="@id/imageview_head_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/head_setting" />
+    </LinearLayout>
+
+</LinearLayout>

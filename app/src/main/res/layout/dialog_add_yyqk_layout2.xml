@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="700.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/closeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/close_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="药物名称："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.AutoCompleteTextView
+                android:id="@+id/ywmcAutoCompleteTextView"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg"
+                android:completionThreshold="1"
+                android:gravity="center_vertical"
+                android:hint="药物首字母"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:widgetTag="用药情况-药物名称" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="药物类型："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                android:id="@+id/ywlxSpinnerUtil"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/spinner_bg"
+                app:widgetTag="用药情况-药物类型" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="用量："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/ylEditText"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical"
+                android:hint="每次用药量"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:widgetTag="用药情况-用量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="药物单位："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                android:id="@+id/ywdwSpinnerUtil"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/spinner_bg"
+                app:widgetTag="用药情况-药物单位" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="用法："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                android:id="@+id/yfSpinnerUtil"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/spinner_bg"
+                app:widgetTag="用药情况-用法" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="使用总剂量："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.EditText
+                android:id="@+id/syzjlEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:background="@drawable/edit_bg"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20"
+                app:widgetTag="用药情况-使用总剂量" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="130.0dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="给药方式："
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/dp20" />
+
+            <net.xinhuaxing.widget.Spinner
+                android:id="@+id/gyfsSpinnerUtil"
+                android:layout_width="180dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/spinner_bg"
+                app:widgetTag="用药情况-给药方式" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/comfrim_bg"
+            android:tag="clickEvent:confirm"
+            android:text="确定"
+            android:textColor="@color/confrim_text_color"
+            android:textSize="@dimen/dp20" />
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:background="@drawable/cancel_bg"
+            android:tag="clickEvent:cancel"
+            android:text="取消"
+            android:textColor="@color/cancel_text_color"
+            android:textSize="@dimen/dp20" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/xd_main_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52dip" >
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:textColor="#61A5AE"
+                android:textSize="26sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@+id/button_sjgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/head_search"
+                android:contentDescription="@string/hello_world"
+                android:onClick="onClick" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@+id/button_xtsz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/head_setting"
+                android:contentDescription="@string/hello_world"
+                android:onClick="onClick" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20.0dip" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_jkjy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_jkjy_bg"
+                android:onClick="onClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_jbxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_jbxx_bg"
+                android:onClick="onClick" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_jktj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_jktj_bg"
+                android:onClick="onClick" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_sfgl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_sfgl_bg"
+                android:onClick="onClick" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_ycjh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_ycjh_bg" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/xd_main_box_shadow_bg" />
+
+            <com.adinnet.xd.medical.widget.MyButton
+                android:id="@id/button_yyzd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/xd_main_box_yyzd_bg"
+                android:onClick="onClick" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/xd_main_box_shadow_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/xd_main_box_shadow_bg" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|center"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:gravity="right"
+        android:text="@string/version_text"
+        android:textColor="#ff9b8e7f"
+        android:textSize="20.0sp"
+        android:visibility="gone" />
+
+</FrameLayout>

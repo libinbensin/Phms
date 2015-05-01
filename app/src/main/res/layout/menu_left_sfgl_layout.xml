@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phss="http://schemas.android.com/apk/res/com.cking.phss"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/menu_left_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <com.cking.phss.widget.MenuRadioGroup
+            android:id="@+id/radiogoup_sfgl"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding20" >
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_gxy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="0"
+                phss:checked="true"
+                phss:iconDrawableNormal="@drawable/menu_personal_pressed"
+                phss:iconDrawablePress="@drawable/menu_personal_normal"
+                phss:textNormal="@string/menu_gxy_text"
+                phss:textPress="@string/menu_gxy_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_tnb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="1"
+                phss:iconDrawableNormal="@drawable/menu_insurance_pressed"
+                phss:iconDrawablePress="@drawable/menu_insurance_normal"
+                phss:textNormal="@string/menu_tnb_text"
+                phss:textPress="@string/menu_tnb_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_nzz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                phss:iconDrawableNormal="@drawable/menu_sign_pressed"
+                phss:iconDrawablePress="@drawable/menu_sign_normal"
+                phss:textNormal="@string/menu_nzz_text"
+                phss:textPress="@string/menu_nzz_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_jsb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="3"
+                phss:iconDrawableNormal="@drawable/menu_exposure_pressed"
+                phss:iconDrawablePress="@drawable/menu_exposure_normal"
+                phss:textNormal="@string/menu_jsb_text"
+                phss:textPress="@string/menu_jsb_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_ycfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="4"
+                phss:iconDrawableNormal="@drawable/menu_allergy_pressed"
+                phss:iconDrawablePress="@drawable/menu_allergy_normal"
+                phss:textNormal="@string/menu_ycfs_text"
+                phss:textPress="@string/menu_ycfs_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_etfs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="5"
+                phss:iconDrawableNormal="@drawable/menu_family_pressed"
+                phss:iconDrawablePress="@drawable/menu_family_normal"
+                phss:textNormal="@string/menu_etfs_text"
+                phss:textPress="@string/menu_etfs_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_lnsf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="6"
+                phss:iconDrawableNormal="@drawable/menu_toward_pressed"
+                phss:iconDrawablePress="@drawable/menu_toward_normal"
+                phss:textNormal="@string/menu_lnfs_text"
+                phss:textPress="@string/menu_lnfs_text" />
+
+            <com.cking.phss.widget.MenuRadioButton
+                android:id="@+id/radio_cjsf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="7"
+                phss:iconDrawableNormal="@drawable/menu_genetic_pressed"
+                phss:iconDrawablePress="@drawable/menu_genetic_normal"
+                phss:textNormal="@string/menu_cjfs_text"
+                phss:textPress="@string/menu_cjfs_text" />
+        </com.cking.phss.widget.MenuRadioGroup>
+    </ScrollView>
+
+</LinearLayout>

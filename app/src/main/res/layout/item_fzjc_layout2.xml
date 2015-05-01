@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="44dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <net.xinhuaxing.widget.TextView
+        android:layout_width="193dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp20"
+        app:widgetTag="辅助检查-辅检项目" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <net.xinhuaxing.widget.TextView
+        android:id="@+id/fzjcjgTextView"
+        android:layout_width="193dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp20"
+        app:widgetTag="辅助检查-辅检结果" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <net.xinhuaxing.widget.TextView
+        android:id="@+id/jcrTextView"
+        android:layout_width="133dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp20"
+        app:widgetTag="辅助检查-检查人" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <net.xinhuaxing.widget.TextView
+        android:id="@+id/jcrqTextView"
+        android:layout_width="227dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp20"
+        app:widgetTag="辅助检查-检查日期" />
+
+    <View
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:background="@color/bl_line_color" />
+
+    <LinearLayout
+        android:id="@+id/czLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:contentDescription="edit"
+            android:onClick="onClick"
+            android:src="@drawable/edit_menu_bg" />
+
+        <ImageView
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:contentDescription="delete"
+            android:onClick="onClick"
+            android:src="@drawable/delete_menu_bg" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="转诊："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.RadioGroup
+                android:id="@+id/zzRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:widgetTag="儿童访视-1岁内-发育筛选-转诊" >
+
+                <RadioButton
+                    android:id="@+id/zz01RadioButton"
+                    style="@style/radio_button_style"
+                    android:checked="true"
+                    android:text="@string/cm_wu_text" />
+
+                <RadioButton
+                    android:id="@+id/zz02RadioButton"
+                    style="@style/radio_button_style"
+                    android:layout_marginLeft="50.0dip"
+                    android:text="@string/cm_have_text" />
+            </net.xinhuaxing.widget.RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="140.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="原因："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/yyEditText"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    app:widgetTag="儿童访视-1岁内-发育筛选-转诊-原因" >
+
+                    <requestFocus />
+                </net.xinhuaxing.widget.EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="140.0dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="机构及科室："
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/dp20" />
+
+                <net.xinhuaxing.widget.EditText
+                    android:id="@+id/jgjksEditText"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    app:widgetTag="儿童访视-1岁内-发育筛选-转诊-机构及科室" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/compound_jzs_button_style"
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="right|center_vertical"
+            android:text="指导："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.CheckBoxGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            app:switchItem="@+id/zz01CheckBox"
+            app:widgetTag="儿童访视-1岁内-发育筛选-指导" >
+
+            <CheckBox
+                android:id="@+id/zd01CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:text="1.科学喂养" />
+
+            <CheckBox
+                android:id="@+id/zd02CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/zd01CheckBox"
+                android:text="2.合理膳食" />
+
+            <CheckBox
+                android:id="@+id/zd03CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zd02CheckBox"
+                android:text="3.生长发育" />
+
+            <CheckBox
+                android:id="@+id/zd04CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="18dip"
+                android:layout_toRightOf="@+id/zd03CheckBox"
+                android:text="4.疾病预防" />
+
+            <CheckBox
+                android:id="@+id/zd05CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@+id/zd04CheckBox"
+                android:text="5.预防意外伤害" />
+
+            <CheckBox
+                android:id="@+id/zd06CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd01CheckBox"
+                android:layout_below="@+id/zd01CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="6.口腔保健" />
+
+            <CheckBox
+                android:id="@+id/zd07CheckBox"
+                style="@style/compound_jzs_button_style"
+                android:layout_alignLeft="@+id/zd02CheckBox"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginTop="18dip"
+                android:text="7.其他" />
+
+            <net.xinhuaxing.widget.EditText
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zd02CheckBox"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="18dip"
+                android:layout_toRightOf="@+id/zd07CheckBox"
+                android:background="@drawable/edit_bg"
+                android:numeric="integer"
+                app:referentId="@+id/zd07CheckBox" />
+        </net.xinhuaxing.widget.CheckBoxGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="其他医嘱及建议："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            style="@style/text_edittext_style"
+            android:layout_width="200.0dip"
+            android:layout_height="wrap_content"
+            app:widgetTag="儿童访视-1岁内-发育筛选-其他医嘱及建议" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="下次访视日期："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.CalendarText
+                style="@style/common_text_style"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/edit_date_bg"
+                android:hint="请输入时间"
+                app:widgetTag="儿童访视-1岁内-发育筛选-下次访视日期" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="right"
+                android:text="随访医生签名："
+                android:textColor="@color/text_gray"
+                android:textSize="20sp" />
+
+            <net.xinhuaxing.widget.EditText
+                style="@style/text_edittext_style"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                app:widgetTag="儿童访视-1岁内-发育筛选-随访医生签名" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

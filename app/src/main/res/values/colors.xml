@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="personal_sex_textcolor">#ff817f7d</color>
+    <color name="personal_textcolor">#ff504f4d</color>
+    <color name="head_textcolor">#ff2793a1</color>
+    <color name="bl_bg_color">#ff7fb7be</color>
+    <color name="bl_line_color">#ffd3d3d3</color>
+    <color name="jz_text_color">#ff38929e</color>
+    <color name="lnpg_text_color">#ffc84b4b</color>
+    <color name="green_pressed_text_color">#ff32A7B8</color>
+    <color name="green_normal_text_color">#ffA2C8CE</color>
+    <color name="sjgl_background_color">#ffDDDCD6</color>
+    <color name="list_jsh_background_color">#ffF7F7F7</color>
+    <color name="list_osh_background_color">#ffF3F2F0</color>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/body_bg"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp30" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/xzButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/add_menu_bg"
+            android:paddingLeft="@dimen/dp30"
+            android:text="@string/cm_add_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp20" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/jtcyTitleLinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp55"
+            android:background="@color/bl_bg_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="159dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_gx_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="69dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_name_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_xb_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_csrq_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_whcd_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_job_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_hyzk_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="140dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/jtcy_grzt_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="fill_parent"
+                android:background="@color/bl_line_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cm_cz_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <com.cking.phss.widget.JbxxJtcyLayout
+            android:id="@+id/jbxxJtcyLayout"
+            style="@style/listview_style" />
+    </LinearLayout>
+
+</LinearLayout>

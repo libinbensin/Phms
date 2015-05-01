@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp20" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp60"
+                android:text="危险因素控制"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp20" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/jktj_title"
+            android:gravity="left|center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp30"
+                android:text="高血压"
+                android:textColor="@color/jz_text_color"
+                android:textSize="@dimen/dp20" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@drawable/jktj_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35.0dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:text="每周测血压："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.RadioGroup
+            android:id="@+id/ywblfyRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:widgetTag="脑卒中-高血压-每周测血压" >
+
+            <RadioButton
+                android:id="@+id/ywblfy01RadioButton"
+                style="@style/radio_button_style"
+                android:checked="true"
+                android:text="无" />
+
+            <RadioButton
+                android:id="@+id/ywblfy02RadioButton"
+                style="@style/radio_button_style"
+                android:layout_marginLeft="50.0dip"
+                android:text="有" />
+        </net.xinhuaxing.widget.RadioGroup>
+
+        <TextView
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="120dip"
+            android:gravity="right"
+            android:text="平均血压(mmHg)："
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:id="@+id/xy01EditText"
+            android:layout_width="75dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/edit_bg"
+            android:hint="收缩压"
+            android:numeric="integer"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-高血压-平均血压(mmHg)：1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dip"
+            android:text="/"
+            android:textColor="@color/text_gray"
+            android:textSize="20sp" />
+
+        <net.xinhuaxing.widget.EditText
+            android:id="@+id/xy02EditText"
+            android:layout_width="75dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dip"
+            android:background="@drawable/edit_bg"
+            android:hint="舒张压"
+            android:numeric="integer"
+            android:paddingLeft="10dip"
+            android:singleLine="true"
+            android:textSize="20sp"
+            app:widgetTag="脑卒中-高血压-平均血压(mmHg)：2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp10" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/jktj_title"
+                android:gravity="left|center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="30.0dip"
+                    android:text="用药情况"
+                    android:textColor="@color/jz_text_color"
+                    android:textSize="@dimen/dp20" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/jktj_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新增"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/dp20" />
+
+                <ImageView
+                    android:id="@+id/xzImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:contentDescription="@string/hello_world"
+                    android:src="@drawable/add_label_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="vertical" >
+
+            <com.cking.phss.widget.ListView
+                android:id="@+id/yyqkListView"
+                style="@style/listview_style"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                app:addButton="@id/xzImageView"
+                app:addDialogLayout="@layout/dialog_add_yyqk_layout2"
+                app:evenLineBackgroundColor="@color/list_osh_background_color"
+                app:evenLineTextColor="@color/black"
+                app:listItemLayout="@layout/item_yyqk_layout2"
+                app:oddLineBackgroundColor="@color/list_jsh_background_color"
+                app:oddLineTextColor="@color/black"
+                app:titleLayout="@layout/item_yyqk_title_layout2"
+                app:type="excel"
+                app:widgetTag="脑卒中-高血压-用药情况" >
+            </com.cking.phss.widget.ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
