@@ -1,18 +1,5 @@
-/* Cking Inc. (C) 2012. All rights reserved.
- *
- * MainActivity.java
- * classes : com.cking.phss.activity.MainActivity
- * @author Wation Haliyoo
- * V 1.0.0
- * Create at 2012-9-15 上午10:57:55
- */
 package com.cking.phss.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import net.xinhuaxing.eshow.constants.Constants;
-import net.xinhuaxing.util.StringUtil;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -42,12 +29,13 @@ import com.cking.phss.global.Global;
 import com.cking.phss.util.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
-/**
- * com.cking.phss.activity.MainActivity
- * 
- * @author Wation Haliyoo <br/>
- *         create at 2012-9-15 上午10:57:55
- */
+import net.xinhuaxing.eshow.constants.Constants;
+import net.xinhuaxing.util.StringUtil;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class MainActivity extends BaseActivity implements OnClickListener {
     private static final String TAG = "MainActivity";
 
@@ -90,8 +78,6 @@ public class MainActivity extends BaseActivity implements OnClickListener {
      * 系统设置
      */
     private XtszMainController mXtszMainController = null;
-
-    
 
     private RelativeLayout gnRelativeLayout;
     private SlidingDrawer sd;
