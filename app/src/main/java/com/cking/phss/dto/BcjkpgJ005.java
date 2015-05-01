@@ -1,17 +1,17 @@
 package com.cking.phss.dto;
 
-import java.util.List;
-
 import com.cking.phss.bean.BeanCD;
 import com.cking.phss.dto.innner.DeviceUse;
 import com.cking.phss.global.Global;
 import com.cking.phss.util.DeviceUseFactory;
 import com.cking.phss.xml.util.XmlAttribute;
 import com.cking.phss.xml.util.XmlTag;
+
+import java.util.List;
 /**
  * 保存健康评估
  * @author taowencong
- *
+ *  当前分支
  */
 public class BcjkpgJ005 implements IDto{
     /**
