@@ -89,6 +89,8 @@
     <orderEntry type="library" exported="" name="ksoap2-android-assembly-2.4-jar-with-dependencies" level="project" />
     <orderEntry type="library" exported="" name="lifesense-ble-1.2.3" level="project" />
     <orderEntry type="library" exported="" name="commons-codec-1.7" level="project" />
+    <orderEntry type="library" exported="" name="xstream-1.4.7" level="project" />
+    <orderEntry type="library" exported="" name="xUtils-2.6.14" level="project" />
     <orderEntry type="library" exported="" name="ant" level="project" />
     <orderEntry type="library" exported="" name="BaseProject" level="project" />
     <orderEntry type="library" exported="" name="achartengine-1.0.0" level="project" />

@@ -41,7 +41,7 @@ import com.cking.phss.page.SfglJsbReportPage01;
 import com.cking.phss.page.SfglJsbReportPage02;
 import com.cking.phss.page.SfglJsbReportPage03;
 import com.cking.phss.page.SfglJsbReportPage04;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

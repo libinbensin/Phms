@@ -3,7 +3,7 @@ package com.cking.phss.update;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
 /**
  * the local version and update info in the SharedPreference

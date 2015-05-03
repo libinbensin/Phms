@@ -6,7 +6,7 @@ import android.os.Message;
 import android.widget.Toast;
 
 import com.cking.phss.R;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
 /**
  * 联网检测相关提示，消息类

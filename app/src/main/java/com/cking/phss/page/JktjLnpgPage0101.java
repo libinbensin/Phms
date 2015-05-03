@@ -18,7 +18,7 @@ import com.cking.phss.bean.Jmjbxx;
 import com.cking.phss.bean.Lnpg;
 import com.cking.phss.sqlite.SqliteField.LnpgField;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class JktjLnpgPage0101 extends LinearLayout implements IPage {

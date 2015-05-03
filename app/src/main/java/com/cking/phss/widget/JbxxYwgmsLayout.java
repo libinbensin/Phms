@@ -33,7 +33,7 @@ import com.cking.phss.dto.Dzjmjkgms;
 import com.cking.phss.dto.IDto;
 import com.cking.phss.dto.Login1;
 import com.cking.phss.global.Global;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class JbxxYwgmsLayout extends ListView {

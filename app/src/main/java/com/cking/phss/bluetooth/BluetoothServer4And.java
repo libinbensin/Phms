@@ -24,7 +24,7 @@ import com.cking.phss.R;
 import com.cking.phss.bluetooth.IBluetoothServerReceiver.BcaData;
 import com.cking.phss.file.FileLog;
 import com.cking.phss.util.CommonUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

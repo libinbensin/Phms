@@ -43,7 +43,7 @@ import com.cking.phss.page.SfglYcfsReportPage01;
 import com.cking.phss.page.SfglYcfsReportPage02;
 import com.cking.phss.page.SfglYcfsReportPage03;
 import com.cking.phss.page.SfglYcfsReportPage04;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

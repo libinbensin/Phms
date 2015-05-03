@@ -1,18 +1,5 @@
-/* Xinhuaxing Inc. (C) 2014. All rights reserved.
- *
- * HomeActivity.java
- * classes : com.cking.phss.activity.HomeActivity
- * @author Administrator
- * V 1.0.0
- * Create at 2014-6-11 上午10:17:01
- */
 package com.cking.phss.activity;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-
-import net.xinhuaxing.eshow.constants.Constants;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,15 +12,21 @@ import android.widget.ImageView;
 
 import com.cking.phss.R;
 import com.cking.phss.util.ContextUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
+
+import net.xinhuaxing.eshow.constants.Constants;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 /**
- * com.cking.phss.activity.HomeActivity
- * @author Administrator <br/>
- * create at 2014-6-11 上午10:17:01
+ * 导航页面
  */
 public class HomeActivity extends BaseActivity implements OnClickListener {
+
     private static final String TAG = "HomeActivity";
+
     String doctorID;
     String doctorName;
     ImageView logoImageView;
@@ -62,9 +55,6 @@ public class HomeActivity extends BaseActivity implements OnClickListener {
         Log.i(TAG, "doctorID:" + doctorID + ", doctorName:" + doctorName);
     }
 
-    /* (non-Javadoc)
-     * @see android.view.View.OnClickListener#onClick(android.view.View)
-     */
     @Override
     public void onClick(View paramView) {
         Intent intent = new Intent();

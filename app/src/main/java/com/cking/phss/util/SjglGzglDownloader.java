@@ -18,6 +18,7 @@ import net.xinhuaxing.util.StringUtil;
 import android.content.Context;
 import android.util.Log;
 
+import com.cking.application.MyApplication;
 import com.cking.phss.bean.BeanID;
 import com.cking.phss.bean.BeanUtil;
 import com.cking.phss.bean.BeanUtil.OnResultFromWeb;

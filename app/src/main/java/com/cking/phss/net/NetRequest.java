@@ -1,10 +1,10 @@
 package com.cking.phss.net;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
+import android.util.Log;
+import android.util.Xml;
+
+import com.cking.phss.file.FileLog;
+import com.cking.phss.global.Global;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -20,11 +20,11 @@ import org.apache.http.util.EntityUtils;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import android.util.Log;
-import android.util.Xml;
-
-import com.cking.phss.file.FileLog;
-import com.cking.phss.global.Global;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NetRequest {
 	private static String TAG = "NetRequest";
@@ -38,6 +38,7 @@ public class NetRequest {
 		
 		Log.i(TAG, "send data has been save to file.");
 		FileLog.i("\r\n-------------------[SEND DATA]----------------------------\r\n", "\r\n" + xmlStr);
+        Log.e("请求字符串",xmlStr);
 		paraList.add(new BasicNameValuePair("XmlString", xmlStr));
 		try {
 			httpPost.setEntity(new UrlEncodedFormEntity(paraList, HTTP.UTF_8));
@@ -64,6 +65,7 @@ public class NetRequest {
 
 	        Log.i(TAG, "recv data has been save to file.");
 	        FileLog.i("\r\n-------------------[RECV DATA]----------------------------\r\n", "\r\n" + result);
+            Log.e("响应字符串",result);
 			return result;
 
 		} catch (UnsupportedEncodingException e) {

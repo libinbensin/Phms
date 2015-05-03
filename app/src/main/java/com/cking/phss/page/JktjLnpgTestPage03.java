@@ -21,7 +21,7 @@ import com.cking.phss.R;
 import com.cking.phss.bean.Lnpg;
 import com.cking.phss.sqlite.SqliteField.LnpgField;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.RadioGroupUtil;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.TestPageItem;

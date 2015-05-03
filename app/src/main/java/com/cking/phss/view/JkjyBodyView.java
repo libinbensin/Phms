@@ -54,7 +54,7 @@ import com.cking.phss.util.BluetoothUtil;
 import com.cking.phss.util.CalendarUtil;
 import com.cking.phss.util.Constant;
 import com.cking.phss.util.JgxxConfigFactory;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.GuidePager;
 import com.cking.phss.widget.GuidePager.OnPageChangeListener;

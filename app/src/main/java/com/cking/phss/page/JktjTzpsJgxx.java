@@ -27,7 +27,7 @@ import com.cking.phss.dto.BcxlhetzJ004;
 import com.cking.phss.dto.IDto;
 import com.cking.phss.sqlite.SqliteField.XlcsjgAndTzpsjg;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class JktjTzpsJgxx extends LinearLayout {

@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/app/libs/xUtils-2.6.14.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/libs/xstream-1.4.7.jar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/dialog/SingleChoiceDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/log/FileLog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/net/NetUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/protocol/login/Protocol_1.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/utils/BitmapHelp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/utils/DButils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/utils/ParseXMLUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/utils/ProgressDialogUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/utils/XmlSeriaUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/BeanCD.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/BeanID.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/ConfigTag.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/Device.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/HospitalTag.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/StringItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xml/bean/ZoneID.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xstream/converter/BeanCDConverter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xstream/converter/BeanIDConverter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/net/mingxing/xstream/converter/ZoneIDConverter.java" charset="UTF-8" />
+  </component>
 </project>
 

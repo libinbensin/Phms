@@ -26,7 +26,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.widget.DeviceListDialog;
 import com.cking.phss.widget.DeviceListDialog.OnDialogResultListener;
 

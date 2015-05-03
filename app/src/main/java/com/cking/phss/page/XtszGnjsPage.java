@@ -32,7 +32,7 @@ import com.cking.phss.bean.Jktj_kstj;
 import com.cking.phss.bean.Jmjbxx;
 import com.cking.phss.dto.Login1;
 import com.cking.phss.global.Global;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.GuidePager;
 

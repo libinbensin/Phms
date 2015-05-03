@@ -1,11 +1,3 @@
-/* Cking Inc. (C) 2012. All rights reserved.
- *
- * FileHelper.java
- * classes : com.okis.happyguide.file.FileHelper
- * @author 刘军鹏
- * V 1.0.0
- * Create at 2012-8-13 下午04:27:33
- */
 package com.cking.phss.file;
 
 import java.io.BufferedReader;
@@ -33,7 +25,7 @@ import android.util.Log;
 
 import com.cking.phss.util.Base64Coder;
 import com.cking.phss.util.Constant;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
 /**
  * com.okis.happyguide.file.FileHelper
@@ -59,6 +51,7 @@ public class FileHelper {
         }
         return sInstance;
     }
+
     /** 判断SDCard是否存在？是否可以进行读写 */
     public boolean SDCardState() {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {// 表示SDCard存在并且可以读写
@@ -174,8 +167,6 @@ public class FileHelper {
 
     /**
      * 修改SD卡上的文件或目录名
-     * 
-     * @param fileName
      */
     public boolean renameSDFile(String oldfileName, String newFileName) {
         File oleFile = new File(SDPATH + oldfileName);
@@ -186,7 +177,6 @@ public class FileHelper {
     /**
      * 拷贝SD卡上的单个文件
      * 
-     * @param path
      * @throws IOException
      */
     public boolean copySDFileTo(String srcFileName, String destFileName) throws IOException {
@@ -478,8 +468,6 @@ public class FileHelper {
 
     /**
      * 拷贝一个文件,srcFile源文件，destFile目标文件
-     * 
-     * @param path
      * @throws IOException
      */
     public boolean copyFileTo(File srcFile, File destFile) throws IOException {
@@ -891,8 +879,6 @@ public class FileHelper {
    }
 
     /**
-     * @param address
-     * @param string
      * @throws IOException
      */
     public static void copyResToStorage(Context context, int resId, String desPath)

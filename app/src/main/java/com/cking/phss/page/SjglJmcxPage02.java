@@ -53,7 +53,7 @@ import com.cking.phss.net.ISoapRecv;
 import com.cking.phss.net.WebService;
 import com.cking.phss.util.AbstractDemoChart;
 import com.cking.phss.util.CalendarUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.SetDatespanDialog;
 import com.cking.phss.widget.SetDatespanDialog.OnResultListener;

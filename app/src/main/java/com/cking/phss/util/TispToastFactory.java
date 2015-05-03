@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.cking.phss.R;
 
 public class TispToastFactory {
+
 	private static Context context = null;
 
 	private static Toast toast = null;

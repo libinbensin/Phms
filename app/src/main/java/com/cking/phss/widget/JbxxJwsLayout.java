@@ -50,7 +50,7 @@ import com.cking.phss.dto.Login1;
 import com.cking.phss.global.Global;
 import com.cking.phss.sqlite4address.Icd10;
 import com.cking.phss.sqlite4address.SqliteDataController;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

@@ -17,7 +17,7 @@ import com.cking.phss.bean.IBean;
 import com.cking.phss.bean.Tzps;
 import com.cking.phss.sqlite.SqliteField.TzpsField;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class JktjTzbsPage01 extends LinearLayout implements IPage {

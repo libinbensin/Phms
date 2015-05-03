@@ -22,7 +22,7 @@ import com.cking.phss.bean.IBean;
 import com.cking.phss.bean.Sfgljl_tnb;
 import com.cking.phss.util.CalendarUtil;
 import com.cking.phss.util.CheckBoxGroupUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.CalendarText;
 

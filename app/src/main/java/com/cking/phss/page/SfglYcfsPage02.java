@@ -39,7 +39,7 @@ import com.cking.phss.dto.Login1;
 import com.cking.phss.global.Global;
 import com.cking.phss.sqlite.Sfgl;
 import com.cking.phss.sqlite.SfglBll;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.PrinterUtil;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.view.SfglBodyView.OnGetSfbhListener;

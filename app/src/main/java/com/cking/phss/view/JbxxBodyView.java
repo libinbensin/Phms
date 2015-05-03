@@ -8,15 +8,6 @@
  */
 package com.cking.phss.view;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import net.xinhuaxing.util.StringUtil;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -47,6 +38,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cking.application.MyApplication;
 import com.cking.phss.R;
 import com.cking.phss.bean.BeanCD;
 import com.cking.phss.bean.BeanID;
@@ -117,7 +109,6 @@ import com.cking.phss.util.IdcReader;
 import com.cking.phss.util.IdcReader.OnErrorListener;
 import com.cking.phss.util.IdcReader.OnReadMessageListener;
 import com.cking.phss.util.JgxxConfigFactory;
-import com.cking.phss.util.MyApplication;
 import com.cking.phss.util.ProgressDialogUtil;
 import com.cking.phss.util.Session;
 import com.cking.phss.util.TispToastFactory;
@@ -126,6 +117,16 @@ import com.cking.phss.widget.GuidePager;
 import com.cking.phss.widget.GuidePager.OnPageChangeListener;
 import com.cking.phss.xml4jgxx.tags.constants.TagConstants;
 import com.ivsign.android.IDCReader.IDCReaderSDK;
+
+import net.xinhuaxing.util.StringUtil;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 基本信息 com.cking.phss.view.JbxxBodyView
@@ -295,11 +296,11 @@ public class JbxxBodyView extends LinearLayout implements IPage {
         // mResidentNameText.setText("季妙芙");
         // mPaperNumEdit.setText("450601197905031501");
         
-//        if (!BluetoothUtil.isPared("CVR-100B")) {
-//            mReadButton.setEnabled(false);
-//        } else {
-//            mReadButton.setEnabled(true);
-//        }
+        if (!BluetoothUtil.isPared("CVR-100B")) {
+            mReadButton.setEnabled(false);
+        } else {
+            mReadButton.setEnabled(true);
+        }
 
         mPrintButton.setEnabled(false);
         if (Global.isLocalLogin) {
@@ -2675,9 +2676,6 @@ public class JbxxBodyView extends LinearLayout implements IPage {
         return sb.toString();
     }
 
-    /**
-     * @param jbxxBodyGrxx
-     */
     public void showItemByIndex(int index) {
         mGuidePager.showPage(index);
     }

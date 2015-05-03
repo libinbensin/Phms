@@ -20,7 +20,7 @@ import com.cking.phss.R;
 import com.cking.phss.bean.IBean;
 import com.cking.phss.global.Global;
 import com.cking.phss.util.AppConfigFactory.AppConfig;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.view.JktjBodyView;
 import com.cking.phss.widget.GuidePager.OnPageChangeListener;
 import com.cking.phss.widget.MenuRadioButton;

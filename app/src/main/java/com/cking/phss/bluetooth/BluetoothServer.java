@@ -20,7 +20,7 @@ import android.widget.Toast;
 
 import com.cking.phss.R;
 import com.cking.phss.file.FileLog;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.DeviceListDialog;
 import com.cking.phss.widget.DeviceListDialog.OnDialogResultListener;

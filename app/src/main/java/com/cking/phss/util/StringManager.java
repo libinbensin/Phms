@@ -2,6 +2,7 @@ package com.cking.phss.util;
 
 import android.content.Context;
 
+import com.cking.application.MyApplication;
 import com.cking.phss.R;
 /**
  * 获取一些字符串值
@@ -10,7 +11,7 @@ import com.cking.phss.R;
  */
 public class StringManager {
     
-    private static Context mContext=MyApplication.getInstance().getApplicationContext();
+    private static Context mContext= MyApplication.getInstance().getApplicationContext();
     
     //获取随访方式
     public static String getSffs(int index){

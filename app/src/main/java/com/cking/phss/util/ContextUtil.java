@@ -3,6 +3,8 @@ package com.cking.phss.util;
 import android.content.Context;
 import android.os.Environment;
 
+import com.cking.application.MyApplication;
+
 public class ContextUtil {
     private static final String TAG = "ContextUtil";
     private Context mContext = MyApplication.getInstance().getApplicationContext();
@@ -21,10 +23,6 @@ public class ContextUtil {
 //        return ContextUtilHolder.UNIQUE_INSTANCE;
 //    }
 
-   
-    
-    
-    
     /**
      *  SDCard是否可读
      * @return 是否可读

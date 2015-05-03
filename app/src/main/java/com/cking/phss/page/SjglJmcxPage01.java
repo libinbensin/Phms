@@ -50,7 +50,7 @@ import com.cking.phss.dto.sjcx.Sjdnryzztjlucx;
 import com.cking.phss.dto.sjgl.JmcxHdr01;
 import com.cking.phss.net.ISoapRecv;
 import com.cking.phss.net.WebService;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.StringManager;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.CalendarText;

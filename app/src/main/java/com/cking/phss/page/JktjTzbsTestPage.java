@@ -19,7 +19,7 @@ import com.cking.phss.R;
 import com.cking.phss.bean.Tzps;
 import com.cking.phss.sqlite.SqliteField.TzpsField;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.RadioGroupUtil;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.TestPageItem;

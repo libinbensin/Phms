@@ -1,45 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cking.phss"
-    android:versionCode="19"
-    android:versionName="2.0.0.019" >
+    android:versionCode="20"
+    android:versionName="2.0.0.020" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true" />
 
     <application
-        android:name="com.cking.phss.util.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name=".activity.HomeActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
-        </activity>
-        <activity
-            android:name=".activity.LoginActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <!-- 登录页面 -->
+        <activity android:name=".activity.LoginActivity" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
-        <activity
-            android:name=".activity.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" >
-        </activity>
-        <activity
-            android:name=".bluetooth.lifesense.ble.ui.DeviceInfoActivity"
-            android:label="@string/title_activity_device_info"
-            android:theme="@style/dialog" >
-        </activity>
+
+        <!-- 选择界面 -->
+        <activity android:name=".activity.HomeActivity" />
+
+        <!-- 主页面 -->
+        <activity android:name=".activity.MainActivity" />
 
         <provider
             android:name=".bluetooth.lifesense.ble.ui.DeviceContentProvider"
@@ -49,16 +46,6 @@
         <activity
             android:name=".bluetooth.lifesense.ble.ui.ConfigPreferenceActivity"
             android:label="@string/title_activity_config_preference"
-            android:theme="@style/dialog" >
-        </activity>
-        <activity
-            android:name=".bluetooth.lifesense.ble.ui.SetUserInfoActivity"
-            android:label="@string/title_activity_set_user_info"
-            android:theme="@style/dialog" >
-        </activity>
-        <activity
-            android:name=".bluetooth.lifesense.ble.ui.GlucoseMeterActivity"
-            android:label="@string/title_activity_glucose_meter"
             android:theme="@style/dialog" >
         </activity>
         <activity
@@ -150,12 +137,12 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
 
-        <service android:name="com.cking.phss.update.UpdateService" >
+        <service android:name=".update.UpdateService" >
             <intent-filter>
                 <action android:name="com.cking.phss.service.update_service" />
             </intent-filter>
         </service>
-        <service android:name="com.cking.phss.service.ListenNetStateService" >
+        <service android:name=".service.ListenNetStateService" >
         </service>
 
         <activity
@@ -164,25 +151,23 @@
             android:screenOrientation="landscape"
             android:theme="@style/bklistDialog" >
         </activity>
+
+        <!-- me custom -->
+        <activity
+            android:name="net.mingxing.activities.LoginActivity"
+            android:label="@string/title_activity_login" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.mingxing.activities.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+
+        <service android:name="net.mingxing.service.ListenNetStateService" />
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
-
-    <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true" />
-
-    <uses-permission android:name="android.permission.VIBRATE" >
-    </uses-permission>
 
 </manifest>

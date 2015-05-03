@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.cking.phss.bean.BeanUtil.SaveToDbResult;
 import com.cking.phss.bean.IBean;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.xml.util.XmlSerializerUtil;
 
 public class JbxxBll {

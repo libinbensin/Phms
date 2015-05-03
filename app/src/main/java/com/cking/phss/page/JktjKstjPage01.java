@@ -35,7 +35,7 @@ import com.cking.phss.bluetooth.BluetoothServer4Ls501;
 import com.cking.phss.util.AppConfigFactory.AppConfig;
 import com.cking.phss.util.DecimalsTextWatcher;
 import com.cking.phss.util.JgxxConfigFactory;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TestResultUtil;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.DeviceListDialog.OnDialogResultListener;

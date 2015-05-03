@@ -31,7 +31,7 @@ import com.cking.phss.dto.MbsfmxlbJ011.Person;
 import com.cking.phss.global.Global;
 import com.cking.phss.util.CalendarUtil;
 import com.cking.phss.util.DisplayUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class SfglTjLayout extends LinearLayout {

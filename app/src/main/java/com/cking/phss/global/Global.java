@@ -58,7 +58,9 @@ public class Global {
     public static boolean isLocalLogin = false; // 是否为本地登录
     
     public static ConfigTag configTag = new ConfigTag(); // 机构信息配置文件
+
     public static boolean isApplicationStoped = true; // 是否已关闭程序
+
     public static String doctorID = null;
     public static String doctorName = null;
     public static String status = null;

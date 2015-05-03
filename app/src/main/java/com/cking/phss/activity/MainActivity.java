@@ -26,7 +26,7 @@ import com.cking.phss.controller.SjglMainController;
 import com.cking.phss.controller.XtszMainController;
 import com.cking.phss.controller.YyzdMainController;
 import com.cking.phss.global.Global;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 import net.xinhuaxing.eshow.constants.Constants;

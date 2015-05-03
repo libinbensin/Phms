@@ -20,7 +20,7 @@ import com.cking.phss.dto.Login1;
 import com.cking.phss.dto.sfgl.gxy.Bcgxyglk19;
 import com.cking.phss.dto.sfgl.gxy.Ddgxyglkxxxx18;
 import com.cking.phss.util.CheckBoxGroupUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.AddressText;
 import com.cking.phss.widget.CalendarText;

@@ -1,11 +1,11 @@
 package com.cking.phss.sqlite;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.database.Cursor;
 
 import com.cking.phss.sqlite.SqliteField.AccountField;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class AccountDal {
     public static void add(Account bean) {
@@ -121,10 +121,6 @@ public class AccountDal {
 
     }
 
-    /**
-     * @param className
-     * @param residentUUID
-     */
     public static void delete(String userName) {
         SqliteOperater.getDbInstance().updateBySql(
                 "DELETE FROM " + AccountField.TB_NAME + " WHERE " + AccountField.USERNAME + "=? ",
@@ -166,12 +162,7 @@ public class AccountDal {
         return beanList;
     }
 
-    /**
-     * @param fieldList
-     * @param valueList
-     * @param whereValueList
-     * @param whereFieldList
-     */
+
     public static void update(String[] setFieldList, String[] setFalueList,
             String[] whereFieldList, String[] whereValueList) {
         String setFiedFragment = "";
@@ -203,11 +194,6 @@ public class AccountDal {
                         + whereFieldFragment + "=?", vlues);
     }
 
-    /**
-     * @param remember
-     * @param string
-     * @return
-     */
     public static Account queryLast(String fieldName, String fieldValue) {
         Cursor cursor = null;
         try {

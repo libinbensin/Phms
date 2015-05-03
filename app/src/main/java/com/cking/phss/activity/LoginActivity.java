@@ -1,21 +1,5 @@
-/* Cking Inc. (C) 2012. All rights reserved.
- *
- * LoginActivity.java
- * classes : com.cking.phss.activity.LoginActivity
- * @author Wation Haliyoo
- * V 1.0.0
- * Create at 2012-9-14 上午11:17:16
- */
 package com.cking.phss.activity;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import net.xinhuaxing.util.StringUtil;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -48,20 +32,27 @@ import com.cking.phss.sqlite.Account;
 import com.cking.phss.sqlite.AccountBll;
 import com.cking.phss.util.ContextUtil;
 import com.cking.phss.util.JgxxConfigFactory;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.ProgressDialogUtil;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.widget.JbxxJwsLayout;
 import com.cking.phss.xml.util.XmlSerializerUtil;
 import com.cking.phss.xml4jgxx.tags.HospitalTag;
 
+import net.xinhuaxing.util.StringUtil;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 /**
- * com.cking.phss.activity.LoginActivity
- * 
- * @author Wation Haliyoo <br/>
- *         create at 2012-9-14 上午11:17:16
+ * 登录页面
  */
 public class LoginActivity extends Activity {
+
     private static final String TAG = "LoginActivity";
 
     private EditText mUsernameEdit = null;
@@ -81,9 +72,10 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         mContext = this;
-        Global.isApplicationStoped = false;
 
-        mToast = TispToastFactory.getToast(getApplicationContext(), "");
+        Global.isApplicationStoped = false;  // 程序启动
+
+        mToast = TispToastFactory.getToast(getApplicationContext(), "");  // 实例化toast
 
         mUsernameEdit = (EditText) findViewById(R.id.username_text);
         mPasswordEdit = (EditText) findViewById(R.id.password_text);
@@ -114,8 +106,7 @@ public class LoginActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                if (checkValid(mUsernameEdit.getText().toString(), mPasswordEdit.getText()
-                        .toString())) {
+                if (checkValid(mUsernameEdit.getText().toString(), mPasswordEdit.getText().toString())) {
                     networkLogin();
                 }
 
@@ -137,7 +128,7 @@ public class LoginActivity extends Activity {
         Account account = AccountBll.queryLastRemember();
         if (account != null) {// 如果有这样的一个账户
             mUsernameEdit.setText(account.getUsername());
-            if (account.getRemember() == 1){// 表示是要记住密码的
+            if (account.getRemember() == 1){  // 表示是要记住密码的
                 mPasswordEdit.setText(account.getPassword());
                 mRememberCkeckBox.setChecked(true);
             }else {
@@ -172,7 +163,7 @@ public class LoginActivity extends Activity {
     }
 
     /**
-     * 
+     * 本地登录
      */
     protected void localLogin() {
         Login1.Request request = new Login1.Request();
@@ -222,7 +213,7 @@ public class LoginActivity extends Activity {
         Login1 loginBean = new Login1();
         loginBean.request = request;
 
-        List<IDto> beanList = new ArrayList<IDto>();
+        List<IDto> beanList = new ArrayList<>();
         beanList.add(loginBean);
         BeanUtil.getInstance().getBeanFromWeb(beanList, new OnResultFromWeb() {
             @Override
@@ -294,7 +285,6 @@ public class LoginActivity extends Activity {
 
     /**
      * 检查用户名密码是否有效
-     * 
      * @param username
      * @param password
      * @return

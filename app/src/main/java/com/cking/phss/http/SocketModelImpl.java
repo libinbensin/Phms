@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import android.content.Context;
 
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
 public class SocketModelImpl {
     private static Context context = MyApplication.getInstance().getApplicationContext();

@@ -5,11 +5,16 @@ import com.cking.phss.dto.Login1;
 import com.cking.phss.sqlite.Resident;
 
 public class Session {
-    Login1 mLoginResult = null;// 记录当前登陆的医生的信息
-    Resident mCurrentResident = null;// 记录当前操作的居民的信息
-    BeanID manageOrg;// 管理机构
-    BeanID station;// 服务
-    BeanID buildOrg;
+
+    private Login1 mLoginResult = null;// 记录当前登陆的医生的信息
+
+    private Resident mCurrentResident = null;// 记录当前操作的居民的信息
+
+    private BeanID manageOrg;// 管理机构
+
+    private BeanID station;// 服务
+
+    private BeanID buildOrg;
 
     public BeanID getManageOrg() {
         return manageOrg;

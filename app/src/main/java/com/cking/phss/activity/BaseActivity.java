@@ -5,19 +5,15 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.Window;
 
 import com.cking.phss.global.Global;
 import com.cking.phss.util.ActivityStack;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
-/**
- * com.iaxure.remotecontrol.activity.BaseActivity
- * @author Administrator <br/>
- * create at 2012-9-6 下午10:41:59
- */
-public class BaseActivity extends Activity {
+public class BaseActivity extends FragmentActivity {
     
     protected void onCreate(Bundle savedInstanceState) {
         if (Global.isApplicationStoped) {

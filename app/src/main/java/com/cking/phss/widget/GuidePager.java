@@ -27,7 +27,7 @@ import com.cking.phss.dto.IDto;
 import com.cking.phss.dto.MbsfmxlbJ011;
 import com.cking.phss.dto.MbsfmxlbJ011.Person;
 import com.cking.phss.util.DisplayUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class GuidePager extends LinearLayout {

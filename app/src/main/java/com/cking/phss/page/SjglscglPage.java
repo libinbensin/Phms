@@ -59,7 +59,7 @@ import com.cking.phss.sqlite.Resident;
 import com.cking.phss.sqlite.SjglBll;
 import com.cking.phss.util.CalendarUtil;
 import com.cking.phss.util.CheckBoxGroupUtil;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.ProgressDialogUtil;
 import com.cking.phss.util.Session;
 import com.cking.phss.util.SjglScglUploader;

@@ -47,7 +47,7 @@ import com.cking.phss.page.SfglNzzReportPage05;
 import com.cking.phss.page.SfglNzzReportPage06;
 import com.cking.phss.page.SfglNzzReportPage07;
 import com.cking.phss.page.SfglNzzReportPage08;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

@@ -13,6 +13,7 @@ import java.util.List;
 
 import android.content.Context;
 
+import com.cking.application.MyApplication;
 import com.cking.phss.bean.BeanCD;
 import com.cking.phss.dto.BcjmjbxxhjtxxJ003;
 import com.cking.phss.dto.Bcjmjkxx8_2;

@@ -1,19 +1,5 @@
-/* Cking Inc. (C) 2012. All rights reserved.
- *
- * MyApplication.java
- * classes : com.okis.happyguide.util.HappyGuideApplication
- * @author 刘军鹏
- * V 1.0.0
- * Create at 2012-8-13 下午03:19:18
- */
-package com.cking.phss.util;
+package com.cking.application;
 
-import java.io.IOException;
-import java.util.Date;
-import java.util.UUID;
-
-import net.xinhuaxing.application.BaseApplication;
-import net.xinhuaxing.eshow.constants.Constants;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -30,14 +16,20 @@ import com.cking.phss.service.ListenNetStateService;
 import com.cking.phss.sqlite.Account;
 import com.cking.phss.sqlite.AccountBll;
 import com.cking.phss.sqlite.AccountDal;
+import com.cking.phss.util.AppConfigFactory;
 import com.cking.phss.util.AppConfigFactory.AppConfig;
+import com.cking.phss.util.ImageCache;
+import com.cking.phss.util.JgxxConfigFactory;
+import com.cking.phss.util.Session;
+import com.cking.phss.util.SharedPreferencesUtil;
+import com.cking.phss.util.TispToastFactory;
 
-/**
- * 
- * 
- * @author 刘军鹏 <br/>
- *         create at 2012-8-13 下午03:19:18
- */
+import net.xinhuaxing.eshow.constants.Constants;
+
+import java.io.IOException;
+import java.util.Date;
+import java.util.UUID;
+
 public class MyApplication extends BaseApplication {
     private static final String TAG = "MyApplication";
 	private static MyApplication instance = null;
@@ -66,7 +58,7 @@ public class MyApplication extends BaseApplication {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		Log.i(TAG, "init application");
+Log.e(TAG, "init application");
 		mContext = this;
         mToast = TispToastFactory.getToast(getApplicationContext(), "");
 		init();

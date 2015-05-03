@@ -17,7 +17,7 @@ import com.cking.phss.global.Global;
 import com.cking.phss.http.IServerRev;
 import com.cking.phss.http.SocketModelImpl;
 import com.cking.phss.util.Constant;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.xml.BodyPullService;
 import com.cking.phss.xml.bean.Body;

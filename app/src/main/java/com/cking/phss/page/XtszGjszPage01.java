@@ -34,7 +34,7 @@ import com.cking.phss.bean.IBean;
 import com.cking.phss.dto.Login1;
 import com.cking.phss.sqlite.Account;
 import com.cking.phss.sqlite.AccountBll;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 import com.cking.phss.xml.util.XmlSerializerUtil;
 

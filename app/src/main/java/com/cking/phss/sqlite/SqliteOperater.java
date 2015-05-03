@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 
 /**
  * SQLite 辅助工具类

@@ -25,7 +25,7 @@ import com.cking.phss.dto.Ddjmjbxx7;
 import com.cking.phss.global.Global;
 import com.cking.phss.sqlite.SqliteField.XlcsjgAndTzpsjg;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class JktjXlpgLasePage extends LinearLayout {

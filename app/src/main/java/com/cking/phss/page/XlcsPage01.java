@@ -30,7 +30,7 @@ import com.cking.phss.global.Global;
 import com.cking.phss.sqlite.SqliteField;
 import com.cking.phss.sqlite.SqliteField.XlcsjgAndTzpsjg;
 import com.cking.phss.sqlite.SqliteOperater;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 public class XlcsPage01 extends LinearLayout {

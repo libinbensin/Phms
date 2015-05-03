@@ -43,7 +43,7 @@ import com.cking.phss.page.SfglEtfsReportPage01;
 import com.cking.phss.page.SfglEtfsReportPage02;
 import com.cking.phss.page.SfglEtfsReportPage03;
 import com.cking.phss.page.SfglEtfsReportPage04;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.util.TispToastFactory;
 
 /**

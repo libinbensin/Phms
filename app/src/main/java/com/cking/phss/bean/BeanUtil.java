@@ -26,7 +26,7 @@ import com.cking.phss.sqlite.Sfgl;
 import com.cking.phss.sqlite.SfglBll;
 import com.cking.phss.sqlite.Sjgl;
 import com.cking.phss.sqlite.SjglBll;
-import com.cking.phss.util.MyApplication;
+import com.cking.application.MyApplication;
 import com.cking.phss.xml.util.XmlSerializerUtil;
 
 public class BeanUtil {
